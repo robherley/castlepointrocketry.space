@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import useScrollHeight from "../hooks/useScrollHeight"
+import { useScrollHeight } from "../hooks/"
 import Logo from "../images/icon.png"
 
 const links = [

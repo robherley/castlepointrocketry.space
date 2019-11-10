@@ -1,20 +1,23 @@
 .landing {
   width: 100%;
+  height: calc(100vh - 11rem);
+  min-height: 800px;
   padding: 2rem;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 
   .text-container {
     max-width: 600px;
     word-wrap: break-word;
     color: color(light);
     animation: fadeIn 1.5s;
+    align-self: center;
 
     h1 {
       text-align: left;
       font-size: 5rem;
-      margin-top: 4rem;
       position: relative;
       span {
         color: color(cpr-red);
@@ -75,6 +78,25 @@
       animation: fadeIn 4s;
       top: 0;
       left: 0;
+    }
+  }
+
+  @media (max-width: $break-md) {
+    height: calc(100vh - 7rem);
+
+    .text-container {
+      margin-top: 2.5rem;
+      align-self: flex-start;
+      h1 {
+        font-size: 2rem;
+      }
+
+      .check-out {
+        font-size: 1.5rem;
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
