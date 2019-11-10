@@ -9,6 +9,7 @@ import RocketStatic from "../images/rocket-static.svg"
 
 const Landing = () => {
   const windowWidth = useWindowWidth()
+  // const scrollHeight = useScrollHeight()
   useEffect(() => {
     // see $break-md in _breakpoints.scss
     // we only wanna animate on big boi screens
@@ -38,11 +39,12 @@ const Landing = () => {
         </div>
         <div className="text-container">
           <h1>
-            Pushing the <span>cutting edge</span> of aerospace manufacturing.
+            Pushing the <span>cutting edge</span> of aerospace manufacturing
           </h1>
           <Link to="/" className="check-out">
-            Check out how we're doing it.
+            Check out how we're doing it
           </Link>
+          <p className="scroll">Or, scroll to see a tour of our rocket</p>
         </div>
       </section>
     </>

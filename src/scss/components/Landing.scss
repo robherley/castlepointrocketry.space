@@ -63,6 +63,21 @@
         transform: scaleX(1);
       }
     }
+
+    .scroll {
+      display: inline-block;
+      margin-top: 3rem;
+      font-size: 2rem;
+      position: relative;
+      color: color(light);
+      &::before {
+        animation: bounce 0.75s infinite;
+        display: inline-block;
+        color: color(cpr-blue);
+        margin-right: 1rem;
+        content: "↓";
+      }
+    }
   }
 
   .rocket-container {
@@ -96,6 +111,9 @@
         &::after {
           display: none;
         }
+      }
+      .scroll {
+        font-size: 1.5rem;
       }
     }
   }

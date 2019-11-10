@@ -1,10 +1,20 @@
-// most from https://cssfx.dev/
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 100;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
