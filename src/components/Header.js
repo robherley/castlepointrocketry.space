@@ -10,10 +10,6 @@ const links = [
     to: "/",
   },
   {
-    children: "Blog",
-    to: "/",
-  },
-  {
     children: "Services",
     to: "/",
   },
@@ -25,13 +21,15 @@ const links = [
     children: "Contact",
     to: "/",
   },
+  {
+    children: "Blog",
+    to: "/",
+  },
 ]
 
-// TODO: sticky nav appear when user scrolls up
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   const scrollHeight = useScrollHeight()
-  console.log(scrollHeight)
   return (
     <header className={scrollHeight > 60 ? "floating" : ""}>
       <div className="container">
