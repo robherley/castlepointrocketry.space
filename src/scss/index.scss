@@ -2,9 +2,8 @@
 @import "colors";
 @import "type";
 @import "flex";
-
-// additional global vars
-$max-width: 1400px;
+@import "anim";
+@import "breakpoints";
 
 @import "./components/Layout";
 @import "./components/Header";

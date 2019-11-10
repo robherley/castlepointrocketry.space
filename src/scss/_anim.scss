@@ -1,1 +1,10 @@
 // most from https://cssfx.dev/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
