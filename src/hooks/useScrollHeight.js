@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react"
 import { throttle } from "lodash"
 
-const getCurrentHeight = () => window.pageYOffset
+const getCurrentHeight = () => {
+  if (typeof window !== `undefined`) {
+    return window.pageYOffset
+  } else {
+    return 0
+  }
+}
 
 export default () => {
   const [height, setHeight] = useState(getCurrentHeight())
