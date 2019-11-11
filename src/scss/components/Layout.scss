@@ -1,8 +1,11 @@
 .layout {
-  max-width: $max-width;
-  margin: 0 auto;
   position: relative;
   padding-top: 11rem;
+
+  section {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
 
   @media (max-width: $break-md) {
     padding-top: 7rem;

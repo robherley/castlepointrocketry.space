@@ -2,4 +2,9 @@
 
 run with: `gatsby develop`
 
-todo: finish this readme
+## Design Inspirations
+
+* [Blue Origin](https://www.blueorigin.com/)
+* [Stripe](https://stripe.com/)
+* [Timber](https://timber.io/)
+* [Scrumpy](https://scrumpy.io/)

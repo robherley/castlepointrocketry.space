@@ -1,5 +1,6 @@
 $colors: (
   light: #fff,
+  light2: #f7f7f9,
   bg: #191e2a,
   text: #58678c,
   cpr-blue: #4da6d0,
@@ -7,6 +8,7 @@ $colors: (
   cpr-red: #991531,
   cpr-yellow: #ffed32,
   cpr-orange: #c75b1e,
+  cpr-purple: #8e2de2,
 );
 
 @function color($name) {

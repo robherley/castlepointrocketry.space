@@ -1,4 +1,4 @@
-.landing {
+.landing--rocket {
   width: 100%;
   height: calc(100vh - 11rem);
   min-height: 800px;
@@ -114,6 +114,137 @@
       }
       .scroll {
         font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.landing--intro {
+  background-color: color(light);
+  box-sizing: border-box;
+  padding: 8rem 2rem;
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: color(cpr-red);
+      position: relative;
+      text-align: center;
+    }
+
+    p {
+      color: color(text);
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.16px;
+      font-family: $heading-font;
+      text-align: center;
+    }
+
+    .tiny-rocket {
+      $color: color(cpr-red);
+      fill: $color;
+      position: relative;
+      padding: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: auto;
+        border-radius: 50%;
+        background-color: $color;
+        opacity: 0.2;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.landing--components {
+  padding: 8rem 2rem;
+  background-color: color(light2);
+
+  .highlighted-path {
+    stroke: color(cpr-purple);
+    stroke-width: 3;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    margin-bottom: 6rem;
+    .component-img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      // thx @stripe
+      border-radius: 8px;
+      box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    }
+    .text {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 2rem 0 0;
+      text-align: right;
+      h1 {
+        color: color(cpr-dark);
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: color(text);
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-family: $heading-font;
+        max-width: 500px;
+        float: right;
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .text {
+        text-align: left;
+        margin: 0 0 0 2rem;
+        p {
+          float: left;
+        }
+      }
+    }
+
+    @media (max-width: $break-md) {
+      flex-direction: column !important;
+
+      .text {
+        margin: 0 0 4rem 0 !important;
+        text-align: left;
+        p {
+          max-width: 100%;
+          float: left;
+        }
       }
     }
   }

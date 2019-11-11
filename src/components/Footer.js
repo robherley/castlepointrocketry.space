@@ -4,8 +4,9 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <footer style={{ textAlign: "center", margin: "1rem 0" }}>
+    <footer className="footer">
       © {new Date().getFullYear()}, Made with {"♥️"} by @robherley
+      <div>(TODO: finish/change this footer)</div>
     </footer>
   )
 }

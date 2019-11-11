@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 
 import { useScrollHeight } from "../hooks/"
 import Logo from "../images/icon.png"
@@ -33,7 +33,11 @@ const Header = () => {
   return (
     <header className={scrollHeight > 60 ? "floating" : ""}>
       <div className="container">
-        <div className="logo-container">
+        <div
+          className="logo-container"
+          onClick={() => navigate("/")}
+          tabIndex="0"
+        >
           <img className="logo-icon" src={Logo} alt="logo" />
           <span className="logo-text">CPR</span>
         </div>
