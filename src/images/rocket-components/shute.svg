@@ -5,6 +5,7 @@
 <style type="text/css">
 	.st0{fill:#181C25;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#8E2DE2;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
 	<g>
@@ -256,15 +257,15 @@
 		<path class="st1" d="M197.5,99.5c0.5,65.5,0.5,131.5,0,198"/>
 	</g>
 	<g>
-		<line class="st1 highlighted-path" x1="180" y1="102.5" x2="120.4" y2="102.5"/>
-		<line class="st1 highlighted-path" x1="178.1" y1="97.7" x2="122.3" y2="97.7"/>
+		<line class="st2" x1="180" y1="102.5" x2="120.4" y2="102.5"/>
+		<line class="st2" x1="178.1" y1="97.7" x2="122.3" y2="97.7"/>
 		<g>
-			<line class="st1 highlighted-path" x1="180" y1="181.4" x2="180" y2="99.5"/>
-			<line class="st1 highlighted-path" x1="120.4" y1="99.5" x2="120.4" y2="181.4"/>
-			<line class="st1 highlighted-path" x1="178.1" y1="177.7" x2="178.1" y2="97.7"/>
-			<line class="st1 highlighted-path" x1="122.3" y1="97.7" x2="122.3" y2="177.7"/>
-			<line class="st1 highlighted-path" x1="120.4" y1="181.4" x2="180" y2="181.4"/>
-			<line class="st1 highlighted-path" x1="178.1" y1="177.7" x2="122.3" y2="177.7"/>
+			<line class="st2" x1="180" y1="181.4" x2="180" y2="99.5"/>
+			<line class="st2" x1="120.4" y1="99.5" x2="120.4" y2="181.4"/>
+			<line class="st2" x1="178.1" y1="177.7" x2="178.1" y2="97.7"/>
+			<line class="st2" x1="122.3" y1="97.7" x2="122.3" y2="177.7"/>
+			<line class="st2" x1="120.4" y1="181.4" x2="180" y2="181.4"/>
+			<line class="st2" x1="178.1" y1="177.7" x2="122.3" y2="177.7"/>
 		</g>
 	</g>
 </g>

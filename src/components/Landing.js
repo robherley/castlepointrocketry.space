@@ -6,49 +6,49 @@ import anime from "animejs/lib/anime.es.js"
 import RocketAnimate from "../images/rocket-animate.inline.svg"
 import RocketStatic from "../images/rocket-static.svg"
 import TinyRocket from "../images/tiny-rocket.inline.svg"
-import Cone from "../images/rocket-components/cone.inline.svg"
-import Shute from "../images/rocket-components/shute.inline.svg"
-import Electric from "../images/rocket-components/electric.inline.svg"
-import Tanks from "../images/rocket-components/tanks.inline.svg"
-import Wings from "../images/rocket-components/wings.inline.svg"
-import Engine from "../images/rocket-components/engine.inline.svg"
+import Cone from "../images/rocket-components/cone.svg"
+import Shute from "../images/rocket-components/shute.svg"
+import Electric from "../images/rocket-components/electric.svg"
+import Tanks from "../images/rocket-components/tanks.svg"
+import Wings from "../images/rocket-components/wings.svg"
+import Engine from "../images/rocket-components/engine.svg"
 
 const fixtures = [
   {
     name: "Coney Boi",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Cone,
+    imgSrc: Cone,
   },
   {
     name: "Parachute Boi",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Shute,
+    imgSrc: Shute,
   },
   {
     name: "Electric Boi",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Electric,
+    imgSrc: Electric,
   },
   {
     name: "Tank Bois",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Tanks,
+    imgSrc: Tanks,
   },
   {
     name: "Wing Bois",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Wings,
+    imgSrc: Wings,
   },
   {
     name: "Engine Boi",
     desc:
       "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
-    Comp: Engine,
+    imgSrc: Engine,
   },
 ]
 
@@ -63,7 +63,6 @@ const Landing = () => {
         i * (baseVal === "st1" ? 15 : 10),
       direction: "alternate",
       loop: false,
-      opacity: [0, 1],
     })
   }, [])
   return (
@@ -103,13 +102,13 @@ const Landing = () => {
         </section>
       </div>
       <div className="landing--components">
-        {fixtures.map(({ name, desc, Comp }) => (
+        {fixtures.map(({ name, desc, imgSrc }) => (
           <section key={name}>
             <div className="text">
               <h1>{name}</h1>
               <p>{desc}</p>
             </div>
-            {<Comp className="component-img" />}
+            {<img src={imgSrc} className="component-img" alt={name} />}
           </section>
         ))}
       </div>
