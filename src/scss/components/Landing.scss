@@ -141,9 +141,9 @@
     p {
       color: color(text);
       font-size: 1.5rem;
-      line-height: 1.5rem;
-      letter-spacing: 0.16px;
+      line-height: 1.725rem;
       font-family: $heading-font;
+      letter-spacing: 0.16px;
       text-align: center;
     }
 
@@ -189,7 +189,7 @@
     max-width: 1050px;
     margin-bottom: 6rem;
     .component-img {
-      max-width: 300px;
+      max-width: 400px;
       width: 100%;
       height: auto;
       // thx @stripe
@@ -200,46 +200,49 @@
     }
     .text {
       width: 100%;
-      max-width: 600px;
       margin: 0 2rem 0 0;
-      text-align: right;
+      max-width: 500px;
+      padding: 1rem;
+      box-sizing: border-box;
+
       h1 {
         color: color(cpr-dark);
-        font-size: 1.6rem;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.725rem;
         margin-bottom: 0.5rem;
+        position: relative;
+        line-height: 1.6rem;
+
+        &::before {
+          position: absolute;
+          top: -1.2rem;
+          left: 0;
+          width: 2rem;
+          height: 0.3rem;
+          content: "";
+          background-color: color(cpr-blue);
+        }
       }
       p {
         color: color(text);
         font-size: 1.5rem;
-        line-height: 1.5rem;
+        line-height: 1.725rem;
         font-family: $heading-font;
-        max-width: 500px;
-        float: right;
       }
     }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
-      .text {
-        text-align: left;
-        margin: 0 0 0 2rem;
-        p {
-          float: left;
-        }
-      }
     }
 
     @media (max-width: $break-md) {
       flex-direction: column !important;
+      .component-img {
+        width: 100%;
+      }
 
       .text {
-        margin: 0 0 4rem 0 !important;
-        text-align: left;
-        p {
-          max-width: 100%;
-          float: left;
-        }
+        margin-top: 3rem;
       }
     }
   }

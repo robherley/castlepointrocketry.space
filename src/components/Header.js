@@ -9,10 +9,10 @@ const links = [
     children: "Our Mission",
     to: "/",
   },
-  {
-    children: "Services",
-    to: "/",
-  },
+  // {
+  //   children: "Services",
+  //   to: "/",
+  // },
   {
     children: "Gallery",
     to: "/",
@@ -21,10 +21,10 @@ const links = [
     children: "Contact",
     to: "/",
   },
-  {
-    children: "Blog",
-    to: "/",
-  },
+  // {
+  //   children: "Blog",
+  //   to: "/",
+  // },
 ]
 
 const Header = () => {

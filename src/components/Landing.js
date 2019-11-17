@@ -15,39 +15,39 @@ import Engine from "../images/rocket-components/engine.svg"
 
 const fixtures = [
   {
-    name: "Coney Boi",
+    name: "Nose Cone",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "Designed to minimize aerodynamic resistance and reliably  house payloads.",
     imgSrc: Cone,
   },
   {
-    name: "Parachute Boi",
+    name: "Recovery System",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "A drogue piloted dual chute system means our vehicle is fully recoverable.",
     imgSrc: Shute,
   },
   {
-    name: "Electric Boi",
+    name: "Avionics Package",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "Our custom avionics are developed to handle navigation, telemetry, data acquisition, flight control, and more.",
     imgSrc: Electric,
   },
   {
-    name: "Tank Bois",
+    name: "Custom Composite Tanks",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "Cutting edge linerless tanks allow our vehicle to fly higher, carry more payload mass, and operate at peak efficiency.",
     imgSrc: Tanks,
   },
   {
-    name: "Wing Bois",
+    name: "Fins",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "Precision machined out of titanium, these control surfaces stabilize the flight profile of our vehicle while resisting peak temperatures.",
     imgSrc: Wings,
   },
   {
-    name: "Engine Boi",
+    name: "Engine",
     desc:
-      "Est labore tempore aut rerum architecto. Quae quod doloribus ab sit ea dignissimos nesciunt officiis. Est quia impedit quia deserunt facere. Accusamus incidunt natus ea error molestiae quod.",
+      "Our fully 3D printed engine is designed for maximum efficiency and minimum complexity.",
     imgSrc: Engine,
   },
 ]
@@ -104,11 +104,11 @@ const Landing = () => {
       <div className="landing--components">
         {fixtures.map(({ name, desc, imgSrc }) => (
           <section key={name}>
+            {<img src={imgSrc} className="component-img" alt={name} />}
             <div className="text">
               <h1>{name}</h1>
               <p>{desc}</p>
             </div>
-            {<img src={imgSrc} className="component-img" alt={name} />}
           </section>
         ))}
       </div>
