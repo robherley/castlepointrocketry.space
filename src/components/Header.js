@@ -6,6 +6,10 @@ import Logo from "../images/icon.png"
 
 const links = [
   {
+    children: "Rocket",
+    to: "/",
+  },
+  {
     children: "Our Mission",
     to: "/mission",
   },

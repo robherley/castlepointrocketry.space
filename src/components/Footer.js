@@ -5,8 +5,7 @@ import React from "react"
 const Footer = () => {
   return (
     <footer className="footer">
-      © {new Date().getFullYear()}, Made with {"♥️"} by @robherley
-      <div>(TODO: finish/change this footer)</div>
+      © {new Date().getFullYear()}, Castle Point Rocketry
     </footer>
   )
 }

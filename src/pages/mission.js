@@ -3,11 +3,11 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Mission from "../components/Mission"
 
-const IndexPage = () => (
+const MissionPage = () => (
   <Layout>
     <SEO title="Our Mission" />
     <Mission />
   </Layout>
 )
 
-export default IndexPage
+export default MissionPage
