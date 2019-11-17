@@ -1,0 +1,58 @@
+.mission {
+  h1 {
+    font-size: 4rem;
+    color: color(light);
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  section {
+    max-width: 1020px;
+    margin-bottom: 4rem;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    }
+
+    h1 {
+      color: color(cpr-dark);
+      font-size: 1.5rem;
+      line-height: 1.725rem;
+      margin-bottom: 1rem;
+      position: relative;
+      line-height: 1.6rem;
+      text-align: left;
+
+      &::before {
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        width: 2rem;
+        height: 0.3rem;
+        content: "";
+        background-color: color(cpr-red);
+      }
+    }
+
+    p {
+      color: color(text);
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      position: relative;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    padding: 3rem 2rem;
+    background-color: color(light2);
+  }
+}

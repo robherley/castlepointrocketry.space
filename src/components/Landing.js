@@ -80,7 +80,8 @@ const Landing = () => {
           <h1>
             Pushing the <span>cutting edge</span> of aerospace manufacturing
           </h1>
-          <Link to="/" className="check-out">
+          {/* TODO: change to blog when blog is finished */}
+          <Link to="/mission" className="check-out">
             Check out what we're up to
           </Link>
           <p className="scroll">Or, scroll to see more of our rocket</p>

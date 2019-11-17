@@ -7,7 +7,7 @@ import Logo from "../images/icon.png"
 const links = [
   {
     children: "Our Mission",
-    to: "/",
+    to: "/mission",
   },
   // {
   //   children: "Services",
@@ -15,11 +15,11 @@ const links = [
   // },
   {
     children: "Gallery",
-    to: "/",
+    to: "/gallery",
   },
   {
     children: "Contact",
-    to: "/",
+    to: "/contact",
   },
   // {
   //   children: "Blog",
