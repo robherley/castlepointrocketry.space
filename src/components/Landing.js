@@ -93,12 +93,12 @@ const Landing = () => {
             <TinyRocket />
           </div>
           <h1>Meet Our Rocket</h1>
+          <p className="bold" style={{ marginBottom: "0.5rem" }}>
+            Powerful · Efficient · Reusable
+          </p>
           <p>
-            In the last year, our company has developed a unique, 3D-printed
-            engine and an innovative, pressure-driven launch platform with which
-            to demonstrate it. This was accomplished not only by our modern
-            approach to aerospace development, but also by a talented and driven
-            team of engineers and scientists.
+            Our launch vehicle features a robust 3D printed engine, and is
+            capable of achieving altitudes in excess of 100 km.
           </p>
         </section>
       </div>

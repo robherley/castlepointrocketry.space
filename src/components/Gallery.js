@@ -3,6 +3,48 @@ import { isNull } from "lodash"
 import Gallery from "react-photo-gallery"
 
 const photos = [
+  {
+    src: require("../images/gallery/2019-04-30.15.10.43-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-05-07.10.23.09-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-05-12.17.14.53-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-05-12.19.20.16-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-06-14.22.45.05-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-07-09.22.42.41-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-07-10.01.43.31-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  {
+    src: require("../images/gallery/2019-07-14.14.41.41-min.jpg"),
+    width: 4,
+    height: 3,
+  },
+  { src: require("../images/gallery/IMG_1841-min.jpg"), width: 4, height: 3 },
+  { src: require("../images/gallery/IMG_2373-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/0J9A9442-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/0J9A9447-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/0J9A9471-min.jpg"), width: 4, height: 3 },
