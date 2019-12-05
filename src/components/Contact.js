@@ -17,7 +17,7 @@ const Contact = () => {
           <br />
           <p>
             Interested in our mission and joining our team? Email{" "}
-            <a href="mailto:careers@cprocketry.com">careers@cprocketry.com</a>
+            <a href="mailto:careers@cprocketry.com">careers@cprocketry.com</a>!
           </p>
         </section>
       </div>

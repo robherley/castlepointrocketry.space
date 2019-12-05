@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import anime from "animejs/lib/anime.es.js"
 
@@ -53,7 +53,9 @@ const fixtures = [
 ]
 
 const Landing = () => {
+  const [showRocket, setShowRocket] = useState(0)
   useEffect(() => {
+    setShowRocket(1)
     anime({
       targets: ".rocket-animate > g > *",
       strokeDashoffset: [anime.setDashoffset, 0],
@@ -69,7 +71,10 @@ const Landing = () => {
     <>
       <section className="landing--rocket">
         <div className="rocket-container">
-          <RocketAnimate className="rocket-animate" />
+          <RocketAnimate
+            className="rocket-animate"
+            style={{ opacity: showRocket }}
+          />
           <img
             src={RocketStatic}
             className="rocket-static"

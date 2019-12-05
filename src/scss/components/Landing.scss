@@ -84,15 +84,11 @@
     position: relative;
     width: 400px;
 
-    .rocket-animate {
-      animation: fadeIn 1.5s;
-    }
-
     .rocket-static {
       position: absolute;
-      animation: fadeIn 4s;
       top: 0;
       left: 0;
+      animation: fadeIn 4s;
     }
   }
 

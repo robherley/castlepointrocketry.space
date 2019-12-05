@@ -10,8 +10,8 @@ const photos = [
   },
   {
     src: require("../images/gallery/2019-05-07.10.23.09-min.jpg"),
-    width: 4,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     src: require("../images/gallery/2019-05-12.17.14.53-min.jpg"),
@@ -20,8 +20,8 @@ const photos = [
   },
   {
     src: require("../images/gallery/2019-05-12.19.20.16-min.jpg"),
-    width: 4,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     src: require("../images/gallery/2019-06-14.22.45.05-min.jpg"),
@@ -30,8 +30,8 @@ const photos = [
   },
   {
     src: require("../images/gallery/2019-07-09.22.42.41-min.jpg"),
-    width: 4,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     src: require("../images/gallery/2019-07-10.01.43.31-min.jpg"),
