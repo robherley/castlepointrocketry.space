@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Castle Point Rocketry`,
-    description: `Landing Page for CPR`,
-    author: `@robherley`,
+    title: `Hudson Space Systems`,
+    description: `HSS is pushing the cutting edge of aerospace manufacturing.`,
+    author: `Hudson Space Systems`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `CastlePointRocketry`,
-        short_name: `CPR`,
+        name: `HudsonSpaceSystems`,
+        short_name: `HSS`,
         start_url: `/`,
         background_color: `#072250`,
         theme_color: `#072250`,

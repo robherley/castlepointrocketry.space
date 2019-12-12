@@ -59,7 +59,7 @@ const Mission = () => {
           </div>
           <h1 className="sub-header">How we're doing it</h1>
           <p>
-            Castle Point Rocketry has developed a fully-reusable sounding
+            Hudson Space Systems has developed a fully-reusable sounding
             rocket. Each component of the vehicle was designed by us to push the
             cutting edge of rocketry. The system is pressure fed from a high
             pressure Helium source and utilizes LOX/RP-1 propellants.

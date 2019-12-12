@@ -43,7 +43,7 @@ const Header = () => {
           tabIndex="0"
         >
           <img className="logo-icon" src={Logo} alt="logo" />
-          <span className="logo-text">CPR</span>
+          <span className="logo-text">Hudson Space Systems</span>
         </div>
         <div className="links">
           {links.map(e => (
