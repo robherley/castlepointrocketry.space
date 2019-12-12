@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
 
 import { useScrollHeight } from "../hooks/"
-import Logo from "../images/icon.png"
+import Logo from "../images/HSSwhite.svg"
 
 const links = [
   {
@@ -43,7 +43,6 @@ const Header = () => {
           tabIndex="0"
         >
           <img className="logo-icon" src={Logo} alt="logo" />
-          <span className="logo-text">Hudson Space Systems</span>
         </div>
         <div className="links">
           {links.map(e => (

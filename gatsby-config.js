@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hudson Space Systems`,
-    description: `HSS is pushing the cutting edge of aerospace manufacturing.`,
+    description: `Hudson Space Systems is building the next generation of suborbital rockets.`,
     author: `Hudson Space Systems`,
   },
   plugins: [
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `HudsonSpaceSystems`,
+        name: `Hudson Space Systems`,
         short_name: `HSS`,
         start_url: `/`,
         background_color: `#072250`,
         theme_color: `#072250`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/favicon.svg`,
       },
     },
     {
