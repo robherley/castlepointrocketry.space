@@ -57,7 +57,7 @@ const Mission = () => {
           <div className="icon">
             <TinyTeam />
           </div>
-          <h1 className="sub-header">How we're doing it</h1>
+          <h1 className="sub-header">Our Team</h1>
           <p>
             Hudson Space Systems has developed a fully-reusable sounding
             rocket. Each component of the vehicle was designed by us to push the
