@@ -7,7 +7,7 @@ import RocketAnimate from "../images/rocket-animate.inline.svg"
 import RocketStatic from "../images/rocket-static.svg"
 import TinyRocket from "../images/tiny-rocket.inline.svg"
 import Cone from "../images/rocket-components/cone.svg"
-import Shute from "../images/rocket-components/shute.svg"
+import Chute from "../images/rocket-components/chute.svg"
 import Electric from "../images/rocket-components/electric.svg"
 import Tanks from "../images/rocket-components/tanks.svg"
 import Wings from "../images/rocket-components/wings.svg"
@@ -23,8 +23,8 @@ const fixtures = [
   {
     name: "Recovery System",
     desc:
-      "A drogue piloted dual chute system means our vehicle is fully recoverable.",
-    imgSrc: Shute,
+      "A drogue-piloted dual-chute system means our vehicle is fully recoverable.",
+    imgSrc: Chute,
   },
   {
     name: "Avionics Package",
@@ -41,13 +41,13 @@ const fixtures = [
   {
     name: "Fins",
     desc:
-      "Precision machined out of titanium, these control surfaces stabilize the flight profile of our vehicle while resisting peak temperatures.",
+      "Precision machined out of titanium, these control surfaces stabilize the flight profile of our vehicle while reducing peak temperatures.",
     imgSrc: Wings,
   },
   {
     name: "Engine",
     desc:
-      "Our fully 3D printed engine is designed for maximum efficiency and minimum complexity.",
+      "Our fully 3D-printed engine is designed for maximum efficiency and minimum complexity.",
     imgSrc: Engine,
   },
 ]
@@ -89,7 +89,7 @@ const Landing = () => {
           <Link to="/mission" className="check-out">
             Check out what we're up to
           </Link>
-          <p className="scroll">Or, scroll to see more of our rocket</p>
+          <p className="scroll">Scroll to see about our rocket</p>
         </div>
       </section>
       <div className="landing--intro">
@@ -102,8 +102,8 @@ const Landing = () => {
             Powerful · Efficient · Reusable
           </p>
           <p>
-            Our launch vehicle features a robust 3D printed engine, and is
-            capable of achieving altitudes in excess of 100 km.
+            Our launch vehicle features a robust 3D-printed engine and is
+            capable of achieving altitudes in excess of 100 kilometers.
           </p>
         </section>
       </div>

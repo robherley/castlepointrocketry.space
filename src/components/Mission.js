@@ -15,7 +15,7 @@ const team = [
   },
   {
     name: "Ben Iofel",
-    role: "Lead Programer",
+    role: "Lead Programmer",
     photo: require("../images/team/ben-min.jpg"),
   },
   {
