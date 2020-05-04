@@ -61,7 +61,6 @@ const photos = [
   { src: require("../images/gallery/DJI_0068-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/IMG_1865-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/IMG_1874-min.jpg"), width: 4, height: 3 },
-  { src: require("../images/gallery/IMG_2293-min.jpg"), width: 4, height: 3 },
   { src: require("../images/gallery/IMG_2373-min.jpg"), width: 4, height: 3 },
 ]
 
