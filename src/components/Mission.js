@@ -15,7 +15,7 @@ const team = [
   },
   {
     name: "Ben Iofel",
-    role: "Lead Programmer",
+    role: "Avionics Lead and Software Engineer",
     photo: require("../images/team/ben-min.jpg"),
   },
   {
@@ -29,9 +29,9 @@ const team = [
     photo: require("../images/team/dakota-min.jpg"),
   },
   {
-    name: "Rodrigo Nogueira",
-    role: "Manufacturing, Welding",
-    photo: require("../images/team/rodrigo-min.jpg"),
+    name: "Nicholas Yarbrough",
+    role: "Electrical Engineering and Embedded System Design",
+    photo: require("../images/team/cole-min.jpg"),
   },
 ]
 
