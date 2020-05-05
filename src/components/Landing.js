@@ -83,7 +83,7 @@ const Landing = () => {
         </div>
         <div className="text-container">
           <h1>
-            Pushing the <span>cutting edge</span> of aerospace manufacturing
+            <span>Microgravity</span> as a Service
           </h1>
           {/* TODO: change to blog when blog is finished */}
           <Link to="/mission" className="check-out">

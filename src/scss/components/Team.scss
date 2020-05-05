@@ -1,0 +1,111 @@
+.team {
+  .page-header {
+    font-size: 4rem;
+    color: color(light);
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .content-header {
+    text-align: left;
+    font-size: 5rem;
+    position: relative;
+    span {
+      color: color(cpr-red);
+    }
+
+    &::before {
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      width: 3rem;
+      height: 0.5rem;
+      content: "";
+      background-color: color(cpr-blue);
+    }
+  }
+
+  section {
+    max-width: 800px;
+    margin-bottom: 4rem;
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .team-member {
+        padding: 1.5rem;
+        width: 200px;
+        height: auto;
+        img {
+          margin-bottom: 1rem;
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    padding: 3rem 2rem;
+    background-color: color(light2);
+  }
+}
+
+.team--sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+
+  .sub-header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: color(cpr-red);
+    position: relative;
+    text-align: center;
+  }
+
+  p {
+    color: color(text);
+    font-size: 1.5rem;
+    line-height: 1.725rem;
+    font-family: $heading-font;
+    letter-spacing: 0.16px;
+    text-align: center;
+  }
+
+  .icon {
+    $color: color(cpr-red);
+    fill: $color;
+    position: relative;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: auto;
+      border-radius: 50%;
+      background-color: $color;
+      opacity: 0.2;
+      box-sizing: border-box;
+    }
+  }
+}
