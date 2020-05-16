@@ -28,9 +28,9 @@ const team = [
     photo: require("../images/team/dakota-min.jpg"),
   },
   {
-    name: "Rodrigo Nogueira",
-    role: "Manufacturing, Welding",
-    photo: require("../images/team/rodrigo-min.jpg"),
+    name: "Nicholas Yarbrough",
+    role: "Electrical Engineering and Embedded System Design",
+    photo: require("../images/team/cole-min.jpg"),
   },
 ]
 
