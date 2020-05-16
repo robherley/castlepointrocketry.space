@@ -83,11 +83,12 @@ const Landing = () => {
         </div>
         <div className="text-container">
           <h1>
-            <span>Microgravity</span> as a Service
+            {/* <span>Microgravity</span> as a Service */}
+            Space is expensive, but it doesn’t have to be
           </h1>
           {/* TODO: change to blog when blog is finished */}
-          <Link to="/mission" className="check-out">
-            Check out what we're up to
+          <Link to="/services" className="check-out">
+            Get your payload into space
           </Link>
           <p className="scroll">Scroll to see about our rocket</p>
         </div>
