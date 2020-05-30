@@ -1,5 +1,4 @@
 import React from 'react'
-import TinyTeam from "../images/tiny-team.inline.svg"
 
 const team = [
   {
@@ -39,18 +38,6 @@ const Team = () => {
     <div className="team">
       <h1 className="page-header">Our Team</h1>
       <div className="container" style={{ backgroundColor: "var(--light)" }}>
-        <section className="mission--sub-section">
-          {/* <div className="icon">
-            <TinyTeam />
-          </div> */}
-          {/* <h1 className="sub-header">Our Team</h1> */}
-          {/* <p>
-            Hudson Space Systems has developed a fully-reusable sounding
-            rocket. Each component of the vehicle was designed by us to push the
-            cutting edge of rocketry. The system is pressure fed from a high
-            pressure Helium source and utilizes LOX/RP-1 propellants.
-          </p> */}
-        </section>
         <section>
           <div className="team-container">
             {team.map(e => (
