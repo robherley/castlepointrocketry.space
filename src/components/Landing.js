@@ -83,7 +83,6 @@ const Landing = () => {
         </div>
         <div className="text-container">
           <h1>
-            {/* <span>Microgravity</span> as a Service */}
             Space is expensive, but it doesn’t have to be
           </h1>
           {/* TODO: change to blog when blog is finished */}

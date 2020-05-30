@@ -36,5 +36,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        // Fathom server URL. Defaults to `cdn.usefathom.com`
+        trackingUrl: 'fathom.cprocketry.com',
+        // Unique site id
+        siteId: 'CALQK',
+        // Domain whitelist
+        whitelistHostnames: [
+          'hudsonspace.systems'
+        ]
+      }
+    }
   ],
 }
