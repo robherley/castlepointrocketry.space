@@ -1,6 +1,4 @@
-import React from "react"
-import TinyIdea from "../images/tiny-idea.inline.svg"
-import TinyTeam from "../images/tiny-team.inline.svg"
+import React from 'react'
 
 const team = [
   {
@@ -15,7 +13,7 @@ const team = [
   },
   {
     name: "Ben Iofel",
-    role: "Avionics Lead and Software Engineer",
+    role: "Lead Programmer",
     photo: require("../images/team/ben-min.jpg"),
   },
   {
@@ -35,36 +33,11 @@ const team = [
   },
 ]
 
-const Mission = () => {
+const Team = () => {
   return (
-    <div className="mission">
-      <h1 className="page-header">Our Mission</h1>
-      <div className="container">
-        <section className="mission--sub-section">
-          <div className="icon">
-            <TinyIdea />
-          </div>
-          <h1 className="sub-header">Our Service</h1>
-          <p>
-            Research in space, without the high price tag. We offer
-            competitively priced payload space in our suborbital rocket
-            launches.
-          </p>
-        </section>
-      </div>
+    <div className="team">
+      <h1 className="page-header">Our Team</h1>
       <div className="container" style={{ backgroundColor: "var(--light)" }}>
-        <section className="mission--sub-section">
-          <div className="icon">
-            <TinyTeam />
-          </div>
-          <h1 className="sub-header">Our Team</h1>
-          <p>
-            Hudson Space Systems has developed a fully-reusable sounding
-            rocket. Each component of the vehicle was designed by us to push the
-            cutting edge of rocketry. The system is pressure fed from a high
-            pressure Helium source and utilizes LOX/RP-1 propellants.
-          </p>
-        </section>
         <section>
           <div className="team-container">
             {team.map(e => (
@@ -81,4 +54,5 @@ const Mission = () => {
   )
 }
 
-export default Mission
+
+export default Team

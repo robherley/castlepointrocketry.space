@@ -1,4 +1,4 @@
-.mission {
+.team {
   .page-header {
     font-size: 4rem;
     color: color(light);
@@ -57,7 +57,7 @@
   }
 }
 
-.mission--sub-section {
+.team--sub-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,32 +80,4 @@
     text-align: center;
   }
 
-  .icon {
-    $color: color(cpr-red);
-    fill: $color;
-    position: relative;
-    padding: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
-    &::after {
-      position: absolute;
-      display: block;
-      content: "";
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      height: auto;
-      border-radius: 50%;
-      background-color: $color;
-      opacity: 0.2;
-      box-sizing: border-box;
-    }
-  }
 }

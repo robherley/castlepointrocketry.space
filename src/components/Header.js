@@ -6,13 +6,17 @@ import Logo from "../images/HSSwhite.svg"
 
 const links = [
   {
-    children: "Rocket",
-    to: "/",
+    children: "Services",
+    to: "/services",
   },
   {
-    children: "Our Mission",
-    to: "/mission",
+    children: "Team",
+    to: "/team",
   },
+  // {
+  //   children: "News",
+  //   to: "/news",
+  // },
   // {
   //   children: "Services",
   //   to: "/",

@@ -86,7 +86,7 @@ const Landing = () => {
             Space is expensive, but it doesn’t have to be
           </h1>
           {/* TODO: change to blog when blog is finished */}
-          <Link to="/mission" className="check-out">
+          <Link to="/services" className="check-out">
             Get your payload into space
           </Link>
           <p className="scroll">Scroll to see about our rocket</p>
