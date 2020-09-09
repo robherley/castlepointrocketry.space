@@ -33,6 +33,19 @@ const team = [
   },
 ]
 
+const advisors = [
+  {
+    name: 'Igor Alexandrov',
+    role: 'Senior Advisor',
+    photo: require('../images/team/igor.jpg'),
+  },
+  {
+    name: 'Khurram Nasir Gore',
+    role: 'Senior Advisor',
+    photo: require('../images/team/khurram.jpg'),
+  }
+]
+
 const Team = () => {
   return (
     <div className="team">
@@ -41,6 +54,18 @@ const Team = () => {
         <section>
           <div className="team-container">
             {team.map(e => (
+              <div className="team-member" key={e.name}>
+                <img src={e.photo} alt={e.name} />
+                <p className="bold">{e.name}</p>
+                <p style={{ marginTop: "0.2rem" }}>{e.role}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section>
+          <h2>Advisory Board</h2>
+          <div className="team-container">
+            {advisors.map(e => (
               <div className="team-member" key={e.name}>
                 <img src={e.photo} alt={e.name} />
                 <p className="bold">{e.name}</p>
