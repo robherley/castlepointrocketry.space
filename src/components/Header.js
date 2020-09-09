@@ -14,10 +14,10 @@ const links = [
     children: "Team",
     to: "/team",
   },
-  // {
-  //   children: "News",
-  //   to: "/news",
-  // },
+  {
+    children: "News",
+    to: "/news",
+  },
   // {
   //   children: "Services",
   //   to: "/",
