@@ -1,3 +1,27 @@
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #8e2de2; //#ffab40;
+  color: color(cpr-dark);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.banner + header {
+  margin-top: 30px;
+}
+
+.banner + header.floating {
+  margin-top: 0;
+}
+
 header {
   position: fixed;
   top: 0;
