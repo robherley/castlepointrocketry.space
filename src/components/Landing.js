@@ -83,7 +83,7 @@ const Landing = () => {
         </div>
         <div className="text-container">
           <h1>
-            Space is expensive, but it doesn’t have to be
+            Microgravity as a Service
           </h1>
           {/* TODO: change to blog when blog is finished */}
           <Link to="/services" className="check-out">
