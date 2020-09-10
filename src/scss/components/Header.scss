@@ -16,6 +16,10 @@
 
 .banner + header {
   margin-top: 30px;
+
+  @media(max-width: $break-md) {
+    margin-top: 60px;
+  }
 }
 
 .banner + header.floating {
