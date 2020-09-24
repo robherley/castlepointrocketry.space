@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <>
       { location.pathname === '/' &&
-        <h2 className="banner">Become a part of our company by <a target="_blank" href="https://invest.microventures.com/upcoming/hudson-space-systems/?referral_code=HSSWEB090820">investing</a> in HSS on MicroVentures</h2> }
+        <h2 className="banner">Become a part of our company by <a target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">investing</a> in HSS on MicroVentures</h2> }
       <header className={scrollHeight > 60 ? "floating" : ""}>
         <div className="container">
           <div
