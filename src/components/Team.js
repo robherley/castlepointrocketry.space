@@ -25,7 +25,7 @@ const team = [
     name: "William Skwirut",
     role: "Aerodynamic Design and Machining Specialist",
     photo: require("../images/team/will-min.jpg"),
-    linkedin: 'william-skwirut-853b43128',
+    linkedin: 'williamskwirut',
   },
   {
     name: "Dakota Van Deursen",
