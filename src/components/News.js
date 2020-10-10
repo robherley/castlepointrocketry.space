@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Feather, Link as LinkIcon, Layers } from 'react-feather'
 
-const Services = () => {
+const News = () => {
   return (
     <div className="news">
       <h1 className="page-header">News</h1>
@@ -53,4 +53,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default News
