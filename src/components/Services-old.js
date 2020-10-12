@@ -1,13 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Feather, Link as LinkIcon, Layers } from 'react-feather'
-import styled from '@emotion/styled'
 
-export default function Services() {
+const Services = () => {
   return (
     <div className="services">
       <h1 className="page-header">Our Services</h1>
-      <div className="container row">
+      <div className="container">
         <section className="services--sub-section">
           <div className="icon">
             <Feather />
@@ -39,10 +38,12 @@ export default function Services() {
             Optional second stage. Customizable payload bay. Up to 16 customers.
           </p>
         </section>
-        {/*<section className="services--sub-section">
+        <section className="services--sub-section">
           <Link to="/contact">Contact Us!</Link>
-          </section>*/}
+        </section>
       </div>
     </div>
   )
 }
+
+export default Services

@@ -1,9 +1,10 @@
 .services {
   .page-header {
     font-size: 4rem;
-    color: color(light);
-    margin: 2rem 0;
+    color: color(cpr-dark);
+    padding: 2rem 0;
     text-align: center;
+    background-color: color(light2);
   }
 
   .content-header {
@@ -54,14 +55,24 @@
   .container {
     padding: 3rem 2rem;
     background-color: color(light2);
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $break-md) {
+      flex-wrap: nowrap;
+    }
   }
 }
 
 .services--sub-section {
+  flex-basis: 27%;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 400px;
+
+  @media screen and (min-width: $break-md) {
+    flex-basis: none;
+  }
 
   .sub-header {
     font-size: 2rem;
