@@ -20,6 +20,7 @@ const Paragraph = styled.p`
   margin: 1rem;
   font-size: 1.2rem;
   color: white;
+  line-height: 1.1;
 `
 
 export default function About() {
