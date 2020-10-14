@@ -6,8 +6,15 @@ const Container = styled.section`
 `
 
 const Video = styled.iframe`
-  width: 100%;
-  height: 20rem;
+  --width: 100%;
+  @media (min-width: 972px) {
+    --width: 60%;
+  }
+
+  width: var(--width);
+  height: calc(var(--width) / 1.7777777);
+  display: block;
+  margin: 0 auto;
 `
 
 const Text = styled.article`

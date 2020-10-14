@@ -4,7 +4,6 @@ import SEO from "../components/SEO"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Services from "../components/Services"
-import Rocket from "../components/Rocket"
 import Team from "../components/Team"
 import Contact from "../components/Contact"
 import Invest from "../components/Invest"
@@ -21,10 +20,9 @@ const IndexPage = () => (
     `}/>
     <SEO title="Home" />
     <Hero />
-    <About />
     <Invest />
+    <About />
     <Services />
-    <Rocket />
     <Team />
     <Contact />
   </Layout>

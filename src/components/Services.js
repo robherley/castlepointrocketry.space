@@ -12,7 +12,7 @@ export default function Services() {
           <div className="icon">
             <Feather />
           </div>
-          <h1 className="sub-header">Microgravity</h1>
+          <h1 className="sub-header">3 Minutes of Microgravity</h1>
           <p>
             Research in space, without the high price tag. We offer 3 minutes of
             microgravity for competitively–priced payload spaces, on our

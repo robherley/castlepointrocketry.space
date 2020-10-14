@@ -100,7 +100,7 @@ const Team = () => {
           <h2>Advisory Board</h2>
           <div className="team-container">
             {advisors.map(e => (
-              <div className="team-member" key={e.name}>
+              <div className={`team-member ${e.name === active ? 'active' : ''}`} key={e.name}>
                 <img src={e.photo} alt={e.name} onClick={() => setActive(e.name)}  />
                 <p className="bold">{e.name}</p>
                 <p style={{ marginTop: "0.2rem" }}>{e.role}</p>
