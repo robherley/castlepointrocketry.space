@@ -6,9 +6,9 @@ const Container = styled.section`
 `
 
 const Video = styled.iframe`
-  --width: 100%;
+  --width: calc(100vw - 4rem);
   @media (min-width: 972px) {
-    --width: 60%;
+    --width: 60vw;
   }
 
   width: var(--width);
