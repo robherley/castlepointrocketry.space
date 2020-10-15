@@ -1,8 +1,7 @@
 .team {
   .page-header {
-    background-color: color(light);
     font-size: 4rem;
-    color: color(cpr-dark);
+    color: color(light2);
     //margin: 2rem 0;
     padding-top: 2rem;
     text-align: center;
@@ -30,6 +29,7 @@
   section {
     // max-width: 800px;
     margin-bottom: 4rem;
+    color: color(light2);
 
     h2 {
       text-align: center;
@@ -42,11 +42,15 @@
 
       .team-member {
         padding: 1rem;
-        width: calc(98px + 2rem);
+        width: 10rem;
         height: auto;
         box-sizing: border-box;
 
-        img {
+        @media (min-width: $break-md) {
+          width: calc(99vw / 6);
+        }
+
+        > img {
           cursor: pointer;
           margin-bottom: .5rem;
           width: 100%;
@@ -57,33 +61,46 @@
           box-shadow: 0 0 0 .4rem var(--cpr-yellow);
         }
 
-        .icons {
-          .linkedin {
-            color: #0a66c2;
+        .icon {
+          float: right;
+          margin-left: .5rem;
+
+          &.linkedin {
+            width: 1.5rem;
           }
-          svg {
-            margin: 5px;
+
+          &.github {
+            width: 1.3rem;
+            top: -.1rem;
+            positoin: relative;
           }
         }
+
         p {
           top: -10px;
+        }
+
+        .role {
+          font-size: .8rem;
         }
       }
     }
 
     .description {
-      max-width: 600px;
+      max-width: 90%;
       margin: 0 auto;
+
+      @media (min-width: $break-md) {
+        max-width: 50%;
+      }
     }
 
     &:last-child {
       margin-bottom: 0;
     }
   }
-
   .container {
-    padding: 1rem 2rem;
-    background-color: color(light2);
+    padding: 1rem 0;
   }
 }
 
@@ -102,7 +119,7 @@
   }
 
   p {
-    color: color(text);
+    color: color(light2);
     font-size: 1.5rem;
     line-height: 1.725rem;
     font-family: $heading-font;
