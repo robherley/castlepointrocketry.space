@@ -5,17 +5,18 @@ const Section = styled.section`
   display: flex;
   align-items: center;
   height: 3rem;
-  background: #8e2de2;
+  padding: 1rem;
+  background: var(--cpr-yellow);
 `
 
 const Header = styled.h1`
-  color: var(--light2);
+  color: var(--cpr-dark);
   text-align: center;
   font-size: 1.5rem;
   width: 100%;
 
   a {
-    color: var(--cpr-dark);
+    color: var(--cpr-blue);
     text-decoration: underline;
   }
 `

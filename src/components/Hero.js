@@ -3,10 +3,10 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 const Page = styled.section`
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 12rem);
 
   @media (min-width: 972px) { // break-md
-    height: calc(100vh - 11rem);
+    height: calc(100vh - 16rem);
   }
 `
 
@@ -18,7 +18,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  margin-top: -15rem; // TODO: how do I avoid hardcoding this?
+  margin-top: -7rem; // TODO: how do I avoid hardcoding this?
   font-size: 4rem;
   font-weight: 900;
   color: #fcfcfc;
