@@ -1,10 +1,11 @@
 .services {
+  background-color: color(light2);
+
   .page-header {
     font-size: 4rem;
     color: color(cpr-dark);
     padding-top: 2rem;
     text-align: center;
-    background-color: color(light2);
   }
 
   .content-header {
@@ -28,7 +29,7 @@
 
   section {
     max-width: 800px;
-    margin-bottom: 4rem;
+    margin: 1rem auto;
 
     .team-container {
       display: flex;
@@ -54,7 +55,6 @@
 
   .container {
     padding: 3rem 2rem;
-    background-color: color(light2);
     flex-wrap: wrap;
 
     @media screen and (min-width: $break-md) {

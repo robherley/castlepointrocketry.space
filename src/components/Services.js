@@ -3,6 +3,17 @@ import { Link } from "gatsby"
 import { Feather, Link as LinkIcon, Layers } from 'react-feather'
 import styled from '@emotion/styled'
 
+const LinkSection = styled.div`
+  text-align: center;
+  padding-bottom: 3rem;
+`
+
+const LearnMore = styled.span`
+  font-size: 2rem;
+  color: var(--cpr-blue);
+  text-decoration: underline;
+`
+
 export default function Services() {
   return (
     <div className="services">
@@ -39,10 +50,14 @@ export default function Services() {
             Optional second stage. Customizable payload bay. Up to 16 customers.
           </p>
         </section>
-        {/*<section className="services--sub-section">
-          <Link to="/contact">Contact Us!</Link>
-          </section>*/}
       </div>
+      <LinkSection>
+        <Link to='/services'>
+          <LearnMore>
+            Learn More &rarr;
+          </LearnMore>
+        </Link>
+      </LinkSection>
     </div>
   )
 }
