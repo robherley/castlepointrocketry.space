@@ -79,7 +79,7 @@ const Team = () => {
   const selectedAdvisor = advisors.find(t => t.last === active)
 
   return (
-    <div className="team">
+    <div className="team" id="team">
       <h1 className="page-header">Our Team</h1>
       <div className="container">
         <section>

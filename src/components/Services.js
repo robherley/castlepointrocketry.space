@@ -16,7 +16,7 @@ const LearnMore = styled.span`
 
 export default function Services() {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <h1 className="page-header">Our Services</h1>
       <div className="container row">
         <section className="services--sub-section">

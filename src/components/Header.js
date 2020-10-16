@@ -8,11 +8,11 @@ import Logo from "../images/HSSwhite.svg"
 const links = [
   {
     children: "Services",
-    to: "/services",
+    to: "/#services",
   },
   {
     children: "Team",
-    to: "/team",
+    to: "/#team",
   },
   // {
   //   children: "News",
@@ -28,7 +28,7 @@ const links = [
   },
   {
     children: "Contact",
-    to: "/contact",
+    to: "/#contact",
   },
   // {
   //   children: "Blog",
@@ -43,8 +43,6 @@ const Header = () => {
 
   return (
     <>
-      {/* location.pathname === '/' &&
-        <h2 className="banner">Become a part of our company by <a target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">investing</a> in HSS on MicroVentures</h2> */}
       <header className={scrollHeight > 60 ? "floating" : ""}>
         <div className="container">
           <div
