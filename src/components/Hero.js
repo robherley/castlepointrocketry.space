@@ -14,6 +14,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
 `
 
@@ -27,6 +28,27 @@ const Title = styled.h1`
   text-align: center;
   letter-spacing: -0.03em;
   //-webkit-text-stroke: 1px black;
+
+  // service mark
+  > span {
+    font-size: 2.5rem;
+    vertical-align: top;
+    color: var(--cpr-yellow);
+  }
+`
+
+const CallToAction = styled.h2`
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+
+  &::before {
+    content: '↓';
+    color: var(--cpr-yellow);
+    margin-right: .7rem;
+    display: inline-block;
+    animation: bounce 0.75s infinite;
+  }
 `
 
 export default function Hero() {
@@ -41,7 +63,10 @@ body {
 }
     `}/>
     <Container>
-      <Title>Microgravity as a Service<span style={{fontSize: '3rem'}}>℠</span></Title>
+      <Title>Microgravity as a Service<span>℠</span></Title>
+      <CallToAction>
+        Scroll to learn more
+      </CallToAction>
     </Container>
   </Page>
 }
