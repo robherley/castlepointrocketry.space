@@ -5,8 +5,7 @@ run with: `gatsby develop`
 
 ** Design Inspirations
 
-
-- [Blue Origin](https://www.blueorigin.com/)
-- [Stripe](https://stripe.com/)
-- [Timber](https://timber.io/)
-- [Scrumpy](https://scrumpy.io/)
++ [[https://www.blueorigin.com/][Blue Origin]]
++ [[https://stripe.com/][Stripe]]
++ [[https://timber.io/][Timber]]
++ [[https://scrumpy.io/][Scrumpy]]
