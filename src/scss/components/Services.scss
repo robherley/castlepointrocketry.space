@@ -2,7 +2,7 @@
   background-color: color(light2);
 
   .page-header {
-    font-size: 4rem;
+    font-size: 3rem;
     color: color(cpr-dark);
     padding-top: 2rem;
     text-align: center;
@@ -75,7 +75,7 @@
   }
 
   .sub-header {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: color(cpr-red);
     position: relative;
@@ -84,7 +84,7 @@
 
   p {
     color: color(text);
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.725rem;
     font-family: $heading-font;
     letter-spacing: 0.16px;
