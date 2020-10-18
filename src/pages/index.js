@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Hero from "../components/Hero"
 import About from "../components/About"
-import Services from "../components/Services"
+import ServicesSummary from "../components/ServicesSummary"
 import Team from "../components/Team"
 import Contact from "../components/Contact"
 import Invest from "../components/Invest"
@@ -22,7 +22,7 @@ const IndexPage = () => (
     <Hero />
     <Invest />
     <About />
-    <Services />
+    <ServicesSummary />
     <Team />
     <Contact />
   </Layout>
