@@ -37,7 +37,7 @@ export default function About() {
     <Video src="https://www.youtube.com/embed/ni1DfT1ew8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Video>
     <Text>
       <Paragraph>
-        What if science could move faster? Hudson Space Systems is dedicated to accelerating the speed of scientific advancement. We believe that the current paradigm of research is artificially limiting innovation. By providing fast and affordable access to microgravity, Hudson Space Systems empowers a broad spectrum of customers to make breakthroughs faster. We will achieve this with our microgravity-as-a-service business model, coupled with our innovative fully reusable launch vehicle.
+        What if science could move faster? Hudson Space Systems is dedicated to accelerating the speed of scientific advancement. We believe that the current paradigm of research is artificially limiting innovation. By providing fast and affordable access to microgravity, Hudson Space Systems empowers a broad spectrum of customers to make breakthroughs faster. We will achieve this with our Microgravity as a Service business model, coupled with our innovative fully reusable launch vehicle.
       </Paragraph>
       <Paragraph>
         STEM research from petrochemical R&D to university labs can benefit from research in microgravity. The current launch providers servicing this market are already operating at capacity, with extremely long lead times and high prices. Hudson Space plans to leverage our launch platform to expand this market by shattering price barriers, slashing lead times, and providing end-to-end user support.
