@@ -33,7 +33,6 @@ const Title = styled.h1`
   > span {
     font-size: 2.5rem;
     vertical-align: top;
-    color: var(--cpr-yellow);
   }
 `
 
