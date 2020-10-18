@@ -58,7 +58,7 @@ body {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
               url(${require('../images/hero.jpg')});
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: auto, auto 100vh;
   background-position: top;
 }
     `}/>
