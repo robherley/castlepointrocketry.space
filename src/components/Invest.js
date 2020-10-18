@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 const Section = styled.section`
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 2.25rem;
   padding: 1rem;
   background: var(--cpr-yellow);
 `

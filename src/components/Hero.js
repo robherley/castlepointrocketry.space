@@ -3,10 +3,10 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 const Page = styled.section`
-  height: calc(100vh - 12rem);
+  height: calc(100vh - 11rem);
 
   @media (min-width: 972px) { // break-md
-    height: calc(100vh - 16rem);
+    height: calc(100vh - 15rem);
   }
 `
 
