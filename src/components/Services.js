@@ -58,7 +58,7 @@ const StepName = styled.h3`
 export default function Services() {
   return <Container>
            <h1>Our Services</h1>
-           <p>Humanity’s future is in space. In order to make that a reality we have to develop science and technologies here on earth. How do you develop a technology for space without doing the research there? The answer is microgravity, provided by our suborbital flights. For a fraction of the cost of an orbital launch we can facilitate the future of space tech, without leaving earth.</p>
+           <p>Humanity’s future is in space. In order to make that a reality, we have to develop science and technologies here on earth. How do you develop a technology for space without doing the research there? The answer is microgravity, provided by our suborbital flights. For a fraction of the cost of an orbital launch, we can facilitate the future of space tech without leaving earth.</p>
            <Steps>
              <Step>
                <Calendar className="icon" />
@@ -67,7 +67,7 @@ export default function Services() {
              <VLine/>
              <Step>
                <Codesandbox className="icon" />
-               <StepName>Integrate your payload</StepName> - Whether you’ve launched dozens of experiments or zero, we’ll help you get integrated. Fly our ready-to-go cubesat style capsules, available with data/power, pressurized environments, and live telemetry. Need something special? No problem, we’ll help you customize your capsule to your exact requirements.
+               <StepName>Integrate your payload</StepName> - Whether you’ve launched dozens of experiments or zero, we’ll help you get integrated. Fly our ready-to-go cubesat-style capsules, available with data/power, pressurized environments, and live telemetry. Need something special? No problem, we’ll help you customize your capsule to your exact requirements.
              </Step>
              <VLine/>
              <Step>
