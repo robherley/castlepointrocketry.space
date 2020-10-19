@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin-top: -7rem; // TODO: how do I avoid hardcoding this?
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 900;
   color: #fcfcfc;
   //background: rgba(0,0,0,0.5);

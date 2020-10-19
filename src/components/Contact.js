@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="container">
+        <h1>Contact Us</h1>
         <section>
-          <h1>How to reach out</h1>
           <p>
             Are you a member of the aerospace industry? An experienced academic?
             A passionate rocketry enthusiast? Contact us to learn more at{" "}
