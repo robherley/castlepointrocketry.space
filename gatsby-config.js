@@ -36,6 +36,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     {
       resolve: 'gatsby-plugin-fathom',
       options: {

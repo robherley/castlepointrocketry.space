@@ -1,0 +1,11 @@
+* hudsonspace.systems
+
+** Running
+run with: `gatsby develop`
+
+** Design Inspirations
+
++ [[https://www.blueorigin.com/][Blue Origin]]
++ [[https://stripe.com/][Stripe]]
++ [[https://timber.io/][Timber]]
++ [[https://scrumpy.io/][Scrumpy]]

@@ -1,8 +1,9 @@
 .contact {
   h1 {
     font-size: 4rem;
-    color: color(light);
-    margin: 2rem 0;
+    color: color(cpr-dark);
+    background-color: color(light2);
+    margin-bottom: 1rem;
     text-align: center;
   }
 
@@ -49,7 +50,7 @@
   }
 
   .container {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     background-color: color(light2);
   }
 }
