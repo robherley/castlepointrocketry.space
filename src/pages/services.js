@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import Services from "../components/Services"
+import Layout from "../sections/Layout"
+import SEO from "../sections/SEO"
+import Services from "../sections/Services"
 
 const ServicesPage = () => (
   <Layout>

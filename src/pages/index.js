@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
-import Hero from "../components/Hero"
-import About from "../components/About"
-import ServicesSummary from "../components/ServicesSummary"
-import Team from "../components/Team"
-import Contact from "../components/Contact"
-import Invest from "../components/Invest"
+import Layout from "../sections/Layout"
+import SEO from "../sections/SEO"
+import Hero from "../sections/Hero"
+import About from "../sections/About"
+import ServicesSummary from "../sections/ServicesSummary"
+import Team from "../sections/Team"
+import Contact from "../sections/Contact"
+import Invest from "../sections/Invest"
 
 const IndexPage = () => (
   <Layout>
