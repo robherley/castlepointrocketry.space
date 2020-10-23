@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { GitHub } from 'react-feather'
-const LinkedIn = require('../images/linkedin.png')
+import { Section, Heading, Paragraph } from '../components/Components'
+import LinkedIn from '../images/linkedin.png'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
 const team = [
   {
@@ -73,14 +76,20 @@ const advisors = [
   }
 ]
 
+const TeamSection = styled(Section)`
+  @media (max-width: 972px) {
+    padding: 2rem 0;
+  }
+`
+
 const Team = () => {
   const [active, setActive] = useState(team[0].last)
   const selectedTeamMember = team.find(t => t.last === active)
   const selectedAdvisor = advisors.find(t => t.last === active)
 
   return (
-    <div className="team" id="team">
-      <h1 className="page-header">Our Team</h1>
+    <TeamSection className="team" id="team">
+      <Heading>Our Team</Heading>
       <div className="container">
         <section>
           <div className="team-container">
@@ -104,9 +113,7 @@ const Team = () => {
               </div>
             ))}
           </div>
-          <div className="description">
-            {selectedTeamMember?.description}
-          </div>
+          <Paragraph css={css`width: 70%; margin: 2rem auto 0 auto;`}>{selectedTeamMember?.description}</Paragraph>
         </section>
         <section>
           <h2>Advisory Board</h2>
@@ -131,12 +138,10 @@ const Team = () => {
               </div>
             ))}
           </div>
-          <div className="description">
-            {selectedAdvisor?.description}
-          </div>
+          <Paragraph css={css`width: 70%; margin: 2rem auto 0 auto;`}>{selectedAdvisor?.description}</Paragraph>
         </section>
       </div>
-    </div>
+    </TeamSection>
   )
 }
 

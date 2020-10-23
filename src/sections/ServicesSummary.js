@@ -2,10 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import { Feather, Link as LinkIcon, Layers } from 'react-feather'
 import styled from '@emotion/styled'
+import { Heading, Section } from '../components/Components'
 
 const LinkSection = styled.div`
   text-align: center;
-  padding-bottom: 3rem;
+  margin-top: 2rem;
 `
 
 const LearnMore = styled.span`
@@ -16,8 +17,8 @@ const LearnMore = styled.span`
 
 export default function ServicesSummary() {
   return (
-    <div className="services" id="services">
-      <h1 className="page-header">Our Services</h1>
+    <Section className="services" id="services">
+      <Heading>Our Services</Heading>
       <div className="container row">
         <section className="services--sub-section">
           <div className="icon">
@@ -58,6 +59,6 @@ export default function ServicesSummary() {
           </LearnMore>
         </Link>
       </LinkSection>
-    </div>
+    </Section>
   )
 }

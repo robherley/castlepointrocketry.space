@@ -1,10 +1,11 @@
 import React from "react"
+import { Section, Heading } from '../components/Components'
 
 const Contact = () => {
   return (
-    <div className="contact" id="contact">
+    <Section className="contact" id="contact">
       <div className="container">
-        <h1>Contact Us</h1>
+        <Heading>Contact Us</Heading>
         <section>
           <p>
             Are you a member of the aerospace industry? An experienced academic?
@@ -24,7 +25,7 @@ const Contact = () => {
           </p>
         </section>
       </div>
-    </div>
+    </Section>
   )
 }
 

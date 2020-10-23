@@ -2,8 +2,6 @@
   .page-header {
     font-size: 4rem;
     color: color(light2);
-    //margin: 2rem 0;
-    padding-top: 2rem;
     text-align: center;
   }
 
@@ -27,11 +25,11 @@
   }
 
   section {
-    // max-width: 800px;
     margin-bottom: 4rem;
     color: color(light2);
 
     h2 {
+      font-size: 3rem;
       text-align: center;
     }
 
@@ -42,7 +40,7 @@
 
       .team-member {
         padding: 1rem;
-        width: 10rem;
+        width: 9rem;
         height: auto;
         box-sizing: border-box;
 
@@ -88,7 +86,7 @@
 
     .description {
       max-width: 90%;
-      margin: 2rem auto;
+      margin: 2rem auto 0 auto;
 
       @media (min-width: $break-md) {
         max-width: 50%;
@@ -98,9 +96,6 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  .container {
-    padding: 1rem 0;
   }
 }
 

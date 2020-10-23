@@ -20,14 +20,12 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin-top: -7rem; // TODO: how do I avoid hardcoding this?
-  font-size: 5rem;
+  font-size: 4.7rem;
   font-weight: 900;
   color: #fcfcfc;
-  //background: rgba(0,0,0,0.5);
-  padding: 1.5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   letter-spacing: -0.03em;
-  //-webkit-text-stroke: 1px black;
 
   // service mark
   > span {
@@ -57,7 +55,7 @@ body {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
               url(${require('../images/hero.jpg')});
   background-repeat: no-repeat;
-  background-size: auto, auto 100vh;
+  background-size: 100vw 100vh, auto 100vh;
   background-position: top;
 }
     `}/>

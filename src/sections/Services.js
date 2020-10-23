@@ -33,7 +33,7 @@ const Steps = styled.div`
   }
 `
 
-const Step = styled.dev`
+const Step = styled.div`
   .icon {
     width: 3rem;
     height: 3rem;
@@ -86,6 +86,13 @@ export default function Services() {
              </Step>
            </Steps>
            <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-           <iframe className="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrt3DGgqmZ6KZwcC?backgroundColor=yellow" frameborder="0" onmousewheel="" width="100%" height="1672" style={{background: 'transparent', border: '1px solid #ccc'}}></iframe>
+           <iframe
+             className="airtable-embed airtable-dynamic-height"
+             src="https://airtable.com/embed/shrt3DGgqmZ6KZwcC?backgroundColor=yellow"
+             frameBorder="0"
+             onWheel={() => {}}
+             width="100%"
+             height="1672"
+             style={{background: 'transparent', border: '1px solid #ccc'}}></iframe>
          </Container>
 }
