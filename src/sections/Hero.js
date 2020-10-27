@@ -26,12 +26,6 @@ const Title = styled.h1`
   padding-bottom: 1.5rem;
   text-align: center;
   letter-spacing: -0.03em;
-
-  // service mark
-  > span {
-    font-size: 2.5rem;
-    vertical-align: top;
-  }
 `
 
 const CallToAction = styled.h2`
@@ -60,7 +54,7 @@ body {
 }
     `}/>
     <Container>
-      <Title>Microgravity as a Service<span>℠</span></Title>
+      <Title>Microgravity as a Service</Title>
       <CallToAction>
         Scroll to learn more
       </CallToAction>
