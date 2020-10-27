@@ -26,9 +26,10 @@ const SectionRoot = styled.section`
 
 const SectionContent = styled.div`
   margin: 0 auto;
+  width: 100%;
+
   ${props =>
-      props.expand && `
-        width: 100%;
+      !props.expand && `
         @media (min-width: 972px) {
           width: 60%;
         }
