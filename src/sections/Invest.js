@@ -12,13 +12,21 @@ const Banner = styled(Section)`
   height: .25rem;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 `
 
 const Header = styled.h1`
   color: var(--cpr-dark);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @media (min-width: 972px) {
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   a {
     color: var(--cpr-blue);
@@ -27,7 +35,7 @@ const Header = styled.h1`
 `
 
 export default function Invest () {
-  return <Banner>
+  return <Banner expand={false}>
     <Header>
       Become a part of our company by&nbsp;
       <a target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">

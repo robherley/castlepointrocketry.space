@@ -26,19 +26,27 @@ const SectionRoot = styled.section`
 
 const SectionContent = styled.div`
   margin: 0 auto;
-  width: 100%;
-  @media (min-width: 972px) {
-    width: 60%;
+  ${props =>
+      props.expand && `
+        width: 100%;
+        @media (min-width: 972px) {
+          width: 60%;
+        }
+      `
   }
 }
 `
 
-export function Section({ children, className }) {
+export function Section({ children, className, expand }) {
   return <SectionRoot className={className}>
-    <SectionContent>
+    <SectionContent expand={expand}>
       {children}
     </SectionContent>
   </SectionRoot>
+}
+
+Section.defaultProps = {
+  expand: false
 }
 
 export const Paragraph = styled.p`

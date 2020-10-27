@@ -3,10 +3,10 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
 const Page = styled.section`
-  height: calc(100vh - 11rem);
+  height: calc(100vh - 10rem);
 
   @media (min-width: 972px) { // break-md
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 14.3rem);
   }
 `
 
@@ -20,8 +20,13 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin-top: -7rem; // TODO: how do I avoid hardcoding this?
-  font-size: 4.0rem;
-  font-weight: 900;
+  font-size: 3.5rem;
+
+  @media (min-width: 972px) {
+    font-size: 5.0rem;
+  }
+
+  font-weight: 500;
   color: #fcfcfc;
   padding-bottom: 1.5rem;
   text-align: center;
@@ -42,6 +47,12 @@ const CallToAction = styled.h2`
   }
 `
 
+const MobileBr = styled.br`
+  @media (min-width: 972px) {
+    display: none;
+  }
+`
+
 export default function Hero() {
   return <Page>
     <Global styles={css`
@@ -54,7 +65,7 @@ body {
 }
     `}/>
     <Container>
-      <Title>Microgravity as a Service</Title>
+      <Title>Microgravity<MobileBr/> as a<MobileBr/> Service</Title>
       <CallToAction>
         Scroll to learn more
       </CallToAction>
