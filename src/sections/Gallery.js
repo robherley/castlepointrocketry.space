@@ -66,7 +66,7 @@ const photos = [
 
 const Modal = ({ index, closeModal }) => {
   return (
-    <div className="modal" onClick={() => closeModal()}>
+    <div className="modal" role="img" onClick={() => closeModal()}>
       <img src={photos[index].src} alt="big-img" />
     </div>
   )

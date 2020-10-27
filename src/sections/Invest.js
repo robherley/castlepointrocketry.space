@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 import { Section } from '../components/Components'
 
 const Banner = styled(Section)`
@@ -38,7 +37,7 @@ export default function Invest () {
   return <Banner expand={false}>
     <Header>
       Become a part of our company by&nbsp;
-      <a target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">
+      <a rel="noreferrer" target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">
         investing
       </a>
       &nbsp;in HSS on MicroVentures!

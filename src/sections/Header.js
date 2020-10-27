@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link, navigate } from "gatsby"
-import { useLocation } from '@reach/router'
 
 import { useScrollHeight } from "../hooks/"
 import Logo from "../images/HSSwhite.svg"
@@ -39,7 +38,6 @@ const links = [
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   const scrollHeight = useScrollHeight()
-  const location = useLocation()
 
   return (
     <>
@@ -49,6 +47,7 @@ const Header = () => {
             className="logo-container"
             onClick={() => navigate("/")}
             tabIndex="0"
+            role="link"
           >
             <img className="logo-icon" src={Logo} alt="logo" />
           </div>
@@ -61,7 +60,7 @@ const Header = () => {
               />
             ))}
           </div>
-          <div className="burger" onClick={() => setOpen(!isOpen)} tabIndex="0">
+          <div className="burger" role="button" onClick={() => setOpen(!isOpen)} tabIndex="0">
             <div className="meat" />
           </div>
         </div>

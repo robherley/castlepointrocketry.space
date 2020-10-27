@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { Section, Heading, Paragraph } from '../components/Components'
-
-const Container = styled.section`
-  margin: 2rem 2rem;
-`
+import { Section, Paragraph } from '../components/Components'
 
 const CenterVideo = styled.div`
   display: flex;

@@ -102,11 +102,11 @@ const Team = () => {
                   <span className="bold">{e.last}</span>
                   <br/>
                   <span className="role">{e.role}</span>
-                  <a target="_blank" href={`https://linkedin.com/in/${e.linkedin}`}>
-                    <img src={LinkedIn} className="icon linkedin" />
+                  <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${e.linkedin}`}>
+                    <img src={LinkedIn} alt="LinkedIn" className="icon linkedin" />
                   </a>
                   { e.github &&
-                    <a target="_blank" href={`https://github.com/${e.github}`}>
+                    <a rel="noreferrer" target="_blank" href={`https://github.com/${e.github}`}>
                       <GitHub className="icon github" />
                     </a> }
                 </p>
@@ -127,11 +127,11 @@ const Team = () => {
                   <span className="bold">{e.last}</span>
                   <br/>
                   <span className="role">{e.role}</span>
-                  <a target="_blank" href={`https://linkedin.com/in/${e.linkedin}`}>
-                    <img src={LinkedIn} className="icon linkedin" />
+                  <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${e.linkedin}`}>
+                    <img src={LinkedIn} alt="LinkedIn" className="icon linkedin" />
                   </a>
                   { e.github &&
-                    <a target="_blank" href={`https://github.com/${e.github}`}>
+                    <a rel="noreferrer" target="_blank" href={`https://github.com/${e.github}`}>
                       <GitHub className="icon github" />
                     </a> }
                 </p>
