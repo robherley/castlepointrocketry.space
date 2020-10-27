@@ -38,8 +38,8 @@ const SectionContent = styled.div`
 }
 `
 
-export function Section({ children, className, expand }) {
-  return <SectionRoot className={className}>
+export function Section({ id, children, className, expand }) {
+  return <SectionRoot id={id} className={className}>
     <SectionContent expand={expand}>
       {children}
     </SectionContent>
