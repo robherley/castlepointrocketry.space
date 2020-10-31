@@ -2,18 +2,32 @@ import React from "react"
 import styled from '@emotion/styled'
 import { Section, Heading } from '../components/Components'
 
+const Container = styled.div`
+  margin: 0 auto;
+
+  @media (min-width: 972px) {
+    width: 60%;
+    min-width: 35rem;
+  }
+`
+
 const ContactMethod = styled.div`
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
+
+  @media (min-width: 972px) {
+    font-size: 1.3rem;
+  }
 `
 
 const ContactTitle = styled.span`
-  color: var(--cpr-blue);
+  color: var(--cpr-red);
+  font-weight: bold;
+  margin-right: 1rem;
 `
 
 const ContactDetail = styled.span`
   float: right;
-
   a {
     text-decoration: underline; // TODO: make links underlined by default
   }
@@ -22,7 +36,7 @@ const ContactDetail = styled.span`
 const Contact = () => {
   return (
     <Section className="contact" id="contact">
-      <div className="container">
+      <Container>
         <Heading>Contact Us</Heading>
         <section>
           <ContactMethod>
@@ -42,7 +56,7 @@ const Contact = () => {
             <ContactDetail><a href="https://castlepointrocketry.space/news/">castlepointrocketry.space</a></ContactDetail>
           </ContactMethod>
         </section>
-      </div>
+      </Container>
     </Section>
   )
 }
