@@ -3,7 +3,7 @@ import Layout from "../sections/Layout"
 import SEO from "../sections/SEO"
 import Hero from "../sections/Hero"
 import About from "../sections/About"
-import ServicesSummary from "../sections/ServicesSummary"
+import Services from "../sections/Services"
 import Team from "../sections/Team"
 import Contact from "../sections/Contact"
 import Invest from "../sections/Invest"
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Hero />
     <Invest />
     <About />
-    <ServicesSummary />
+    <Services />
     <Team />
     <Contact />
   </Layout>
