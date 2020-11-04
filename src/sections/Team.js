@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { flatten } from 'lodash'
 import { GitHub } from 'react-feather'
 import { Section, Heading, Paragraph } from '../components/Components'
-import LinkedIn from '../images/linkedin.png'
+import mq from '../components/Breakpoints'
+import LinkedInImg from '../images/linkedin.png'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 
@@ -83,8 +84,118 @@ const team = [
 ]
 
 const TeamSection = styled(Section)`
+  color: var(--light2);
   @media (max-width: 972px) {
     padding: 2rem 0;
+  }
+`
+
+
+const DetailsWrapper = styled.div`
+  min-height: 26rem;
+  margin: 0 2rem;
+
+  @media (min-width: 972px) {
+    min-height: 21rem;
+  }
+`
+
+const Details = styled.div`
+  box-sizing: border-box;
+  background: #1e91d633; // adjust-color(c('cpr-blue'), $alpha: -.8);
+  border-radius: 10px;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem auto;
+
+  @media (min-width: 972px) {
+    width: 60%;
+  }
+
+  .desktop-description { display: none; }
+  .mobile-description { display: block; }
+
+  @media (min-width: 972px) {
+    .desktop-description { display: block; }
+    .mobile-description { display: none; }
+  }
+`
+
+const DetailsBody = styled.div`
+  display: flex;
+`
+
+const RealPhoto = styled.img`
+  //width: 9rem; // firefox bug
+  height: 9rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background: #1e91d64d;
+
+  @media (min-width: 972px) {
+    //width: 15rem; // firefox bug
+    height: 15rem;
+    margin-bottom: 0;
+  }
+`
+
+const Name = styled.span`
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: .5rem;
+`
+
+const Role = styled.span`
+  font-size: 1.17rem;
+  display: block;
+  margin-bottom: .5rem;
+`
+
+const LinkedIn = styled.img`
+  width: 2rem;
+  margin-bottom: 1rem;
+`
+
+const TeamListContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+
+  @media (min-width: 972px) {
+    flex-wrap: nowrap;
+  }
+`
+
+const TeamMember = styled.div`
+  flex: 0 1 26%;
+  margin: .5rem;
+  width: 7rem;
+  height: auto;
+  box-sizing: border-box;
+
+  @media (min-width: 972px) {
+    width: 12rem;
+  }
+
+  > img {
+    cursor: pointer;
+    margin-bottom: .5rem;
+    width: 100%;
+    background: none;
+  }
+
+  &.active > img {
+    box-shadow: 0 0 0 .2rem var(--cpr-yellow);
+  }
+
+  h4 + h4 {
+    margin-top: .2rem;
+  }
+
+  h4 {
+    text-align: center;
   }
 `
 
@@ -93,40 +204,39 @@ const Team = () => {
   const selected = team.find(t => t.last === active)
 
   return (
-    <TeamSection className="team" id="team">
+    <TeamSection className="team" id="team" expand={true}>
       <Heading>Our Team</Heading>
       <div className="container">
         <section>
-          <div className="details-wrapper">
-            <div className="details">
-              <div className="header">
-                <img src={selected.photo} className="real-photo" />
+          <DetailsWrapper>
+            <Details className="details">
+              <DetailsBody className="header">
+                <RealPhoto src={selected.photo} className="real-photo" />
                 <div>
-                  <h1>{selected.first} {selected.last}</h1>
-                  <h3>{selected.role}</h3>
+                  <Name>{selected.first} {selected.last}</Name>
+                  <Role>{selected.role}</Role>
                   <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${selected.linkedin}`}>
-                    <img src={LinkedIn} alt="LinkedIn" className="icon linkedin" />
+                    <LinkedIn src={LinkedInImg} alt="LinkedIn" className="icon linkedin" />
                   </a>
                   <Paragraph className="desktop-description">{selected.description}</Paragraph>
                 </div>
-              </div>
+              </DetailsBody>
               <Paragraph className="mobile-description">{selected.description}</Paragraph>
-            </div>
-          </div>
-          <div className="team-container">
+            </Details>
+          </DetailsWrapper>
+          <TeamListContainer>
             {team.map(member =>
-              <div className={`team-member ${member.last === active ? 'active' : ''}`}>
+              <TeamMember className={member.last === active ? 'active' : ''}>
                 <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
                 <h4>{member.first}</h4>
                 <h4>{member.last}</h4>
-              </div>
+              </TeamMember>
             )}
-          </div>
+          </TeamListContainer>
         </section>
       </div>
     </TeamSection>
   )
 }
-
 
 export default Team
