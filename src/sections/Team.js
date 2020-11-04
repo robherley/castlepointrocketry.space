@@ -204,37 +204,35 @@ const Team = () => {
   const selected = team.find(t => t.last === active)
 
   return (
-    <TeamSection className="team" id="team" expand={true}>
+    <TeamSection id="team" expand={true}>
       <Heading>Our Team</Heading>
-      <div className="container">
-        <section>
-          <DetailsWrapper>
-            <Details className="details">
-              <DetailsBody className="header">
-                <RealPhoto src={selected.photo} className="real-photo" />
-                <div>
-                  <Name>{selected.first} {selected.last}</Name>
-                  <Role>{selected.role}</Role>
-                  <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${selected.linkedin}`}>
-                    <LinkedIn src={LinkedInImg} alt="LinkedIn" className="icon linkedin" />
-                  </a>
-                  <Paragraph className="desktop-description">{selected.description}</Paragraph>
-                </div>
-              </DetailsBody>
-              <Paragraph className="mobile-description">{selected.description}</Paragraph>
-            </Details>
-          </DetailsWrapper>
-          <TeamListContainer>
-            {team.map(member =>
-              <TeamMember className={member.last === active ? 'active' : ''}>
-                <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
-                <h4>{member.first}</h4>
-                <h4>{member.last}</h4>
-              </TeamMember>
-            )}
-          </TeamListContainer>
-        </section>
-      </div>
+      <section>
+        <DetailsWrapper>
+          <Details>
+            <DetailsBody>
+              <RealPhoto src={selected.photo}/>
+              <div>
+                <Name>{selected.first} {selected.last}</Name>
+                <Role>{selected.role}</Role>
+                <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${selected.linkedin}`}>
+                  <LinkedIn src={LinkedInImg} alt="LinkedIn" />
+                </a>
+                <Paragraph className="desktop-description">{selected.description}</Paragraph>
+              </div>
+            </DetailsBody>
+            <Paragraph className="mobile-description">{selected.description}</Paragraph>
+          </Details>
+        </DetailsWrapper>
+        <TeamListContainer>
+          {team.map(member =>
+            <TeamMember className={member.last === active ? 'active' : ''}>
+              <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
+              <h4>{member.first}</h4>
+              <h4>{member.last}</h4>
+            </TeamMember>
+          )}
+        </TeamListContainer>
+      </section>
     </TeamSection>
   )
 }
