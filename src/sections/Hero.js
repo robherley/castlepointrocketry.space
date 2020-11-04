@@ -1,6 +1,7 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import mq from '../components/Breakpoints'
 
 const Page = styled.section`
   height: calc(100vh - 10rem);
@@ -20,11 +21,9 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin-top: -7rem; // TODO: how do I avoid hardcoding this?
-  font-size: 3.5rem;
-
-  @media (min-width: 972px) {
-    font-size: 5.0rem;
-  }
+  ${mq({
+    fontSize: ['3.5rem', '4.0rem'],
+  })}
 
   font-weight: 500;
   color: #fcfcfc;
@@ -48,9 +47,9 @@ const CallToAction = styled.h2`
 `
 
 const MobileBr = styled.br`
-  @media (min-width: 972px) {
-    display: none;
-  }
+  ${mq({
+    display: ['unset', 'none']
+  })}
 `
 
 export default function Hero() {
