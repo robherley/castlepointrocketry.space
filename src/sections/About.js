@@ -24,7 +24,6 @@ const ParagraphTitle = styled.h2`
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: var(--cpr-yellow);
-  text-align: center;
 `
 
 export default function About() {
