@@ -25,6 +25,10 @@ $colors: (
   @return var(--#{unquote($name)});
 }
 
+@function c($name) {
+  @return map-get($colors, $name + "");
+}
+
 // add each color to root elem so we easily reference them in react
 :root {
   @each $color, $val in $colors {
