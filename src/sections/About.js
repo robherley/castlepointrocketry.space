@@ -20,19 +20,41 @@ const Video = styled.iframe`
   margin-bottom: 2rem;
 `
 
+const ParagraphTitle = styled.h2`
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--cpr-yellow);
+`
+
 export default function About() {
-  return <Section>
-           <CenterVideo>
-             <Video src="https://www.youtube.com/embed/ni1DfT1ew8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Video>
-           </CenterVideo>
-           <Paragraph>
-             What if science could move faster? Hudson Space Systems is dedicated to accelerating the speed of scientific advancement. We believe that the current paradigm of research is artificially limiting innovation. By providing fast and affordable access to microgravity, Hudson Space Systems empowers a broad spectrum of customers to make breakthroughs faster. We will achieve this with our Microgravity as a Service business model, coupled with our innovative, fully-reusable launch vehicle.
-           </Paragraph>
-           <Paragraph>
-             From petrochemical R&D to university labs, STEM research can benefit from access to microgravity. The launch providers currently servicing this market are already operating at capacity, with extremely long lead times and high prices. Hudson Space Systems plans to leverage our launch platform to expand this market by shattering price barriers, slashing lead times, and providing end-to-end user support.
-           </Paragraph>
-           <Paragraph>
-             We're developing the next generation of reusable space launch vehicles, featuring our patent-pending engine technology and high-efficiency designs, to accelerate the next wave of innovation in space.
-           </Paragraph>
-         </Section>
+    return <Section>
+             <CenterVideo>
+               <Video src="https://www.youtube.com/embed/ni1DfT1ew8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></Video>
+             </CenterVideo>
+
+             <ParagraphTitle>What if science could move faster?</ParagraphTitle>
+             <Paragraph>
+               We’re interested in seeing that future. Made in Hoboken, NJ, we’re Hudson Space Systems. Our goal is to give more people, more affordable exposure to microgravity, for research purposes.
+             </Paragraph>
+
+             <ParagraphTitle>What is microgravity?</ParagraphTitle>
+             <Paragraph>
+               Every object we put in orbit is actually just in free fall around the planet. We call this floating effect microgravity, because these perpetually falling objects appear to be weightless.
+             </Paragraph>
+
+             <ParagraphTitle>So?</ParagraphTitle>
+             <Paragraph>
+               These conditions offer incredible opportunities to learn about and research phenomena not easily observed on Earth. From corporate researchers investigating petrochemicals, pharmaceuticals, and semiconductors to academic researchers investigating microbiology and stem cells, many are already experimenting in space. The value of this opportunity to accelerate and widen opportunities for R&D has already been proven.
+             </Paragraph>
+
+             <ParagraphTitle>Great! Sign me up today!</ParagraphTitle>
+             <Paragraph>
+               Well...that’s the problem.  The launch providers currently servicing this market are already operating at capacity, with extremely long lead times and sky high prices, which also means limited opportunity to facilitate iterative research. Because of this only a select few people end up launching their research.
+             </Paragraph>
+
+             <ParagraphTitle>And that’s where you come in?</ParagraphTitle>
+             <Paragraph>
+               Exactly. Bringing together a team of quirky rocket scientists, we’ve developed and built an innovative, fully-reusable launch platform. We can increase launch frequencies, lower costs, and remove the traditional barriers to sending experiments in space. We’re using our affordable and streamlined suborbital rocket technology to offer rides to space (and back) for researchers, on a dependable schedule and at attainable rates.
+             </Paragraph>
+           </Section>
 }
