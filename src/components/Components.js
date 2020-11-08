@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import mq from '../components/Breakpoints'
 
 export const Heading = styled.h1`
-  font-size: 4rem;
+  ${mq({
+    fontSize: ['2.5rem', '3rem', '4rem'],
+  })}
 `
 
 const SectionRoot = styled.section`
