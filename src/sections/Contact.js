@@ -7,7 +7,7 @@ const Container = styled.div`
   margin: 0 auto;
 
   ${mq({
-    width: ['auto', '70%'],
+    width: ['80%', '70%'],
     minWidth: ['auto', '32rem'],
   })}
 `
