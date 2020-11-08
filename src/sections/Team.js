@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
-import { flatten } from 'lodash'
-import { GitHub } from 'react-feather'
 import { Section, Heading, Paragraph } from '../components/Components'
-import mq from '../components/Breakpoints'
 import LinkedInImg from '../images/linkedin.png'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 
 const team = [
   {
