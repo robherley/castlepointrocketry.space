@@ -34,7 +34,7 @@ export default function About() {
 
              <ParagraphTitle>What if science could move faster?</ParagraphTitle>
              <Paragraph>
-               We’re interested in seeing that future. Made in Hoboken, NJ, we’re Hudson Space Systems. Our goal is to give more people, more affordable exposure to microgravity, for research purposes.
+               We’re interested in seeing that future. Made in Hoboken, NJ, we’re Hudson Space Systems. Our goal is to give more people, more affordable exposure to microgravity.
              </Paragraph>
 
              <ParagraphTitle>What is microgravity?</ParagraphTitle>
