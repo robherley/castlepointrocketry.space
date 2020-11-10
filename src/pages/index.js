@@ -7,6 +7,7 @@ import ServicesSummary from "../sections/ServicesSummary"
 import Team from "../sections/Team"
 import Contact from "../sections/Contact"
 import Invest from "../sections/Invest"
+import Comparison from "../sections/Comparison"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Invest />
     <About />
     <ServicesSummary />
+    <Comparison />
     <Team />
     <Contact />
   </Layout>
