@@ -4,7 +4,7 @@ import mq from '../components/Breakpoints'
 
 export const Heading = styled.h1`
   ${mq({
-    fontSize: ['2.5rem', '3rem', '4rem'],
+    fontSize: ['2.5rem', '3rem'],
   })}
 `
 
