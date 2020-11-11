@@ -8,10 +8,9 @@ const Banner = styled(Section)`
     background: var(--cpr-yellow);
   }
 
-  height: .25rem;
   display: flex;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: .6rem 0;
 `
 
 const Header = styled.h1`
