@@ -7,7 +7,7 @@ import Logo from "../images/HSSwhite.svg"
 const links = [
   {
     children: "Services",
-    to: "/services",
+    to: "/#services",
   },
   {
     children: "Team",
