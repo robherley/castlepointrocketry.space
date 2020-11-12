@@ -10,7 +10,7 @@ const Banner = styled(Section)`
 
   display: flex;
   align-items: center;
-  padding: .6rem 0;
+  padding: 0.6rem 0;
 `
 
 const Header = styled.h1`
@@ -32,14 +32,20 @@ const Header = styled.h1`
   }
 `
 
-export default function Invest () {
-  return <Banner expand={false}>
-    <Header>
-      Become a part of our company by&nbsp;
-      <a rel="noreferrer" target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">
-        investing
-      </a>
-      &nbsp;in HSS on MicroVentures!
-    </Header>
-  </Banner>
+export default function Invest() {
+  return (
+    <Banner expand={false}>
+      <Header>
+        Become a part of our company by&nbsp;
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
+        >
+          investing
+        </a>
+        &nbsp;in HSS on MicroVentures!
+      </Header>
+    </Banner>
+  )
 }

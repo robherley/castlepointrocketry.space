@@ -45,10 +45,8 @@ module.exports = {
         // Unique site id
         siteId: 'CALQK',
         // Domain whitelist
-        whitelistHostnames: [
-          'hudsonspace.systems'
-        ]
-      }
-    }
+        whitelistHostnames: ['hudsonspace.systems'],
+      },
+    },
   ],
 }

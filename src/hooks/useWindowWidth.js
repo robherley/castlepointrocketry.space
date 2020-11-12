@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
-import { throttle } from "lodash"
+import { useState, useEffect } from 'react'
+import { throttle } from 'lodash'
 
 const getCurrentWidth = () => {
   if (typeof window !== `undefined`) {
@@ -17,11 +17,11 @@ export default () => {
       setWidth(getCurrentWidth())
     }, 100)
 
-    window.addEventListener("resize", handleResize)
+    window.addEventListener('resize', handleResize)
 
     return () => {
       handleResize.cancel()
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 

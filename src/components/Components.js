@@ -32,25 +32,25 @@ const SectionContent = styled.div`
   width: 100%;
 
   ${props =>
-      !props.expand && `
+    !props.expand &&
+    `
         @media (min-width: 972px) {
           width: 60%;
         }
-      `
-  }
+      `}
 }
 `
 
 export function Section({ id, children, className, expand }) {
-  return <SectionRoot id={id} className={className}>
-    <SectionContent expand={expand}>
-      {children}
-    </SectionContent>
-  </SectionRoot>
+  return (
+    <SectionRoot id={id} className={className}>
+      <SectionContent expand={expand}>{children}</SectionContent>
+    </SectionRoot>
+  )
 }
 
 Section.defaultProps = {
-  expand: false
+  expand: false,
 }
 
 export const Paragraph = styled.p`

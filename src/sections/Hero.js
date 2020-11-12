@@ -1,12 +1,13 @@
-import React from "react"
-import { Global, css } from "@emotion/core"
-import styled from "@emotion/styled"
+import React from 'react'
+import { Global, css } from '@emotion/core'
+import styled from '@emotion/styled'
 import mq from '../components/Breakpoints'
 
 const Page = styled.section`
   height: calc(100vh - 10.4rem);
 
-  @media (min-width: 972px) { // break-md
+  @media (min-width: 972px) {
+    // break-md
     height: calc(100vh - 13.6rem);
   }
 `
@@ -40,7 +41,7 @@ const CallToAction = styled.h2`
   &::before {
     content: '↓';
     color: var(--cpr-yellow);
-    margin-right: .7rem;
+    margin-right: 0.7rem;
     display: inline-block;
     animation: bounce 0.75s infinite;
   }
@@ -48,26 +49,31 @@ const CallToAction = styled.h2`
 
 const MobileBr = styled.br`
   ${mq({
-    display: ['unset', 'none']
+    display: ['unset', 'none'],
   })}
 `
 
 export default function Hero() {
-  return <Page>
-    <Global styles={css`
-body {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  return (
+    <Page>
+      <Global
+        styles={css`
+          body {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
               url(${require('../images/hero.jpg')});
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh, auto 100vh;
-  background-position: top;
-}
-    `}/>
-    <Container>
-      <Title>Microgravity<MobileBr/> as a<MobileBr/> Service</Title>
-      <CallToAction>
-        Scroll to learn more
-      </CallToAction>
-    </Container>
-  </Page>
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh, auto 100vh;
+            background-position: top;
+          }
+        `}
+      />
+      <Container>
+        <Title>
+          Microgravity
+          <MobileBr /> as a<MobileBr /> Service
+        </Title>
+        <CallToAction>Scroll to learn more</CallToAction>
+      </Container>
+    </Page>
+  )
 }
