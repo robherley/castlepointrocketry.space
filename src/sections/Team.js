@@ -5,57 +5,58 @@ import styled from '@emotion/styled'
 
 const team = [
   {
-    first: "Nathan",
-    last: "Tahbaz",
-    role: "CEO",
-    photo: require("../images/team/real/nathan.png"),
-    cartoon: require("../images/team/cartoons/nathan.png"),
+    first: 'Nathan',
+    last: 'Tahbaz',
+    role: 'CEO',
+    photo: require('../images/team/real/nathan.png'),
+    cartoon: require('../images/team/cartoons/nathan.png'),
     description: `Nathan is a space nerd with experience in management, systems, rapid prototyping, manufacturing, and project management. He has a Bachelor's degree in Mechanical Engineering and a Master's degree in Space Systems Engineering from Stevens Institute of Technology.`,
     linkedin: 'nathan-tahbaz',
   },
   {
-    first: "Monica",
-    last: "Traupmann",
-    role: "COO",
-    photo: require("../images/team/real/monica.png"),
-    cartoon: require("../images/team/cartoons/monica.png"),
+    first: 'Monica',
+    last: 'Traupmann',
+    role: 'COO',
+    photo: require('../images/team/real/monica.png'),
+    cartoon: require('../images/team/cartoons/monica.png'),
     linkedin: 'monica-traupmann',
-    description: "Monica is an explosions enthusiast with experience in propulsion design, fuel delivery systems, and instrumentation, as well as fundraising and crowdfunding for small-scale projects. She has a Bachelor’s degree in Chemical Engineering and a Master’s degree in Mechanical Engineering with a focus on Energy, Fluids, and Heat Transfer.",
+    description:
+      'Monica is an explosions enthusiast with experience in propulsion design, fuel delivery systems, and instrumentation, as well as fundraising and crowdfunding for small-scale projects. She has a Bachelor’s degree in Chemical Engineering and a Master’s degree in Mechanical Engineering with a focus on Energy, Fluids, and Heat Transfer.',
   },
   {
-    first: "Benjamin",
-    last: "Iofel",
-    role: "CIO",
-    photo: require("../images/team/real/ben.png"),
-    cartoon: require("../images/team/cartoons/ben.png"),
+    first: 'Benjamin',
+    last: 'Iofel',
+    role: 'CIO',
+    photo: require('../images/team/real/ben.png'),
+    cartoon: require('../images/team/cartoons/ben.png'),
     linkedin: 'beniofel',
     github: 'benwaffle',
     description: `Ben is a computer expert with extensive experience in software development, embedded programming, and Linux. He is a software engineer at Flow and brings that culture and experience to Hudson Space Systems. He has a B.S. in Computer Science.`,
   },
   {
-    first: "William",
-    last: "Skwirut",
-    role: "CTO",
-    photo: require("../images/team/real/will.png"),
-    cartoon: require("../images/team/cartoons/will.png"),
+    first: 'William',
+    last: 'Skwirut',
+    role: 'CTO',
+    photo: require('../images/team/real/will.png'),
+    cartoon: require('../images/team/cartoons/will.png'),
     linkedin: 'williamskwirut',
     description: `Will’s background includes designing, manufacturing, and testing fluid control components and systems. He also has experience in numerical analysis, rapid prototyping, computational fluid dynamics, and finite element analysis. Will has Bachelor’s and Master’s Degrees in Mechanical Engineering from Stevens Institute of Technology, specializing in Fluids, Thermal, and Energy.`,
   },
   {
-    first: "Dakota",
-    last: "Van Deursen",
-    role: "CFO",
-    photo: require("../images/team/real/dakota.png"),
-    cartoon: require("../images/team/cartoons/dakota.png"),
+    first: 'Dakota',
+    last: 'Van Deursen',
+    role: 'CFO',
+    photo: require('../images/team/real/dakota.png'),
+    cartoon: require('../images/team/cartoons/dakota.png'),
     linkedin: 'dvandeursen',
     description: `Dakota is passionate about learning how complex systems work together - both physically and socially. He weaves experience with STEM in the workplace into his personal history in peer management and governing bodies. He has a B.Eng. in Chemical Engineering and an M.S. in Materials Science & Engineering from Stevens Institute of Technology.`,
   },
   {
-    first: "Nicholas",
-    last: "Yarbrough",
-    role: "Engineer",
-    photo: require("../images/team/real/cole.png"),
-    cartoon: require("../images/team/cartoons/cole.png"),
+    first: 'Nicholas',
+    last: 'Yarbrough',
+    role: 'Engineer',
+    photo: require('../images/team/real/cole.png'),
+    cartoon: require('../images/team/cartoons/cole.png'),
     linkedin: 'cole-yarbrough-2a39551b2',
     description: `Cole is a lifelong maker and electrical / computer engineer who has worked on space projects both small and large: from communicating with the ISS to launching a high-altitude balloon. Cole leads the development of avionics hardware for our suborbital launch platforms.`,
   },
@@ -66,7 +67,8 @@ const team = [
     photo: require('../images/team/real/igor.png'),
     cartoon: require('../images/team/cartoons/igor.png'),
     linkedin: 'igor-alexandrov-033123',
-    description: 'Igor is an experienced president with a demonstrated history of working in the research industry. Strong business development professional skilled in Analytical Skills, Entrepreneurship, Fundraising, Software Development, and Start-ups.',
+    description:
+      'Igor is an experienced president with a demonstrated history of working in the research industry. Strong business development professional skilled in Analytical Skills, Entrepreneurship, Fundraising, Software Development, and Start-ups.',
   },
   {
     first: 'Khurram',
@@ -75,7 +77,8 @@ const team = [
     photo: require('../images/team/real/khurram.png'),
     cartoon: require('../images/team/cartoons/khurram.png'),
     linkedin: 'kngore',
-    description: 'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM.  With over 20 years in the tech and innovation space, his work brings together a deep understanding of business development, product lifecycle, data ethics, and the legal implications and challenges for companies that push boundaries.',
+    description:
+      'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM.  With over 20 years in the tech and innovation space, his work brings together a deep understanding of business development, product lifecycle, data ethics, and the legal implications and challenges for companies that push boundaries.',
   },
 ]
 
@@ -86,14 +89,8 @@ const TeamSection = styled(Section)`
   }
 `
 
-
 const DetailsWrapper = styled.div`
-  min-height: 26rem;
   margin: 0 2rem;
-
-  @media (min-width: 972px) {
-    min-height: 21rem;
-  }
 `
 
 const Details = styled.div`
@@ -108,12 +105,20 @@ const Details = styled.div`
     width: 60%;
   }
 
-  .desktop-description { display: none; }
-  .mobile-description { display: block; }
+  .desktop-description {
+    display: none;
+  }
+  .mobile-description {
+    display: block;
+  }
 
   @media (min-width: 972px) {
-    .desktop-description { display: block; }
-    .mobile-description { display: none; }
+    .desktop-description {
+      display: block;
+    }
+    .mobile-description {
+      display: none;
+    }
   }
 `
 
@@ -139,13 +144,13 @@ const RealPhoto = styled.img`
 const Name = styled.span`
   font-size: 1.5rem;
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 `
 
 const Role = styled.span`
   font-size: 1.17rem;
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 `
 
 const LinkedIn = styled.img`
@@ -165,8 +170,8 @@ const TeamListContainer = styled.div`
 `
 
 const TeamMember = styled.div`
-  flex: 0 1 26%;
-  margin: .5rem;
+  flex: 0 1 30%;
+  margin: 0.25rem;
   width: 7rem;
   height: auto;
   box-sizing: border-box;
@@ -177,17 +182,21 @@ const TeamMember = styled.div`
 
   > img {
     cursor: pointer;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     background: none;
   }
 
+  &:hover:not(.active) > img {
+    box-shadow: 0 0 0 0.2rem #ffd96655;
+  }
+
   &.active > img {
-    box-shadow: 0 0 0 .2rem var(--cpr-yellow);
+    box-shadow: 0 0 0 0.2rem var(--cpr-yellow);
   }
 
   h4 + h4 {
-    margin-top: .2rem;
+    margin-top: 0.2rem;
   }
 
   h4 {
@@ -203,31 +212,45 @@ const Team = () => {
     <TeamSection id="team" expand={true}>
       <Heading>Our Team</Heading>
       <section>
-        <DetailsWrapper>
-          <Details>
-            <DetailsBody>
-              <RealPhoto src={selected.photo}/>
-              <div>
-                <Name>{selected.first} {selected.last}</Name>
-                <Role>{selected.role}</Role>
-                <a rel="noreferrer" target="_blank" href={`https://linkedin.com/in/${selected.linkedin}`}>
-                  <LinkedIn src={LinkedInImg} alt="LinkedIn" />
-                </a>
-                <Paragraph className="desktop-description">{selected.description}</Paragraph>
-              </div>
-            </DetailsBody>
-            <Paragraph className="mobile-description">{selected.description}</Paragraph>
-          </Details>
-        </DetailsWrapper>
         <TeamListContainer>
-          {team.map(member =>
+          {team.map(member => (
             <TeamMember className={member.last === active ? 'active' : ''}>
-              <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
+              <img
+                src={member.cartoon}
+                alt={`${member.first} ${member.last}`}
+                onClick={() => setActive(member.last)}
+              />
               <h4>{member.first}</h4>
               <h4>{member.last}</h4>
             </TeamMember>
-          )}
+          ))}
         </TeamListContainer>
+        <DetailsWrapper>
+          <Details>
+            <DetailsBody>
+              <RealPhoto src={selected.photo} />
+              <div>
+                <Name>
+                  {selected.first} {selected.last}
+                </Name>
+                <Role>{selected.role}</Role>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href={`https://linkedin.com/in/${selected.linkedin}`}
+                >
+                  <LinkedIn src={LinkedInImg} alt="LinkedIn" />
+                </a>
+                <Paragraph className="desktop-description">
+                  {selected.description}
+                </Paragraph>
+              </div>
+            </DetailsBody>
+            <Paragraph className="mobile-description">
+              {selected.description}
+            </Paragraph>
+          </Details>
+        </DetailsWrapper>
       </section>
     </TeamSection>
   )
