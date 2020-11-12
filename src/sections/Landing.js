@@ -1,53 +1,53 @@
-import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
-import anime from "animejs/lib/anime.es.js"
+import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
+import anime from 'animejs/lib/anime.es.js'
 
 // lots of images
-import RocketAnimate from "../images/rocket-animate.inline.svg"
-import RocketStatic from "../images/rocket-static.svg"
-import TinyRocket from "../images/tiny-rocket.inline.svg"
-import Cone from "../images/rocket-components/cone.svg"
-import Chute from "../images/rocket-components/chute.svg"
-import Electric from "../images/rocket-components/electric.svg"
-import Tanks from "../images/rocket-components/tanks.svg"
-import Wings from "../images/rocket-components/wings.svg"
-import Engine from "../images/rocket-components/engine.svg"
+import RocketAnimate from '../images/rocket-animate.inline.svg'
+import RocketStatic from '../images/rocket-static.svg'
+import TinyRocket from '../images/tiny-rocket.inline.svg'
+import Cone from '../images/rocket-components/cone.svg'
+import Chute from '../images/rocket-components/chute.svg'
+import Electric from '../images/rocket-components/electric.svg'
+import Tanks from '../images/rocket-components/tanks.svg'
+import Wings from '../images/rocket-components/wings.svg'
+import Engine from '../images/rocket-components/engine.svg'
 
 const fixtures = [
   {
-    name: "Nose Cone",
+    name: 'Nose Cone',
     desc:
-      "Designed to minimize aerodynamic resistance and reliably  house payloads.",
+      'Designed to minimize aerodynamic resistance and reliably  house payloads.',
     imgSrc: Cone,
   },
   {
-    name: "Recovery System",
+    name: 'Recovery System',
     desc:
-      "A drogue-piloted dual-chute system means our vehicle is fully recoverable.",
+      'A drogue-piloted dual-chute system means our vehicle is fully recoverable.',
     imgSrc: Chute,
   },
   {
-    name: "Avionics Package",
+    name: 'Avionics Package',
     desc:
-      "Our custom avionics are developed to handle navigation, telemetry, data acquisition, flight control, and more.",
+      'Our custom avionics are developed to handle navigation, telemetry, data acquisition, flight control, and more.',
     imgSrc: Electric,
   },
   {
-    name: "Custom Composite Tanks",
+    name: 'Custom Composite Tanks',
     desc:
-      "Cutting edge linerless tanks allow our vehicle to fly higher, carry more payload mass, and operate at peak efficiency.",
+      'Cutting edge linerless tanks allow our vehicle to fly higher, carry more payload mass, and operate at peak efficiency.',
     imgSrc: Tanks,
   },
   {
-    name: "Fins",
+    name: 'Fins',
     desc:
-      "Precision machined out of titanium, these control surfaces stabilize the flight profile of our vehicle while reducing peak temperatures.",
+      'Precision machined out of titanium, these control surfaces stabilize the flight profile of our vehicle while reducing peak temperatures.',
     imgSrc: Wings,
   },
   {
-    name: "Engine",
+    name: 'Engine',
     desc:
-      "Our fully 3D-printed engine is designed for maximum efficiency and minimum complexity.",
+      'Our fully 3D-printed engine is designed for maximum efficiency and minimum complexity.',
     imgSrc: Engine,
   },
 ]
@@ -57,13 +57,13 @@ const Landing = () => {
   useEffect(() => {
     setShowRocket(1)
     anime({
-      targets: ".rocket-animate > g > *",
+      targets: '.rocket-animate > g > *',
       strokeDashoffset: [anime.setDashoffset, 0],
-      easing: "easeInOutSine",
+      easing: 'easeInOutSine',
       duration: 1500,
       delay: ({ className: { baseVal } }, i) =>
-        i * (baseVal === "st1" ? 15 : 10),
-      direction: "alternate",
+        i * (baseVal === 'st1' ? 15 : 10),
+      direction: 'alternate',
       loop: false,
     })
   }, [])
@@ -82,9 +82,7 @@ const Landing = () => {
           />
         </div>
         <div className="text-container">
-          <h1>
-            Microgravity as a Service
-          </h1>
+          <h1>Microgravity as a Service</h1>
           {/* TODO: change to blog when blog is finished */}
           <Link to="/services" className="check-out">
             Get your payload into space
@@ -98,7 +96,7 @@ const Landing = () => {
             <TinyRocket />
           </div>
           <h1>Meet Our Rocket</h1>
-          <p className="bold" style={{ marginBottom: "0.5rem" }}>
+          <p className="bold" style={{ marginBottom: '0.5rem' }}>
             Powerful · Efficient · Reusable
           </p>
           <p>

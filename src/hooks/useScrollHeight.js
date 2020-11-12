@@ -1,5 +1,5 @@
-import { useState, useLayoutEffect } from "react"
-import { throttle } from "lodash"
+import { useState, useLayoutEffect } from 'react'
+import { throttle } from 'lodash'
 
 const getCurrentHeight = () => {
   if (typeof window !== `undefined`) {
@@ -17,13 +17,13 @@ export default () => {
       setHeight(getCurrentHeight())
     }, 100)
 
-    window.addEventListener("scroll", handleScroll)
-    window.addEventListener("touchmove", handleScroll)
+    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('touchmove', handleScroll)
 
     return () => {
       handleScroll.cancel()
-      window.removeEventListener("scroll", handleScroll)
-      window.removeEventListener("touchmove", handleScroll)
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('touchmove', handleScroll)
     }
   }, [])
 
