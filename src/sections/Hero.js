@@ -4,11 +4,13 @@ import styled from "@emotion/styled"
 import mq from '../components/Breakpoints'
 
 const Page = styled.section`
-  height: calc(100vh - 10.4rem);
-
-  @media (min-width: 972px) { // break-md
-    height: calc(100vh - 13.6rem);
-  }
+  ${mq({
+     height: [
+       'calc(100vh - 10.4rem)',
+       'calc(100vh - 9.4rem)',
+       'calc(100vh - 13.6rem)',
+     ]
+  })}
 `
 
 const Container = styled.div`

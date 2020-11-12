@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { Section } from '../components/Components'
+import mq from '../components/Breakpoints'
 
 const Banner = styled(Section)`
   // set background regardless of order
@@ -11,19 +12,18 @@ const Banner = styled(Section)`
   display: flex;
   align-items: center;
   padding: .6rem 0;
+  color: var(--cpr-dark);
+  text-align: center;
 `
 
 const Header = styled.h1`
-  color: var(--cpr-dark);
-  text-align: center;
   font-size: 1.1rem;
   margin-left: 1rem;
   margin-right: 1rem;
+  display: inline-block;
 
   @media (min-width: 972px) {
     font-size: 1.4rem;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   a {
@@ -33,13 +33,20 @@ const Header = styled.h1`
 `
 
 export default function Invest () {
-  return <Banner expand={false}>
-    <Header>
-      Become a part of our company by&nbsp;
-      <a rel="noreferrer" target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">
-        investing
-      </a>
-      &nbsp;in HSS on MicroVentures!
-    </Header>
-  </Banner>
+  return <Banner expand={true}>
+           <Header>
+             Check out&nbsp;
+             <a rel="noreferrer" target="_blank" href="https://www.youtube.com/watch?v=gnz6q2EzGw8&t=2011">
+               our pitch
+             </a>
+             &nbsp;at Propelify.
+           </Header>
+           <Header>
+             Invest in Hudson Space on&nbsp;
+             <a rel="noreferrer" target="_blank" href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420">
+               MicroVentures
+             </a>
+             !
+           </Header>
+         </Banner>
 }
