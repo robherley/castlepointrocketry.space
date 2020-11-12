@@ -53,7 +53,7 @@ const Anchor = styled.a`
 export default function Services() {
   return (
     <Section className="services" id="services">
-      <Heading>Our Services</Heading>
+      <Heading>Our Service</Heading>
       <Paragraph>
         We want to make researching in microgravity as easy as ordering a lab
         test here on Earth. With our suborbital flights, researchers will have a
