@@ -9,6 +9,7 @@ import mq from '../components/Breakpoints'
 
 const Container = styled.div`
   display: flex;
+  justify-content: center;
   ${mq({
       flexDirection: ['column', 'column', 'row'],
   })}
@@ -55,7 +56,7 @@ const Image = styled.div`
 
 export default function Comparison() {
     return <Section expand={true} css={css`padding: 2rem 0`}>
-             <Heading>Competition</Heading>
+             <Heading>Your Options for Microgravity</Heading>
              <Container>
                <Row>
                  <Image><img src={EiffelTower} /></Image>
