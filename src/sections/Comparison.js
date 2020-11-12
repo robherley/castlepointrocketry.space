@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   ${mq({
-      flexDirection: ['column', 'column', 'row'],
+    flexDirection: ['column', 'column', 'row'],
   })}
 `
 
@@ -28,12 +28,11 @@ const Row = styled.div`
   }
 
   p {
-    margin-top: .3rem;
+    margin-top: 0.3rem;
 
     ::before {
       content: '» ';
       color: var(--cpr-blue);
-
     }
   }
 `
@@ -55,33 +54,50 @@ const Image = styled.div`
 `
 
 export default function Comparison() {
-    return <Section expand={true} css={css`padding: 2rem 0`}>
-             <Heading>Your Options for Microgravity</Heading>
-             <Container>
-               <Row>
-                 <Image><img src={EiffelTower} /></Image>
-                 <div>
-                   <h2>Drop Tower</h2>
-                   <Paragraph>Not enough microgravity time.</Paragraph>
-                   <Paragraph>10s μg, 264 kg limit, retrieve instantly</Paragraph>
-                 </div>
-               </Row>
-               <Row>
-                 <Image><img src={Rocket} /></Image>
-                 <div>
-                   <h2>Hudson Space</h2>
-                   <Paragraph>Accessibly priced, iterative across launches.</Paragraph>
-                   <Paragraph>3min μg, 80 kg limit, $9500/kg, retrieve instantly</Paragraph>
-                 </div>
-               </Row>
-               <Row>
-                 <Image><img src={ISS} /></Image>
-                 <div>
-                   <h2>ISS Experiment</h2>
-                   <Paragraph>Way too expensive, no iteration.</Paragraph>
-                   <Paragraph>∞ μg, 4 kg limit, $70000/kg, retrieve after months</Paragraph>
-                 </div>
-               </Row>
-             </Container>
-           </Section>
+  return (
+    <Section
+      expand={true}
+      css={css`
+        padding: 2rem 0;
+      `}
+    >
+      <Heading>Your Options for Microgravity</Heading>
+      <Container>
+        <Row>
+          <Image>
+            <img src={EiffelTower} />
+          </Image>
+          <div>
+            <h2>Drop Tower</h2>
+            <Paragraph>Not enough microgravity time.</Paragraph>
+            <Paragraph>10s μg, 264 kg limit, retrieve instantly</Paragraph>
+          </div>
+        </Row>
+        <Row>
+          <Image>
+            <img src={Rocket} />
+          </Image>
+          <div>
+            <h2>Hudson Space</h2>
+            <Paragraph>Accessibly priced, iterative across launches.</Paragraph>
+            <Paragraph>
+              3min μg, 80 kg limit, $9500/kg, retrieve instantly
+            </Paragraph>
+          </div>
+        </Row>
+        <Row>
+          <Image>
+            <img src={ISS} />
+          </Image>
+          <div>
+            <h2>ISS Experiment</h2>
+            <Paragraph>Way too expensive, no iteration.</Paragraph>
+            <Paragraph>
+              ∞ μg, 4 kg limit, $70000/kg, retrieve after months
+            </Paragraph>
+          </div>
+        </Row>
+      </Container>
+    </Section>
+  )
 }
