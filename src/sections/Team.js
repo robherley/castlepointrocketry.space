@@ -88,12 +88,7 @@ const TeamSection = styled(Section)`
 
 
 const DetailsWrapper = styled.div`
-  min-height: 26rem;
   margin: 0 2rem;
-
-  @media (min-width: 972px) {
-    min-height: 21rem;
-  }
 `
 
 const Details = styled.div`
@@ -165,8 +160,8 @@ const TeamListContainer = styled.div`
 `
 
 const TeamMember = styled.div`
-  flex: 0 1 26%;
-  margin: .5rem;
+  flex: 0 1 30%;
+  margin: .25rem;
   width: 7rem;
   height: auto;
   box-sizing: border-box;
@@ -180,6 +175,10 @@ const TeamMember = styled.div`
     margin-bottom: .5rem;
     width: 100%;
     background: none;
+  }
+
+  &:hover:not(.active) > img {
+    box-shadow: 0 0 0 .2rem #ffd96655;
   }
 
   &.active > img {
@@ -203,6 +202,15 @@ const Team = () => {
     <TeamSection id="team" expand={true}>
       <Heading>Our Team</Heading>
       <section>
+        <TeamListContainer>
+          {team.map(member =>
+            <TeamMember className={member.last === active ? 'active' : ''}>
+              <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
+              <h4>{member.first}</h4>
+              <h4>{member.last}</h4>
+            </TeamMember>
+          )}
+        </TeamListContainer>
         <DetailsWrapper>
           <Details>
             <DetailsBody>
@@ -219,15 +227,6 @@ const Team = () => {
             <Paragraph className="mobile-description">{selected.description}</Paragraph>
           </Details>
         </DetailsWrapper>
-        <TeamListContainer>
-          {team.map(member =>
-            <TeamMember className={member.last === active ? 'active' : ''}>
-              <img src={member.cartoon} alt={`${member.first} ${member.last}`} onClick={() => setActive(member.last)} />
-              <h4>{member.first}</h4>
-              <h4>{member.last}</h4>
-            </TeamMember>
-          )}
-        </TeamListContainer>
       </section>
     </TeamSection>
   )
