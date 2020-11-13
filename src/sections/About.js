@@ -40,9 +40,9 @@ export default function About() {
 
       <ParagraphTitle>What if science could move faster?</ParagraphTitle>
       <Paragraph>
-        We’re interested in seeing that future. Made in Hoboken, NJ, we’re
-        Hudson Space Systems. Our goal is to give more people, more affordable
-        exposure to microgravity.
+        We're designing that future today. Made in Hoboken, NJ, we’re Hudson
+        Space Systems. Our goal is to make access to space research affordable
+        and accessible for all.
       </Paragraph>
 
       <ParagraphTitle>What is microgravity?</ParagraphTitle>
@@ -58,18 +58,17 @@ export default function About() {
         research phenomena not easily observed on Earth. From corporate
         researchers investigating petrochemicals, pharmaceuticals, and
         semiconductors to academic researchers investigating microbiology and
-        stem cells, many are already experimenting in space. The value of this
-        opportunity to accelerate and widen opportunities for R&D has already
-        been proven.
+        stem cells, many are already experimenting in space. Microgravity is
+        already accelerating and widening R&D for companies today.
       </Paragraph>
 
       <ParagraphTitle>Great! Sign me up today!</ParagraphTitle>
       <Paragraph>
         Well...that’s the problem. The launch providers currently servicing this
         market are already operating at capacity, with extremely long lead times
-        and sky high prices, which also means limited opportunity to facilitate
-        iterative research. Because of this only a select few people end up
-        launching their research.
+        and sky high prices, which also means there are few chances for
+        iterative experimentation. Because of this, opportunities to research in
+        microgravity are limited.
       </Paragraph>
 
       <ParagraphTitle>And that’s where you come in?</ParagraphTitle>
@@ -79,7 +78,8 @@ export default function About() {
         can increase launch frequencies, lower costs, and remove the traditional
         barriers to sending experiments in space. We’re using our affordable and
         streamlined suborbital rocket technology to offer rides to space (and
-        back) for researchers, on a dependable schedule and at attainable rates.
+        back) for research payloads, on a dependable schedule and at attainable
+        rates.
       </Paragraph>
     </Section>
   )
