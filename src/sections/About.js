@@ -58,18 +58,17 @@ export default function About() {
         research phenomena not easily observed on Earth. From corporate
         researchers investigating petrochemicals, pharmaceuticals, and
         semiconductors to academic researchers investigating microbiology and
-        stem cells, many are already experimenting in space. The value of this
-        technology to accelerate and widen opportunities for R&D has already
-        been proven.
+        stem cells, many are already experimenting in space. Microgravity is
+        already accelerating and widening R&D for companies today.
       </Paragraph>
 
       <ParagraphTitle>Great! Sign me up today!</ParagraphTitle>
       <Paragraph>
         Well...that’s the problem. The launch providers currently servicing this
         market are already operating at capacity, with extremely long lead times
-        and sky high prices, which also means limited opportunity to facilitate
-        iterative research. Because of this only a select few people end up
-        launching their research.
+        and sky high prices, which also means there are few chances for
+        iterative experimentation. Because of this, opportunities to research in
+        microgravity are limited.
       </Paragraph>
 
       <ParagraphTitle>And that’s where you come in?</ParagraphTitle>
