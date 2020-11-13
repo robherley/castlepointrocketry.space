@@ -69,8 +69,9 @@ export default function Comparison() {
           </Image>
           <div>
             <h2>Drop Tower</h2>
-            <Paragraph>Not enough microgravity time.</Paragraph>
-            <Paragraph>10s μg, 264 kg limit, retrieve instantly</Paragraph>
+            <Paragraph>10sec μg</Paragraph>
+            <Paragraph>264 kg max</Paragraph>
+            <Paragraph>retrieve instantly</Paragraph>
           </div>
         </Row>
         <Row>
@@ -79,10 +80,10 @@ export default function Comparison() {
           </Image>
           <div>
             <h2>Hudson Space</h2>
-            <Paragraph>Accessibly priced, iterative across launches.</Paragraph>
-            <Paragraph>
-              3min μg, 80 kg limit, $9500/kg, retrieve instantly
-            </Paragraph>
+            <Paragraph>3min μg</Paragraph>
+            <Paragraph>80 kg max</Paragraph>
+            <Paragraph>$9500/kg</Paragraph>
+            <Paragraph>retrieve instantly</Paragraph>
           </div>
         </Row>
         <Row>
@@ -91,10 +92,10 @@ export default function Comparison() {
           </Image>
           <div>
             <h2>ISS Experiment</h2>
-            <Paragraph>Way too expensive, no iteration.</Paragraph>
-            <Paragraph>
-              ∞ μg, 4 kg limit, $70000/kg, retrieve after months
-            </Paragraph>
+            <Paragraph>∞ μg</Paragraph>
+            <Paragraph>4 kg max</Paragraph>
+            <Paragraph>$70,000/kg</Paragraph>
+            <Paragraph>retrieve after months</Paragraph>
           </div>
         </Row>
       </Container>
