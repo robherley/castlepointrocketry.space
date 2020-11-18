@@ -57,6 +57,7 @@ const Image = styled.div`
 const Table = styled.table`
   thead {
     font-weight: bold;
+      text-align: center;
 
     td {
       background: #393939;
@@ -65,11 +66,17 @@ const Table = styled.table`
         background: none;
       }
 
-      &:nth-child(3) {
-        border-top: 1px solid var(--cpr-yellow);
-        border-left: 1px solid var(--cpr-yellow);
-        border-right: 1px solid var(--cpr-yellow);
+      img {
+        height: 6rem;
       }
+    }
+  }
+
+  thead > tr:first-child {
+    td:nth-child(3) {
+      border-top: 1px solid var(--cpr-yellow);
+      border-left: 1px solid var(--cpr-yellow);
+      border-right: 1px solid var(--cpr-yellow);
     }
   }
 
@@ -80,17 +87,17 @@ const Table = styled.table`
       border-top: 1px solid #393939;
     }
 
-    tr {
+    tr:last-child {
       td:nth-child(3) {
-        border-left: 1px solid var(--cpr-yellow);
-        border-right: 1px solid var(--cpr-yellow);
+        border-bottom: 1px solid var(--cpr-yellow);
       }
+    }
+  }
 
-      &:last-child {
-        td:nth-child(3) {
-          border-bottom: 1px solid var(--cpr-yellow);
-        }
-      }
+  tr {
+    td:nth-child(3) {
+      border-left: 1px solid var(--cpr-yellow);
+      border-right: 1px solid var(--cpr-yellow);
     }
   }
 
@@ -102,17 +109,17 @@ const Table = styled.table`
 const Circle = styled.div`
   width: 1rem;
   height: 1rem;
-  vertical-align: middle;
   background: green;
   display: inline-block;
   border-radius: 50%;
   text-align: center;
+  vertical-align: middle;
 `
 
 function Best() {
   return (
     <Circle css={css`background: green;`}>
-      <Check size={13} />
+      <Check size={12} />
     </Circle>
   )
 }
@@ -136,55 +143,55 @@ export default function Comparison() {
     >
       <Heading>Your Options for Microgravity</Heading>
       <Container>
-      <Table>
-        {/*
-        <thead>
-          <td></td>
-          <td><img src={EiffelTower} /></td>
-          <td><img src={Rocket}/></td>
-          <td><img src={ISS}/></td>
-        </thead>
-         */}
-        <thead>
-          <td></td>
-          <td>Drop Tower</td>
-          <td>Hudson Space</td>
-          <td>ISS Experiment</td>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Microgravity</td>
-            <td>10 sec <Worst/></td>
-            <td>3 min <Best/></td>
-            <td>∞</td>
-          </tr>
-          <tr>
-            <td>Weight Limit</td>
-            <td>264 kg</td>
-            <td>80 kg <Best/></td>
-            <td>4 kg <Worst/></td>
-          </tr>
-          <tr>
-            <td>Iteration</td>
-            <td>rapid</td>
-            <td>rapid <Best/></td>
-            <td>none <Worst/></td>
-          </tr>
-          <tr>
-            <td>Retrieval</td>
-            <td>instant</td>
-            <td>instant <Best/></td>
-            <td>months <Worst/></td>
-          </tr>
-          <tr>
-            <td>Cost</td>
-            <td></td>
-            <td>$9,500/kg <Best/></td>
-            <td>$70,000/kg <Worst/></td>
-          </tr>
-        </tbody>
-      </Table>
-    </Container>
+        <Table>
+          <thead>
+            <tr>
+              <td></td>
+              <td><img src={EiffelTower} /></td>
+              <td><img src={Rocket}/></td>
+              <td><img src={ISS}/></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Drop Tower</td>
+              <td>Hudson Space</td>
+              <td>ISS Experiment</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Microgravity</td>
+              <td>10 sec <Worst/></td>
+              <td>3 min</td>
+              <td>∞ <Best/></td>
+            </tr>
+            <tr>
+              <td>Weight Limit</td>
+              <td>264 kg <Best/></td>
+              <td>80 kg</td>
+              <td>4 kg <Worst/></td>
+            </tr>
+            <tr>
+              <td>Iteration</td>
+              <td>rapid</td>
+              <td>rapid <Best/></td>
+              <td>none <Worst/></td>
+            </tr>
+            <tr>
+              <td>Retrieval</td>
+              <td>instant</td>
+              <td>instant <Best/></td>
+              <td>months <Worst/></td>
+            </tr>
+            <tr>
+              <td>Cost</td>
+              <td></td>
+              <td>$9,500/kg <Best/></td>
+              <td>$70,000/kg <Worst/></td>
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
       <Container>
         <Row>
           <Image>
