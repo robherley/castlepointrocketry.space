@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from '../sections/Layout'
 import SEO from '../sections/SEO'
+import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import mq from '../components/Breakpoints'
 import { Paragraph } from '../components/Components'
+import { AlertCircle, Sun } from 'react-feather'
 
 const Container = styled.section`
   box-sizing: border-box;
@@ -44,8 +46,8 @@ const BigButton = styled.a`
 `
 
 const Section = styled.section`
-  padding-top: 3rem;
   padding-bottom: 3rem;
+  padding-top: 3rem;
 
   & + & {
     border-top: 1px solid #ffffff33;
@@ -54,12 +56,23 @@ const Section = styled.section`
   > * + * {
     margin-top: 1rem;
   }
+
+  img {
+    max-width: 100%;
+  }
 `
 
 export default function InvestPage() {
   return (
     <Layout>
       <SEO title="Home" />
+      <Global styles={css`
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${require('../images/starry-bg.png')});
+
+  background-size: contain;
+}
+      `}/>
       <Container>
         <Section>
           <h1>The Next Generation of Reusable Space Launch Vehicles</h1>
@@ -84,6 +97,7 @@ export default function InvestPage() {
           </div>
         </Section>
         <Section>
+          <div className="center"><img css={css`height: 6rem`} src={require('../images/beaker.png')}/></div>
           <h2>The Problem: Doing Science in Space Costs too Much</h2>
           <Paragraph>
             The current launch services market is cost prohibitive towards
@@ -93,6 +107,7 @@ export default function InvestPage() {
           </Paragraph>
         </Section>
         <Section>
+          <div className="center"><img css={css`height: 6rem; filter: hue-rotate(90deg) saturate(2.5);`} src={require('../images/rocket.png')}/></div>
           <h2>The Solution: Next-Gen Reusable Rockets!</h2>
           <h3>Reusable Design</h3>
           <Paragraph>
@@ -119,12 +134,14 @@ export default function InvestPage() {
         </Section>
         <Section>
           <h2>What's Microgravity?</h2>
+          <img src={require('../images/labgoo.gif')}/>
           <Paragraph>
             It's weightlessness (pretty much). When something is in space, in
             orbit, or in freefall, gravity is no longer a significant force.
             That's why objects appear to be floating in space.
           </Paragraph>
           <h2>Why Should I Care?</h2>
+          <img src={require('../images/worldsworl.gif')}/>
           <Paragraph>
             Free from gravity, innovators can focus on the variables that
             matter. There's a huge potential for new science to be done in
