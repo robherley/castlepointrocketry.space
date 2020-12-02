@@ -5,7 +5,6 @@ import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import mq from '../components/Breakpoints'
 import { Paragraph } from '../components/Components'
-import { AlertCircle, Sun } from 'react-feather'
 
 const Container = styled.section`
   box-sizing: border-box;
@@ -46,11 +45,17 @@ const BigButton = styled.a`
 `
 
 const Section = styled.section`
+  ${props => mq({
+    width: props.expand ? '100%' : ['100%', '100%', '60%'],
+  })}
+  margin: 0 auto;
+
   padding-bottom: 3rem;
   padding-top: 3rem;
 
-  & + & {
-    border-top: 1px solid #ffffff33;
+  border-top: 1px solid #ffffff33;
+  &:first-child {
+    border-top: none;
   }
 
   > * + * {
@@ -62,6 +67,40 @@ const Section = styled.section`
   }
 `
 
+Section.defaultProps = {
+  expand: false
+}
+
+const SideBySide = styled.div`
+  display: flex;
+  ${mq({
+    flexDirection: ['column', 'column', 'row']
+  })}
+`
+
+const Subsection = styled.div`
+  img {
+    display: block;
+    width: 70%;
+    margin: 1rem auto 0 auto;
+  }
+
+  > * + * {
+    margin-top: 1rem;
+  }
+
+  ${mq({
+    width: ['100%', '100%', '50%'],
+    margin: ['0', '0', '0 1rem'],
+  })}
+
+  & + & {
+    ${mq({
+      marginTop: ['1rem', '1rem', '0']
+    })}
+  }
+`
+
 export default function InvestPage() {
   return (
     <Layout>
@@ -69,7 +108,6 @@ export default function InvestPage() {
       <Global styles={css`
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${require('../images/starry-bg.png')});
-
   background-size: contain;
 }
       `}/>
@@ -86,6 +124,7 @@ body {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            css={css`width: 100%`}
           ></iframe>
           <div className="row justify-center">
             <BigButton
@@ -132,23 +171,29 @@ body {
           <h3>=</h3>
           <h3>More Innovation!</h3>
         </Section>
-        <Section>
-          <h2>What's Microgravity?</h2>
-          <img src={require('../images/labgoo.gif')}/>
-          <Paragraph>
-            It's weightlessness (pretty much). When something is in space, in
-            orbit, or in freefall, gravity is no longer a significant force.
-            That's why objects appear to be floating in space.
-          </Paragraph>
-          <h2>Why Should I Care?</h2>
-          <img src={require('../images/worldsworl.gif')}/>
-          <Paragraph>
-            Free from gravity, innovators can focus on the variables that
-            matter. There's a huge potential for new science to be done in
-            microgravity. Science done in microgravity could enable
-            game-changing discoveries in petrochemicals, pharmaceuticals,
-            semiconductors, microbiology and stem cells.
-          </Paragraph>
+        <Section expand={true}>
+          <SideBySide>
+            <Subsection>
+              <h2>What's Microgravity?</h2>
+              <img src={require('../images/labgoo.gif')}/>
+              <Paragraph>
+                It's weightlessness (pretty much). When something is in space, in
+                orbit, or in freefall, gravity is no longer a significant force.
+                That's why objects appear to be floating in space.
+              </Paragraph>
+            </Subsection>
+            <Subsection>
+              <h2>Why Should I Care?</h2>
+              <img src={require('../images/worldsworl.gif')}/>
+              <Paragraph>
+                Free from gravity, innovators can focus on the variables that
+                matter. There's a huge potential for new science to be done in
+                microgravity. Science done in microgravity could enable
+                game-changing discoveries in petrochemicals, pharmaceuticals,
+                semiconductors, microbiology and stem cells.
+              </Paragraph>
+            </Subsection>
+          </SideBySide>
         </Section>
         <Section>
           <h2>Help Us Enable the Next Scientific Revolution, in Space!</h2>
