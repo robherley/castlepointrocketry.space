@@ -103,14 +103,22 @@ const Subsection = styled.div`
 
 export default function InvestPage() {
   return (
-    <Layout>
-      <SEO title="Home" />
+    <main>
+      <SEO title="Invest" />
       <Global styles={css`
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${require('../images/starry-bg.png')});
   background-size: contain;
 }
+
+.logo-icon {
+  display: block;
+  width: 14rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
       `}/>
+      <img src={require('../images/HSSwhite.svg')} className="logo-icon"/>
       <Container>
         <Section>
           <h1>The Next Generation of Reusable Space Launch Vehicles</h1>
@@ -207,6 +215,6 @@ body {
           </div>
         </Section>
       </Container>
-    </Layout>
+    </main>
   )
 }
