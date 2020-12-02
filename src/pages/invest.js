@@ -25,6 +25,13 @@ const Container = styled.section`
   h5,
   h6 {
     text-align: center;
+    line-height: 2.4rem;
+    text-underline-offset: .3rem;
+  }
+
+  .highlight {
+    color: var(--cpr-yellow);
+    text-decoration: underline wavy white;
   }
 `
 
@@ -159,28 +166,28 @@ body {
         </Section>
         <Section>
           <div className="center"><img css={css`height: 6rem; filter: hue-rotate(90deg) saturate(2.5);`} src={require('../images/rocket.png')}/></div>
-          <h2>The Solution: Next-Gen Reusable Rockets!</h2>
+          <h2 className="highlight">The Solution: Next-Gen Reusable Rockets!</h2>
           <h3>Reusable Design</h3>
           <Paragraph>
             Our 3D-printed engine is quick to manufacture and reusable for up to
             15 launches. The vehicle utilizes robust carbon-fiber design. A
             redundant, multi-stage parachute system ensures reliable recovery.
           </Paragraph>
-          <h3>+</h3>
+          <h1 css={css`color: var(--cpr-yellow);`}>+</h1>
           <h3>Faster Turnaround</h3>
           <Paragraph>
             Our vehicle can be recovered, inspected, and launched within days.
             Payloads can be rapidly integrated for launch. Payloads can be
             returned to customers in a matter of hours, not weeks.
           </Paragraph>
-          <h3>+</h3>
+          <h1 css={css`color: var(--cpr-yellow);`}>+</h1>
           <h3>Lower Costs</h3>
           <Paragraph>
             Pressure-fed design innovations allow for elimination of costly
             components such as turbopumps. Our reusable design reduces fleet and
             manufacturing costs.
           </Paragraph>
-          <h3>=</h3>
+          <h1 css={css`color: var(--cpr-yellow);`}>=</h1>
           <h3>More Innovation!</h3>
         </Section>
         <Section expand={true}>
@@ -208,7 +215,7 @@ body {
           </SideBySide>
         </Section>
         <Section>
-          <h2>Help Us Enable the Next Scientific Revolution, in Space!</h2>
+          <h2 className="highlight">Help Us Enable the Next Scientific Revolution, in Space!</h2>
           <div className="row justify-center">
             <BigButton
               href="https://invest.microventures.com/signup-invest/hudson-space-systems"
