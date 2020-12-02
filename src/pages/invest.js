@@ -65,6 +65,10 @@ const Section = styled.section`
   img {
     max-width: 100%;
   }
+
+  iframe { // video
+    height: 16.5rem;
+  }
 `
 
 Section.defaultProps = {
