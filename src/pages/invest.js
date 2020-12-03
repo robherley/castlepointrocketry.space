@@ -33,6 +33,10 @@ const Container = styled.section`
     color: var(--cpr-yellow);
     text-decoration: underline wavy white;
   }
+
+  ${Paragraph} {
+    text-align: justify;
+  }
 `
 
 const BigButton = styled.a`
