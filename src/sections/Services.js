@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import {
   Calendar,
   Codesandbox,
@@ -36,14 +35,6 @@ const Step = styled.div`
 const StepName = styled.h3`
   display: inline;
   font-size: 1.5rem;
-`
-
-const VLine = styled.div`
-  display: block;
-  width: 0.1rem;
-  height: 2.5rem;
-  background: #999;
-  margin-left: 2.2rem;
 `
 
 const Anchor = styled.a`

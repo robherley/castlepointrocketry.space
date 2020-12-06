@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { Section } from '../components/Components'
-import mq from '../components/Breakpoints'
 
 const Banner = styled(Section)`
   // set background regardless of order

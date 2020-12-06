@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../sections/Layout'
 import SEO from '../sections/SEO'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
@@ -143,7 +142,7 @@ body {
   padding: 1rem 0;
 }
       `}/>
-      <img src={require('../images/HSSwhite.svg')} className="logo-icon"/>
+      <img src={require('../images/HSSwhite.svg')} className="logo-icon" alt="HSS Logo"/>
       <Container>
         <Section>
           <h1>The Next Generation of Reusable Space Launch Vehicles</h1>
@@ -158,6 +157,7 @@ body {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+              title="Welcome to Hudson Space Systems"
             ></iframe>
           </div>
           <div className="row justify-center">
@@ -170,7 +170,7 @@ body {
           </div>
         </Section>
         <Section>
-          <div className="center"><img css={css`height: 6rem`} src={require('../images/beaker.png')}/></div>
+          <div className="center"><img css={css`height: 6rem`} src={require('../images/beaker.png')} alt="Beaker"/></div>
           <h2 className="highlight">The Problem: Doing Science in Space Costs too Much</h2>
           <Paragraph>
             The current launch services market is cost prohibitive towards
@@ -180,7 +180,7 @@ body {
           </Paragraph>
         </Section>
         <Section>
-          <div className="center"><img css={css`height: 6rem; filter: hue-rotate(90deg) saturate(2.5);`} src={require('../images/rocket.png')}/></div>
+          <div className="center"><img css={css`height: 6rem; filter: hue-rotate(90deg) saturate(2.5);`} src={require('../images/rocket.png')} alt="Rocket"/></div>
           <h2 className="highlight">The Solution: Next-Gen Reusable Rockets!</h2>
           <h3>Reusable Design</h3>
           <Paragraph>
@@ -209,7 +209,7 @@ body {
           <SideBySide>
             <Subsection>
               <h2 className="highlight">What's Microgravity?</h2>
-              <img src={require('../images/labgoo.gif')}/>
+              <img src={require('../images/labgoo.gif')} alt="Floating lab equipment"/>
               <Paragraph>
                 It's weightlessness (pretty much). When something is in space, in
                 orbit, or in freefall, gravity is no longer a significant force.
@@ -218,7 +218,7 @@ body {
             </Subsection>
             <Subsection>
               <h2 className="highlight">Why Should I Care?</h2>
-              <img src={require('../images/worldsworl.gif')}/>
+              <img src={require('../images/worldsworl.gif')} alt="Satellites rotating around the earth"/>
               <Paragraph>
                 Free from gravity, innovators can focus on the variables that
                 matter. There's a huge potential for new science to be done in
