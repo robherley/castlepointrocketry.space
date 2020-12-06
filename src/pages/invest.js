@@ -33,9 +33,9 @@ const Container = styled.section`
 
   .highlight {
     color: var(--cpr-yellow);
-    text-underline-offset: .3rem;
+    text-underline-offset: 0.3rem;
     text-decoration: underline wavy white;
-    text-decoration-thickness: .1rem;
+    text-decoration-thickness: 0.1rem;
     text-decoration-color: #eee;
   }
 
@@ -61,9 +61,10 @@ const BigButton = styled.a`
 `
 
 const Section = styled.section`
-  ${props => mq({
-    width: props.expand ? '100%' : ['100%', '100%', '60%'],
-  })}
+  ${props =>
+    mq({
+      width: props.expand ? '100%' : ['100%', '100%', '60%'],
+    })}
   margin: 0 auto;
 
   padding-bottom: 3rem;
@@ -82,23 +83,24 @@ const Section = styled.section`
     max-width: 100%;
   }
 
-  iframe { // video
+  iframe {
+    // video
     ${mq({
       '--width': ['calc(100vw * .9)', 'calc(100vw * .4)'],
     })}
     width: var(--width);
-    height: calc(var(--width) * (9/16));
+    height: calc(var(--width) * (9 / 16));
   }
 `
 
 Section.defaultProps = {
-  expand: false
+  expand: false,
 }
 
 const SideBySide = styled.div`
   display: flex;
   ${mq({
-    flexDirection: ['column', 'column', 'row']
+    flexDirection: ['column', 'column', 'row'],
   })}
 `
 
@@ -120,7 +122,7 @@ const Subsection = styled.div`
 
   & + & {
     ${mq({
-      marginTop: ['1rem', '1rem', '0']
+      marginTop: ['1rem', '1rem', '0'],
     })}
   }
 `
@@ -129,20 +131,27 @@ export default function InvestPage() {
   return (
     <main>
       <SEO title="Invest" />
-      <Global styles={css`
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${require('../images/starry-bg.png')});
-  background-size: contain;
-}
+      <Global
+        styles={css`
+          body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url(${require('../images/starry-bg.png')});
+            background-size: contain;
+          }
 
-.logo-icon {
-  display: block;
-  width: 14rem;
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-      `}/>
-      <img src={require('../images/HSSwhite.svg')} className="logo-icon" alt="HSS Logo"/>
+          .logo-icon {
+            display: block;
+            width: 14rem;
+            margin: 0 auto;
+            padding: 1rem 0;
+          }
+        `}
+      />
+      <img
+        src={require('../images/HSSwhite.svg')}
+        className="logo-icon"
+        alt="HSS Logo"
+      />
       <Container>
         <Section>
           <h1>The Next Generation of Reusable Space Launch Vehicles</h1>
@@ -170,8 +179,18 @@ body {
           </div>
         </Section>
         <Section>
-          <div className="center"><img css={css`height: 6rem`} src={require('../images/beaker.png')} alt="Beaker"/></div>
-          <h2 className="highlight">The Problem: Doing Science in Space Costs too Much</h2>
+          <div className="center">
+            <img
+              css={css`
+                height: 6rem;
+              `}
+              src={require('../images/beaker.png')}
+              alt="Beaker"
+            />
+          </div>
+          <h2 className="highlight">
+            The Problem: Doing Science in Space Costs too Much
+          </h2>
           <Paragraph>
             The current launch services market is cost prohibitive towards
             anyone wanting to do science in space on a reasonable budget. Even
@@ -180,45 +199,80 @@ body {
           </Paragraph>
         </Section>
         <Section>
-          <div className="center"><img css={css`height: 6rem; filter: hue-rotate(90deg) saturate(2.5);`} src={require('../images/rocket.png')} alt="Rocket"/></div>
-          <h2 className="highlight">The Solution: Next-Gen Reusable Rockets!</h2>
+          <div className="center">
+            <img
+              css={css`
+                height: 6rem;
+                filter: hue-rotate(90deg) saturate(2.5);
+              `}
+              src={require('../images/rocket.png')}
+              alt="Rocket"
+            />
+          </div>
+          <h2 className="highlight">
+            The Solution: Next-Gen Reusable Rockets!
+          </h2>
           <h3>Reusable Design</h3>
           <Paragraph>
             Our 3D-printed engine is quick to manufacture and reusable for up to
             15 launches. The vehicle utilizes robust carbon-fiber design. A
             redundant, multi-stage parachute system ensures reliable recovery.
           </Paragraph>
-          <h1 css={css`color: var(--cpr-yellow);`}>+</h1>
+          <h1
+            css={css`
+              color: var(--cpr-yellow);
+            `}
+          >
+            +
+          </h1>
           <h3>Faster Turnaround</h3>
           <Paragraph>
             Our vehicle can be recovered, inspected, and launched within days.
             Payloads can be rapidly integrated for launch. Payloads can be
             returned to customers in a matter of hours, not weeks.
           </Paragraph>
-          <h1 css={css`color: var(--cpr-yellow);`}>+</h1>
+          <h1
+            css={css`
+              color: var(--cpr-yellow);
+            `}
+          >
+            +
+          </h1>
           <h3>Lower Costs</h3>
           <Paragraph>
             Pressure-fed design innovations allow for elimination of costly
             components such as turbopumps. Our reusable design reduces fleet and
             manufacturing costs.
           </Paragraph>
-          <h1 css={css`color: var(--cpr-yellow);`}>=</h1>
+          <h1
+            css={css`
+              color: var(--cpr-yellow);
+            `}
+          >
+            =
+          </h1>
           <h3>More Innovation!</h3>
         </Section>
         <Section expand={true}>
           <SideBySide>
             <Subsection>
               <h2 className="highlight">What's Microgravity?</h2>
-              <img src={require('../images/labgoo.gif')} alt="Floating lab equipment"/>
+              <img
+                src={require('../images/labgoo.gif')}
+                alt="Floating lab equipment"
+              />
               <Paragraph>
-                It's weightlessness (pretty much). When something is in space, in
-                orbit, or in freefall, gravity is no longer a significant force.
-                That's why objects appear to be floating in space.
+                It's weightlessness (pretty much). When something is in space,
+                in orbit, or in freefall, gravity is no longer a significant
+                force. That's why objects appear to be floating in space.
               </Paragraph>
             </Subsection>
             <Subsection>
               <h2 className="highlight">Why Should I Care?</h2>
-              <img src={require('../images/worldsworl.gif')} alt="Satellites rotating around the earth"/>
+              <img
+                src={require('../images/worldsworl.gif')}
+                alt="Satellites rotating around the earth"
+              />
               <Paragraph>
                 Free from gravity, innovators can focus on the variables that
                 matter. There's a huge potential for new science to be done in
