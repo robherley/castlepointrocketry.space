@@ -26,12 +26,18 @@ const Container = styled.section`
   h6 {
     text-align: center;
     line-height: 2.4rem;
-    text-underline-offset: .3rem;
+  }
+
+  h1 {
+    line-height: 3rem;
   }
 
   .highlight {
     color: var(--cpr-yellow);
+    text-underline-offset: .3rem;
     text-decoration: underline wavy white;
+    text-decoration-thickness: .1rem;
+    text-decoration-color: #eee;
   }
 
   ${Paragraph} {
@@ -160,7 +166,7 @@ body {
         </Section>
         <Section>
           <div className="center"><img css={css`height: 6rem`} src={require('../images/beaker.png')}/></div>
-          <h2>The Problem: Doing Science in Space Costs too Much</h2>
+          <h2 className="highlight">The Problem: Doing Science in Space Costs too Much</h2>
           <Paragraph>
             The current launch services market is cost prohibitive towards
             anyone wanting to do science in space on a reasonable budget. Even
@@ -197,7 +203,7 @@ body {
         <Section expand={true}>
           <SideBySide>
             <Subsection>
-              <h2>What's Microgravity?</h2>
+              <h2 className="highlight">What's Microgravity?</h2>
               <img src={require('../images/labgoo.gif')}/>
               <Paragraph>
                 It's weightlessness (pretty much). When something is in space, in
@@ -206,7 +212,7 @@ body {
               </Paragraph>
             </Subsection>
             <Subsection>
-              <h2>Why Should I Care?</h2>
+              <h2 className="highlight">Why Should I Care?</h2>
               <img src={require('../images/worldsworl.gif')}/>
               <Paragraph>
                 Free from gravity, innovators can focus on the variables that
@@ -219,7 +225,7 @@ body {
           </SideBySide>
         </Section>
         <Section>
-          <h2 className="highlight">Help Us Enable the Next Scientific Revolution, in Space!</h2>
+          <h2>Help Us Enable the Next Scientific Revolution, in Space!</h2>
           <div className="row justify-center">
             <BigButton
               href="https://invest.microventures.com/offerings/hudson-space-systems?referral_code=HSSWEBINVESTPAGE120220"
