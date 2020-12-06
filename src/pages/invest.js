@@ -84,7 +84,11 @@ const Section = styled.section`
   }
 
   iframe { // video
-    height: 16.5rem;
+    ${mq({
+      '--width': ['calc(100vw * .9)', 'calc(100vw * .4)'],
+    })}
+    width: var(--width);
+    height: calc(var(--width) * (9/16));
   }
 `
 
@@ -148,13 +152,14 @@ body {
             platform and will build a fleet of reusable rockets that will make
             microgravity research easy, affordable, and repeatable.
           </Paragraph>
-          <iframe
-            src="https://www.youtube.com/embed/ni1DfT1ew8Y"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            css={css`width: 100%`}
-          ></iframe>
+          <div className="row justify-center">
+            <iframe
+              src="https://www.youtube.com/embed/ni1DfT1ew8Y"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div className="row justify-center">
             <BigButton
               href="https://invest.microventures.com/offerings/hudson-space-systems?referral_code=HSSWEBINVESTPAGE120220"
