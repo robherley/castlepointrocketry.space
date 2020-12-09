@@ -5,6 +5,8 @@ import styled from '@emotion/styled'
 import mq from '../components/Breakpoints'
 import { Paragraph } from '../components/Components'
 
+import '../scss/index.scss'
+
 const Container = styled.section`
   box-sizing: border-box;
 
