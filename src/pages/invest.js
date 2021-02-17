@@ -158,9 +158,10 @@ export default function InvestPage() {
         <Section>
           <h1>The Next Generation of Reusable Space Launch Vehicles</h1>
           <Paragraph>
-            Gravity is limiting progress. We have developed a new vehicle launch
-            platform and will build a fleet of reusable rockets that will make
-            microgravity research easy, affordable, and repeatable.
+            Gravity is omnipresent in our science. The next step to better
+            learning is removing it from the equation. To do so, we have
+            developed a new vehicle launch platform that will make microgravity
+            research easy, affordable, and repeatable.
           </Paragraph>
           <div className="row justify-center">
             <iframe
@@ -194,10 +195,10 @@ export default function InvestPage() {
             The Problem: Doing Science in Space Costs too Much
           </h2>
           <Paragraph>
-            The current launch services market is cost prohibitive towards
-            anyone wanting to do science in space on a reasonable budget. Even
-            if you have the money, get ready to wait... Average wait times for
-            microgravity research launches run from 4 months to 2 years.
+            The current launch services market is cost prohibitive to anyone
+            wanting to do science in space. And even if you have the money, get
+            ready to wait...  The average wait times for microgravity research
+            launches run from 4 months to 2 years.
           </Paragraph>
         </Section>
         <Section>
@@ -217,8 +218,9 @@ export default function InvestPage() {
           <h3>Reusable Design</h3>
           <Paragraph>
             Our 3D-printed engine is quick to manufacture and reusable for up to
-            15 launches. The vehicle utilizes robust carbon-fiber design. A
-            redundant, multi-stage parachute system ensures reliable recovery.
+            15 launches. The vehicle utilizes a robust and lightweight
+            carbon-fiber structure. A redundant, multi-stage parachute system
+            ensures reliable recovery.
           </Paragraph>
           <h1
             css={css`
@@ -230,8 +232,8 @@ export default function InvestPage() {
           <h3>Faster Turnaround</h3>
           <Paragraph>
             Our vehicle can be recovered, inspected, and launched within days.
-            Payloads can be rapidly integrated for launch. Payloads can be
-            returned to customers in a matter of hours, not weeks.
+            Payloads can be rapidly integrated for launch, and returned to
+            customers in a matter of hours, not weeks.
           </Paragraph>
           <h1
             css={css`
@@ -242,9 +244,9 @@ export default function InvestPage() {
           </h1>
           <h3>Lower Costs</h3>
           <Paragraph>
-            Pressure-fed design innovations allow for elimination of costly
-            components such as turbopumps. Our reusable design reduces fleet and
-            manufacturing costs.
+            Innovations in pressure-fed fuel-delivery systems allow for
+            elimination of costly components such as turbopumps. Our reusable
+            design reduces fleet and manufacturing costs.
           </Paragraph>
           <h1
             css={css`
@@ -253,7 +255,7 @@ export default function InvestPage() {
           >
             =
           </h1>
-          <h3>More Innovation!</h3>
+          <h3>More Ground-escaping Science!</h3>
         </Section>
         <Section expand={true}>
           <SideBySide>
@@ -264,9 +266,9 @@ export default function InvestPage() {
                 alt="Floating lab equipment"
               />
               <Paragraph>
-                It's weightlessness (pretty much). When something is in space,
-                in orbit, or in freefall, gravity is no longer a significant
-                force. That's why objects appear to be floating in space.
+                It’s weightlessness (pretty much). When something is in space,
+                in orbit, or in freefall, gravity is no longer a force to be
+                resisted. That’s why objects appear to be floating in space.
               </Paragraph>
             </Subsection>
             <Subsection>
@@ -277,10 +279,9 @@ export default function InvestPage() {
               />
               <Paragraph>
                 Free from gravity, innovators can focus on the variables that
-                matter. There's a huge potential for new science to be done in
-                microgravity. Science done in microgravity could enable
-                game-changing discoveries in petrochemicals, pharmaceuticals,
-                semiconductors, microbiology and stem cells.
+                matter. Science done in microgravity could enable game-changing
+                discoveries in petrochemicals, pharmaceuticals, semiconductors,
+                microbiology, stem cells, and more.
               </Paragraph>
             </Subsection>
           </SideBySide>
