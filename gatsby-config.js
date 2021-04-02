@@ -35,8 +35,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-emotion`,
     {
       resolve: 'gatsby-plugin-fathom',
       options: {
@@ -48,5 +46,20 @@ module.exports = {
         whitelistHostnames: ['hudsonspace.systems'],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Alata',
+          },
+          {
+            family: 'Inter',
+            weights: ['300', '400', '600'],
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }
