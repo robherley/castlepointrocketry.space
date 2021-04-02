@@ -66,9 +66,9 @@ const HeaderLink = styled(Link)`
 const Header = () => (
   <HeaderContainer>
     <Link to="/foobar">
-      <img className="logo-icon" src={Logo} alt="hudson space systems logo" />
+      <img src={Logo} alt="hudson space systems logo" />
     </Link>
-    <div className="links">
+    <div>
       {links.map(e => (
         <HeaderLink {...e} key={e.to} />
       ))}
