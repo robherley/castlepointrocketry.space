@@ -68,11 +68,11 @@ const Header = () => (
     <Link to="/foobar">
       <img src={Logo} alt="hudson space systems logo" />
     </Link>
-    <div>
+    <nav>
       {links.map(e => (
         <HeaderLink {...e} key={e.to} />
       ))}
-    </div>
+    </nav>
   </HeaderContainer>
 )
 
