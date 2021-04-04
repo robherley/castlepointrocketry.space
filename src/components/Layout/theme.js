@@ -1,13 +1,14 @@
+const FONT_FALLBACK =
+  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
+
 export default {
   size: {
     maxWidth: '70rem',
   },
   font: {
     family: {
-      default: 'Inter',
-      heading: 'Alata',
-      fallback:
-        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+      default: `Inter, ${FONT_FALLBACK}`,
+      heading: `Alata, ${FONT_FALLBACK}`,
     },
     weight: {
       light: 300,

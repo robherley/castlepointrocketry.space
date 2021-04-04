@@ -11,8 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.color.bg};
     color: ${({ theme }) => theme.color.gray};
-    font-family: ${({ theme }) =>
-      `${theme.font.family.default}, ${theme.font.family.fallback}`};
+    font-family: ${({ theme }) => theme.font.family.default};
   }
 
   p {
@@ -31,8 +30,8 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: ${({ theme }) =>
-      `${theme.font.family.heading}, ${theme.font.family.fallback}`};
+    font-family: ${({ theme }) => theme.font.family.heading};
+    font-weight: ${({ theme }) => theme.font.weight.light};
     clear: both;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -56,6 +55,14 @@ const GlobalStyle = createGlobalStyle`
   }
   h6 {
     font-size: 0.75em;
+  }
+
+  .light {
+    font-weight: ${({ theme }) => theme.font.weight.light};
+  }
+
+  .semibold {
+    font-weight: ${({ theme }) => theme.font.weight.semiBold};
   }
 `
 

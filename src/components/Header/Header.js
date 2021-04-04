@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import Logo from '../../images/HSSwhite.svg'
+import Logo from '../../images/logo/HSSwhite.svg'
 import links from './links'
 
 const HeaderContainer = styled.header`
@@ -53,7 +53,7 @@ const HeaderLink = styled(Link)`
     left: 1rem;
     right: 1rem;
     height: 1px;
-    background-color: ${({ theme }) => theme.color.gray};
+    background-color: ${({ theme }) => theme.color.yellow};
     transform: scaleX(0);
     transition: transform 0.5s ease;
     transform-origin: center right;
@@ -65,7 +65,7 @@ const HeaderLink = styled(Link)`
   }
 
   &:last-child {
-    margin-right: 0;
+    padding-right: 0;
     &:after {
       background-color: transparent;
     }
