@@ -19,6 +19,7 @@ export default {
     bg: '#151719',
     gray: '#9ba9b4',
     light: '#fff',
+    yellow: '#ffba08',
     hss: {
       blue: '#1e91d6',
       dark: '#0a1b35',

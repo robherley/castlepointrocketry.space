@@ -4,16 +4,24 @@ import normalize from 'styled-normalize'
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
-  body,
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: ${({ theme }) => theme.color.bg};
+    color: ${({ theme }) => theme.color.gray};
+    font-family: ${({ theme }) =>
+      `${theme.font.family.default}, ${theme.font.family.fallback}`};
+  }
+
   p {
     background-color: ${({ theme }) => theme.color.bg};
     color: ${({ theme }) => theme.color.gray};
     font-stretch: normal;
     font-style: normal;
-    font-family: ${({ theme }) =>
-      `${theme.font.family.default}, ${theme.font.family.fallback}`};
-    line-height: normal;
-    letter-spacing: 0.12px;
+    line-height: 1.375em;
+    letter-spacing: 0px;
     font-size: 1rem;
   }
 

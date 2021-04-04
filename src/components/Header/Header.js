@@ -3,25 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Logo from '../../images/HSSwhite.svg'
-
-const links = [
-  {
-    children: 'Invest',
-    to: '/invest',
-  },
-  {
-    children: 'Services',
-    to: '/#services',
-  },
-  {
-    children: 'Team',
-    to: '/#team',
-  },
-  {
-    children: 'Contact',
-    to: '/#contact',
-  },
-]
+import links from './links'
 
 const HeaderContainer = styled.header`
   position: fixed;

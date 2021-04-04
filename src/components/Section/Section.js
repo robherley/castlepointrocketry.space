@@ -6,7 +6,6 @@ const SectionContainer = styled.section`
   max-width: ${({ theme }) => theme.size.maxWidth};
   margin: 0 auto;
   padding: 12rem 2rem;
-
   border-bottom: 1px solid rgba(197, 210, 220, 0.3);
 
   &:last-of-type {
@@ -14,39 +13,62 @@ const SectionContainer = styled.section`
   }
 
   h2 {
+    font-size: 2.5rem;
     color: ${({ theme }) => theme.color.light};
   }
 `
 
 const SectionTitle = styled.h2`
-  text-align: center;
   margin-bottom: 0.5rem;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    content: 'eee';
+    color: rgba(0, 0, 0, 0);
+    text-decoration: underline wavy ${({ theme }) => theme.color.yellow};
+  }
 `
 
-const SectionDescription = styled.p`
-  text-align: center;
-  margin: 0.75rem auto 0 auto;
-  max-width: 60rem;
+const SectionSubtitle = styled.p`
+  margin-top: 0.75rem;
+  max-width: 40rem;
+  text-align: justify;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0.5rem;
+    left: -1.25rem;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: ${({ theme }) => theme.color.yellow};
+  }
 `
 
 const SectionContent = styled.div`
   padding: 4rem 0;
 `
 
-const Section = ({ children, title, description }) => {
+const Section = ({ title, subtitle, children, ...rest }) => {
   return (
-    <SectionContainer>
+    <SectionContainer {...rest}>
       {title && <SectionTitle>{title}</SectionTitle>}
-      {description && <SectionDescription>{description}</SectionDescription>}
+      {subtitle && <SectionSubtitle>{subtitle}</SectionSubtitle>}
       <SectionContent>{children}</SectionContent>
     </SectionContainer>
   )
 }
 
 Section.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
-  description: PropTypes.string,
+  subtitle: PropTypes.string,
 }
 
 export default Section
