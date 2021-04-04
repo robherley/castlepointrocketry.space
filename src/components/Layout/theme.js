@@ -1,6 +1,6 @@
 export default {
   size: {
-    maxWidth: '90rem',
+    maxWidth: '70rem',
   },
   font: {
     family: {
