@@ -8,17 +8,19 @@ import { HeroTile, HeroTileGrid } from './HeroTile'
 const HeroPhoto = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${heroPhoto});
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: ${({ theme }) => theme.color.bg};
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 `
 
 const HeroContent = styled.div`
   max-width: ${({ theme }) => theme.size.maxWidth};
   margin: 0 auto;
-  padding: 12rem 2rem 0 2rem;
+  padding: 8rem 2rem;
 `
 
 const HeroTitle = styled.h1`
@@ -38,9 +40,9 @@ const HeroTitle = styled.h1`
       position: absolute;
       content: '';
       background-color: ${({ theme }) => theme.color.yellow};
-      bottom: 0.69rem;
+      bottom: 10%;
       left: 0;
-      height: 0.5rem;
+      height: 10%;
       width: 100%;
       opacity: 0.8;
     }
@@ -48,6 +50,43 @@ const HeroTitle = styled.h1`
     &:hover:after {
       opacity: 1;
     }
+  }
+
+  @media (max-width: 460px) {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+`
+
+const ScrollMore = styled.div`
+  color: ${({ theme }) => theme.color.light};
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    h3 {
+      display: inline-block;
+    }
+    border: 2px solid ${({ theme }) => theme.color.yellow};
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  svg {
+    fill: ${({ theme }) => theme.color.yellow};
+    animation: bounce 0.75s infinite;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 460px) {
+    display: none;
   }
 `
 
@@ -73,7 +112,6 @@ const Hero = () => {
             href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
           />
           <HeroTile
-            style={{ gridColumn: 'span 2' }}
             renderIcon={<CarbonIcons.Rocket32 />}
             title="Inquiry for a launch?"
             subtitle="Fill out our form!"
@@ -81,6 +119,11 @@ const Hero = () => {
           />
         </HeroTileGrid>
       </HeroContent>
+      <ScrollMore>
+        <div>
+          <h3>Scroll to learn more</h3> <CarbonIcons.ArrowDown32 />
+        </div>
+      </ScrollMore>
     </HeroPhoto>
   )
 }

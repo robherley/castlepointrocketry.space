@@ -64,6 +64,18 @@ const GlobalStyle = createGlobalStyle`
   .semibold {
     font-weight: ${({ theme }) => theme.font.weight.semiBold};
   }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 `
 
 export default GlobalStyle

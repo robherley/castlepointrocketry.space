@@ -9,6 +9,17 @@ export const HeroTileGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 1rem;
+
+  a:last-of-type {
+    grid-column: span 2;
+  }
+
+  @media (max-width: 460px) {
+    grid-gap: 2rem;
+    a {
+      grid-column: span 2;
+    }
+  }
 `
 
 const TileContainer = styled.a`
