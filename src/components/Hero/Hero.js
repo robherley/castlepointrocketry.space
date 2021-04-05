@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as CarbonIcons from '@carbon/icons-react'
+import {
+  ArrowDown32,
+  PresentationFile32,
+  Gift32,
+  Rocket32,
+} from '@carbon/icons-react'
 
 import heroPhoto from '../../images/hero/hero_rightcrop.png'
 import { HeroTile, HeroTileGrid } from './HeroTile'
@@ -59,6 +64,32 @@ const HeroTitle = styled.h1`
   }
 `
 
+const ScrollMore = styled.div`
+  color: ${({ theme }) => theme.color.light};
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  max-width: 25rem;
+
+  h3 {
+    display: inline-block;
+  }
+
+  svg {
+    fill: ${({ theme }) => theme.color.yellow};
+    animation: bounce 0.75s infinite;
+    vertical-align: middle;
+  }
+
+  > a {
+    padding: 0.25rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+  }
+`
+
 const Hero = () => {
   return (
     <HeroPhoto>
@@ -69,24 +100,30 @@ const Hero = () => {
         </HeroTitle>
         <HeroTileGrid>
           <HeroTile
-            renderIcon={<CarbonIcons.PresentationFile32 />}
+            renderIcon={<PresentationFile32 />}
             title="Interested?"
             subtitle="See our pitch at Propelify"
             href="https://www.youtube.com/watch?v=gnz6q2EzGw8&t=2011"
           />
           <HeroTile
-            renderIcon={<CarbonIcons.Gift32 />}
+            renderIcon={<Gift32 />}
             title="Want to help?"
             subtitle="Invest on MicroVentures"
             href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
           />
           <HeroTile
-            renderIcon={<CarbonIcons.Rocket32 />}
+            renderIcon={<Rocket32 />}
             title="Inquiry for a launch?"
             subtitle="Fill out our form!"
             href="https://airtable.com/shrt3DGgqmZ6KZwcC"
           />
         </HeroTileGrid>
+        <ScrollMore>
+          <a href="#video">
+            <h3>Scroll to learn more</h3>
+            <ArrowDown32 />
+          </a>
+        </ScrollMore>
       </HeroContent>
     </HeroPhoto>
   )

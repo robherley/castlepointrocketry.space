@@ -8,6 +8,7 @@ const IndexPage = () => (
   <Layout seo={{ title: 'Overview' }}>
     <Hero />
     <Section
+      id="video"
       title="Next Generation of Reusable Space Launch Vehicles"
       subtitle="Gravity is omnipresent in our science. The next step to better learning is removing it from the equation. To do so, we have developed a new vehicle launch platform that will make microgravity research easy, affordable, and repeatable."
     >
