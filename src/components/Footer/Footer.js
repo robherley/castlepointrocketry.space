@@ -64,28 +64,29 @@ const Footer = () => (
         <span>&middot; (201) 268-7887</span>
       </div>
       <div>
-        {/* TODO: update these links */}
-        <SocialLink href="https://example.com" renderIcon={<LogoTwitter32 />} />
-        <SocialLink href="https://example.com" renderIcon={<LogoGithub32 />} />
         <SocialLink
-          href="https://example.com"
+          href="https://twitter.com/HudsonSpaceSys"
+          renderIcon={<LogoTwitter32 />}
+        />
+        <SocialLink
+          href="https://www.facebook.com/hudsonspacesys"
           renderIcon={<LogoFacebook32 />}
         />
         <SocialLink
-          href="https://example.com"
+          href="https://www.instagram.com/hudsonspacesys/"
           renderIcon={<LogoInstagram32 />}
         />
         <SocialLink
-          href="https://example.com"
+          href="https://www.linkedin.com/company/hudsonspacesys/"
           renderIcon={<LogoLinkedin32 />}
         />
+        <SocialLink href="https://example.com" renderIcon={<LogoGithub32 />} />
       </div>
     </div>
 
     <div>
       <div className="copyright">
-        © {new Date().getFullYear()} Hudson Space Systems. Designed and
-        developed by{' '}
+        © {new Date().getFullYear()} Hudson Space Systems. Created by{' '}
         <a
           href="https://github.com/robherley"
           target="_blank"
