@@ -58,38 +58,6 @@ const HeroTitle = styled.h1`
   }
 `
 
-const ScrollMore = styled.div`
-  color: ${({ theme }) => theme.color.light};
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-
-  > div {
-    h3 {
-      display: inline-block;
-    }
-    border: 2px solid ${({ theme }) => theme.color.yellow};
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    padding: 0.25rem 0.75rem;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  svg {
-    fill: ${({ theme }) => theme.color.yellow};
-    animation: bounce 0.75s infinite;
-    vertical-align: middle;
-  }
-
-  @media (max-width: 460px) {
-    display: none;
-  }
-`
-
 const Hero = () => {
   return (
     <HeroPhoto>
@@ -119,11 +87,6 @@ const Hero = () => {
           />
         </HeroTileGrid>
       </HeroContent>
-      <ScrollMore>
-        <div>
-          <h3>Scroll to learn more</h3> <CarbonIcons.ArrowDown32 />
-        </div>
-      </ScrollMore>
     </HeroPhoto>
   )
 }
