@@ -60,7 +60,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Alata', 'Inter'],
+          families: ['Alata', 'Inter:300,400,600'],
         },
       },
     },

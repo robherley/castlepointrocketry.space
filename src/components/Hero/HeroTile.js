@@ -47,7 +47,7 @@ const TileContainer = styled.a`
   }
 
   .title {
-    font-weight: ${({ theme }) => theme.font.weight.semiBold};
+    font-weight: ${({ theme }) => theme.font.weight.bold};
     margin-top: 1rem;
   }
 

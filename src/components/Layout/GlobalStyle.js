@@ -61,8 +61,8 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${({ theme }) => theme.font.weight.light};
   }
 
-  .semibold {
-    font-weight: ${({ theme }) => theme.font.weight.semiBold};
+  .bold {
+    font-weight: ${({ theme }) => theme.font.weight.bold};
   }
 
   @keyframes bounce {
