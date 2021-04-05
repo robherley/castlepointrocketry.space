@@ -54,7 +54,8 @@ const HeroTitle = styled.h1`
 
   @media (max-width: 460px) {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
   }
 `
 

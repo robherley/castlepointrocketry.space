@@ -1,12 +1,11 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Layout, { SEO } from '../components/Layout'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 import Video from '../components/Video'
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Overview" />
+  <Layout seo={{ title: 'Overview' }}>
     <Hero />
     <Section
       title="Next Generation of Reusable Space Launch Vehicles"

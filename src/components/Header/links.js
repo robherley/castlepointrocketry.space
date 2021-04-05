@@ -1,4 +1,4 @@
-export default [
+const links = [
   {
     children: 'Invest',
     to: '/invest',
@@ -20,3 +20,5 @@ export default [
     to: '/#contact',
   },
 ]
+
+export default links

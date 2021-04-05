@@ -31,6 +31,16 @@ module.exports = {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
+          omitKeys: [
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+            'xmlnsSodipodi',
+            'xmlnsInkscape',
+            'rdfResource',
+            'rdfAbout',
+          ],
           include: /\.inline\.svg$/,
         },
       },
@@ -47,17 +57,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: 'Alata',
-          },
-          {
-            family: 'Inter',
-            weights: ['300', '400', '600'],
-          },
-        ],
+        google: {
+          families: ['Alata', 'Inter'],
+        },
       },
     },
     `gatsby-plugin-styled-components`,

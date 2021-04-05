@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
 import { navigate } from '@reach/router'
 
-export default () => {
+const NotFound = () => {
   useEffect(() => {
     navigate('/')
   }, [])
   return null
 }
+
+export default NotFound

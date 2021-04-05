@@ -1,7 +1,7 @@
 const FONT_FALLBACK =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
 
-export default {
+const theme = {
   size: {
     maxWidth: '70rem',
   },
@@ -31,3 +31,5 @@ export default {
     },
   },
 }
+
+export default theme

@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import Logo from '../../images/logo/HSSwhite.svg'
-import links from './links'
+import Logo from '../../images/logo/HSS.inline.svg'
+import Navigation from './Navigation'
 
 const HeaderContainer = styled.header`
-  position: fixed;
+  /* TODO: do we want a floating header */
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
@@ -17,57 +18,26 @@ const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: ${({ theme }) => theme.size.maxWidth};
-  padding: 2rem;
+  max-width: calc(${({ theme }) => theme.size.maxWidth} + 2rem);
+  padding: 1rem;
   margin: 0 auto;
 
-  img {
+  .logo {
     width: 200px;
-  }
-`
-
-const HeaderLink = styled(Link)`
-  position: relative;
-  color: ${({ theme }) => theme.color.light};
-  padding: 0 1rem;
-  box-sizing: border-box;
-  letter-spacing: 0.025rem;
-  text-decoration: none;
-  margin-right: 1px;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 25%;
-    bottom: 25%;
-    right: -1px;
-    width: 1px;
-    height: 50%;
-    background-color: ${({ theme }) => theme.color.gray};
+    height: auto;
   }
 
-  &::before {
-    top: calc(100% + 0.2rem);
-    content: '';
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    height: 1px;
-    background-color: ${({ theme }) => theme.color.yellow};
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-    transform-origin: center right;
+  nav.side {
+    display: none;
   }
 
-  &:hover::before {
-    transform-origin: center left;
-    transform: scaleX(1);
-  }
+  @media (max-width: 800px) {
+    nav.side {
+      display: block;
+    }
 
-  &:last-child {
-    padding-right: 0;
-    &:after {
-      background-color: transparent;
+    nav.normal {
+      display: none;
     }
   }
 `
@@ -76,13 +46,9 @@ const Header = () => (
   <HeaderContainer>
     <HeaderInner>
       <Link to="/">
-        <img src={Logo} alt="hudson space systems logo" />
+        <Logo className="logo" />
       </Link>
-      <nav>
-        {links.map(e => (
-          <HeaderLink {...e} key={e.to} />
-        ))}
-      </nav>
+      <Navigation />
     </HeaderInner>
   </HeaderContainer>
 )

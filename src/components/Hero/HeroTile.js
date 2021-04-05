@@ -15,7 +15,6 @@ export const HeroTileGrid = styled.div`
   }
 
   @media (max-width: 460px) {
-    grid-gap: 2rem;
     a {
       grid-column: span 2;
     }
@@ -24,11 +23,10 @@ export const HeroTileGrid = styled.div`
 
 const TileContainer = styled.a`
   position: relative;
-  border: 0.2rem solid ${({ theme }) => theme.color.yellow};
   color: ${({ theme }) => theme.color.light};
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem 1rem 1rem 1rem;
-  border-radius: 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 1.5rem;
   font-size: 1.2rem;
   text-decoration: none;
   transition: all 300ms;
@@ -60,8 +58,8 @@ const TileContainer = styled.a`
 
   .external {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 1rem;
+    right: 1rem;
   }
 `
 
