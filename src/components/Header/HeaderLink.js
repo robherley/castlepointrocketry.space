@@ -85,11 +85,10 @@ export const HorizontalHeaderLink = styled(Link)`
 export const VerticalHeaderLink = styled(Link)`
   ${common}
 
-  /* font-family: ${({ theme }) => theme.font.family.heading}; */
-
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
   text-align: right;
+  transition: color 300ms;
 
   &::after {
     bottom: -0.5rem;

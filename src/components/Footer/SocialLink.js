@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const SocialLinkContainer = styled.a`
   border-radius: 50%;
-  background-color: rgb(38, 40, 44);
+  background-color: ${({ theme }) => theme.color.bg2};
   padding: 0.75rem;
   display: flex;
   justify-content: center;

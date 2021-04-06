@@ -18,6 +18,7 @@ const theme = {
   },
   color: {
     bg: '#151719',
+    bg2: '#26282C',
     gray: '#9ba9b4',
     light: '#fff',
     yellow: '#ffba08',

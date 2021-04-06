@@ -21,6 +21,12 @@ const FooterContainer = styled.footer`
     color: inherit;
   }
 
+  .upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
   .favicon {
     height: 2rem;
     width: auto;
@@ -30,25 +36,39 @@ const FooterContainer = styled.footer`
   .contact {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  }
 
-    > div {
-      display: flex;
-      align-items: center;
-    }
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .robwashere {
     color: inherit;
     text-decoration: underline;
   }
+
+  @media (max-width: 900px) {
+    text-align: center;
+
+    .upper {
+      .contact {
+        margin-bottom: 1rem;
+        flex-direction: column;
+      }
+
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 `
 
 const Footer = () => (
   <FooterContainer>
-    <div className="contact">
-      <div>
+    <div className="upper">
+      <div className="contact">
         <img
           src={favicon}
           alt="hudson space systems logo"
@@ -61,9 +81,9 @@ const Footer = () => (
           contact@hudsonspace.systems
         </a>
         {'  '}
-        <span>&middot; (201) 268-7887</span>
+        <span>(201) 268-7887</span>
       </div>
-      <div>
+      <div className="social-links">
         <SocialLink
           href="https://twitter.com/HudsonSpaceSys"
           renderIcon={<LogoTwitter32 />}
