@@ -48,13 +48,9 @@ const CurrentMember = React.forwardRef(
   ({ first, last, role, photo, description, linkedin }, ref) => {
     return (
       <CurrentMemberContainer>
-        <img
-          ref={ref}
-          src={photo.default}
-          alt={`${first} ${last}'s headshot`}
-        />
+        <img src={photo.default} alt={`${first} ${last}'s headshot`} />
 
-        <div>
+        <div ref={ref}>
           <div className="name">
             {first} {last}{' '}
             <a href={linkedin} target="_blank" rel="noopener noreferrer">

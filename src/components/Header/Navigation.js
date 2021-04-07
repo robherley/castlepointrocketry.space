@@ -12,7 +12,7 @@ const HorizontalContainer = styled.nav``
 
 const Horizontal = () => (
   <HorizontalContainer>
-    {links.map(e => (
+    {links.map((e) => (
       <HorizontalHeaderLink {...e} key={e.to} />
     ))}
   </HorizontalContainer>
@@ -33,7 +33,7 @@ const VerticalContainer = styled.nav`
 
   transform: translateX(${({ isOpen }) => (isOpen ? '0' : '20rem')});
   transition: transform 0.5s ease;
-  border-left: 1px solid ${({ theme }) => theme.color.gray};
+  border-left: 1px solid ${({ theme }) => theme.color.yellow};
 `
 
 const VerticalButton = styled.button`
@@ -62,7 +62,7 @@ const Vertical = ({ open, setOpen }) => {
         {open ? <Close32 /> : <Menu32 />}
       </VerticalButton>
       <VerticalContainer isOpen={open}>
-        {links.map(e => (
+        {links.map((e) => (
           <VerticalHeaderLink
             {...e}
             key={e.to}

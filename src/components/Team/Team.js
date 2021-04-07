@@ -20,14 +20,17 @@ const Team = () => {
   const handleClick = (i) => () => {
     setActive(i)
     if (memberRef.current) {
-      memberRef.current.focus()
-      memberRef.current.scrollIntoView()
+      memberRef.current.scrollIntoView({
+        behavior: 'auto',
+        block: 'center',
+        inline: 'center',
+      })
     }
   }
 
   return (
-    <TeamContainer>
-      <CurrentMember {...members[active]} ref={memberRef} />
+    <TeamContainer ref={memberRef}>
+      <CurrentMember {...members[active]} />
       {members.map((m, i) => (
         <CartoonPhoto
           {...m}

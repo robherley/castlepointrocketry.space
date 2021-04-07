@@ -6,6 +6,7 @@ import Section from '../components/Section'
 import ServiceFlow from '../components/ServiceFlow'
 import Video from '../components/Video'
 import Team from '../components/Team'
+import Contact from '../components/Contact'
 
 const IndexPage = () => (
   <Layout seo={{ title: 'Overview' }}>
@@ -30,6 +31,7 @@ const IndexPage = () => (
     <Section id="team" title="Meet the Team">
       <Team />
     </Section>
+    <Contact />
   </Layout>
 )
 

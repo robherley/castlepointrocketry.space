@@ -17,6 +17,9 @@ const PhotoContainer = styled.div`
       max-width: 6rem;
     }
   }
+  @media (max-width: 360px) {
+    margin: 0.5rem;
+  }
 `
 
 const PhotoButton = styled.button`
