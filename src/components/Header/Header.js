@@ -7,7 +7,7 @@ import Navigation from './Navigation'
 
 const HeaderContainer = styled.header`
   /* TODO: do we want a floating header */
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;

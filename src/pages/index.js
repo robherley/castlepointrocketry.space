@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Section from '../components/Section'
 import ServiceFlow from '../components/ServiceFlow'
 import Video from '../components/Video'
+import Team from '../components/Team'
 
 const IndexPage = () => (
   <Layout seo={{ title: 'Overview' }}>
@@ -27,7 +28,7 @@ const IndexPage = () => (
       <FAQAccordion />
     </Section>
     <Section id="team" title="Meet the Team">
-      <div>todo</div>
+      <Team />
     </Section>
   </Layout>
 )
