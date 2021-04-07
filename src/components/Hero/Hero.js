@@ -100,19 +100,19 @@ const Hero = () => {
         </HeroTitle>
         <HeroTileGrid>
           <HeroTile
-            renderIcon={<PresentationFile32 />}
+            renderIcon={PresentationFile32}
             title="Interested?"
             subtitle="See our pitch at Propelify"
             href="https://www.youtube.com/watch?v=gnz6q2EzGw8&t=2011"
           />
           <HeroTile
-            renderIcon={<Gift32 />}
+            renderIcon={Gift32}
             title="Want to help?"
             subtitle="Invest on MicroVentures"
             href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
           />
           <HeroTile
-            renderIcon={<Rocket32 />}
+            renderIcon={Rocket32}
             title="Inquiry for a launch?"
             subtitle="Fill out our form!"
             href="https://airtable.com/shrt3DGgqmZ6KZwcC"

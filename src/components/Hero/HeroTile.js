@@ -61,9 +61,32 @@ const TileContainer = styled.a`
     top: 1rem;
     right: 1rem;
   }
+
+  @media (max-width: 460px) {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .title {
+      margin-top: 0;
+    }
+
+    .external {
+      display: none;
+    }
+
+    .action {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      grid-column: span 2;
+    }
+  }
 `
 
 export const HeroTile = ({ renderIcon, title, subtitle, href, ...rest }) => {
+  const Icon = renderIcon
   return (
     <TileContainer
       target="_blank"
@@ -71,16 +94,20 @@ export const HeroTile = ({ renderIcon, title, subtitle, href, ...rest }) => {
       href={href}
       {...rest}
     >
-      {renderIcon}
       <ArrowUpRight24 className="external" />
-      <div className="title">{title}</div>
-      <div className="subtitle">{subtitle}</div>
+      <div>
+        <Icon className="action" />
+      </div>
+      <div>
+        <div className="title">{title}</div>
+        <div className="subtitle">{subtitle}</div>
+      </div>
     </TileContainer>
   )
 }
 
 HeroTile.propTypes = {
-  renderIcon: PropTypes.node.isRequired,
+  renderIcon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
