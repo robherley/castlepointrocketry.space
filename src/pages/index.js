@@ -1,4 +1,5 @@
 import React from 'react'
+import FAQAccordion from '../components/FAQAccordion'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
@@ -23,7 +24,7 @@ const IndexPage = () => (
       <ServiceFlow />
     </Section>
     <Section id="faq" title="Frequently Asked Questions">
-      <div>todo</div>
+      <FAQAccordion />
     </Section>
     <Section id="team" title="Meet the Team">
       <div>todo</div>

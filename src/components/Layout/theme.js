@@ -19,6 +19,7 @@ const theme = {
   color: {
     bg: '#151719',
     bg2: '#26282C',
+    bg3: 'rgba(197, 210, 220, 0.3)',
     gray: '#9ba9b4',
     light: '#fff',
     yellow: '#ffba08',

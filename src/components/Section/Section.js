@@ -6,7 +6,7 @@ const SectionContainer = styled.section`
   max-width: ${({ theme }) => theme.size.maxWidth};
   margin: 0 auto;
   padding: 12rem 2rem;
-  border-bottom: 1px solid rgba(197, 210, 220, 0.3);
+  border-bottom: 1px solid ${({ theme }) => theme.color.bg3};
 
   &:last-of-type {
     border-bottom: none;
