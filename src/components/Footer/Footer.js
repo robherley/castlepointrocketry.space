@@ -91,7 +91,10 @@ const Footer = () => (
         href="https://www.linkedin.com/company/hudsonspacesys/"
         renderIcon={<LogoLinkedin32 />}
       />
-      <SocialLink href="https://example.com" renderIcon={<LogoGithub32 />} />
+      <SocialLink
+        href="http://github.com/hudsonspace/"
+        renderIcon={<LogoGithub32 />}
+      />
     </div>
   </FooterContainer>
 )

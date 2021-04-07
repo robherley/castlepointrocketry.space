@@ -7,6 +7,7 @@ const SectionContainer = styled.section`
   margin: 0 auto;
   padding: 12rem 2rem;
   border-bottom: 1px solid ${({ theme }) => theme.color.bg3};
+  /* background-color: ${({ theme }) => theme.color.bg}; */
 
   &:last-of-type {
     border-bottom: none;
