@@ -35,8 +35,8 @@ const SectionTitle = styled.h2`
 const SectionSubtitle = styled.p`
   margin-top: 0.75rem;
   max-width: 40rem;
-  text-align: justify;
   position: relative;
+  font-size: 1.25rem;
 
   &:before {
     position: absolute;
