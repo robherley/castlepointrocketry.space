@@ -16,6 +16,7 @@ const AspectLock = styled.div`
   /* padding hack for responsive player ratio: 100 / (1280 / 720) */
   padding-top: 56.25%;
   position: relative;
+  margin-bottom: 2rem;
 
   .player {
     border-radius: 20px;

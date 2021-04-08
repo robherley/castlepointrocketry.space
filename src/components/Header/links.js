@@ -1,7 +1,7 @@
 const links = [
   {
     children: 'Invest',
-    to: '/invest',
+    to: '/#invest',
   },
   {
     children: 'Microgravity Service',

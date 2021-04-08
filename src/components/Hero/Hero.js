@@ -120,7 +120,7 @@ const Hero = () => {
           />
         </HeroTileGrid>
         <ScrollMore>
-          <a href="#video">
+          <a href="#problem">
             <h3>Scroll to learn more</h3>
             <ArrowDown32 />
           </a>

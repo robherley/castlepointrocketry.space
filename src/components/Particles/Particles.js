@@ -1,9 +1,15 @@
 import React from 'react'
 import ParticleJS from 'react-particles-js'
+import { useWindowWidth } from '../../hooks'
 
 import config from './config'
 
 const Particles = () => {
+  const width = useWindowWidth()
+  const isTiny = width <= 800
+
+  config.particles.number.value = isTiny ? 30 : 100
+
   return (
     <ParticleJS
       params={config}

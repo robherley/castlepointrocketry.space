@@ -30,6 +30,7 @@ const TileContainer = styled.a`
   font-size: 1.2rem;
   text-decoration: none;
   transition: all 300ms;
+  user-select: none;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.yellow};

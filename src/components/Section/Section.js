@@ -59,14 +59,14 @@ const Section = ({ title, subtitle, children, ...rest }) => {
     <SectionContainer {...rest}>
       {title && <SectionTitle>{title}</SectionTitle>}
       {subtitle && <SectionSubtitle>{subtitle}</SectionSubtitle>}
-      <SectionContent>{children}</SectionContent>
+      {children && <SectionContent>{children}</SectionContent>}
     </SectionContainer>
   )
 }
 
 Section.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   title: PropTypes.string,
   subtitle: PropTypes.string,
 }
