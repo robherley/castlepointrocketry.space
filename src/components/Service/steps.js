@@ -1,5 +1,5 @@
 import date from '../../images/drawings/date.png'
-import payload2 from '../../images/drawings/payload2.png'
+import droptower from '../../images/drawings/droptower.png'
 import rocket from '../../images/drawings/rocket_blast.png'
 import microscope from '../../images/drawings/microscope.png'
 import repeat2 from '../../images/drawings/repeat2.png'
@@ -15,7 +15,7 @@ const steps = [
     title: 'Payload Integration',
     description:
       'Fly our ready-to-go cubesat-style capsules, available with data/power, pressurized environments, and live telemetry. We’ll help you customize your capsule to your exact requirements.',
-    image: payload2,
+    image: droptower,
   },
   {
     title: 'Launch',
@@ -30,7 +30,7 @@ const steps = [
     image: microscope,
   },
   {
-    title: 'Repeat',
+    title: 'Iterate',
     description:
       'One-offs are great for a proof of concept, but good science needs a robust data set. Our reusable vehicle and customer-focused integration services make iterative launches fast, simple, and affordable.',
     image: repeat2,
