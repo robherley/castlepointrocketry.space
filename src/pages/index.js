@@ -4,7 +4,7 @@ import FAQAccordion from '../components/FAQAccordion'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
-import ServiceBreakdown from '../components/ServiceBreakdown'
+import Service from '../components/Service'
 import Video from '../components/Video'
 import Team from '../components/Team'
 import Contact from '../components/Contact'
@@ -26,7 +26,7 @@ const IndexPage = () => (
         title="Our Microgravity as a Service"
         subtitle="We want to make researching in microgravity as easy as ordering a lab test here on Earth. With our suborbital flights, researchers will have a dependable schedule of launches to book a spot on, and full integration services to help them carry out their experiments."
       >
-        <ServiceBreakdown />
+        <Service />
       </Section>
       <Section id="faq" title="Frequently Asked Questions">
         <FAQAccordion />

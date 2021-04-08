@@ -73,6 +73,7 @@ const ScrollMore = styled.div`
 
   h3 {
     display: inline-block;
+    margin-right: 1rem;
   }
 
   svg {

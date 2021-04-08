@@ -1,8 +1,8 @@
 import date from '../../images/drawings/date.png'
-import payload from '../../images/drawings/payload.png'
-import rocket from '../../images/drawings/rocket_blast_yellow.png'
-import learn from '../../images/drawings/learn.png'
-import repeat from '../../images/drawings/repeat.png'
+import payload2 from '../../images/drawings/payload2.png'
+import rocket from '../../images/drawings/rocket_blast.png'
+import microscope from '../../images/drawings/microscope.png'
+import repeat2 from '../../images/drawings/repeat2.png'
 
 const steps = [
   {
@@ -15,7 +15,7 @@ const steps = [
     title: 'Payload Integration',
     description:
       'Fly our ready-to-go cubesat-style capsules, available with data/power, pressurized environments, and live telemetry. We’ll help you customize your capsule to your exact requirements.',
-    image: payload,
+    image: payload2,
   },
   {
     title: 'Launch',
@@ -27,13 +27,13 @@ const steps = [
     title: 'Learn',
     description:
       'We’ll work with you to return your experiment as soon as possible, however you need it. Cryo, vacuum, freeze-dried, same-day shipped, high-speed download, you name it.',
-    image: learn,
+    image: microscope,
   },
   {
     title: 'Repeat',
     description:
       'One-offs are great for a proof of concept, but good science needs a robust data set. Our reusable vehicle and customer-focused integration services make iterative launches fast, simple, and affordable.',
-    image: repeat,
+    image: repeat2,
   },
 ]
 
