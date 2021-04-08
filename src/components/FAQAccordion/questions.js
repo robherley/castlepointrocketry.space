@@ -7,7 +7,7 @@ const questions = [
   {
     q: 'What is microgravity?',
     a:
-      'Every object we put in orbit is actually just in free fall around the planet. We call this floating effect microgravity, because these perpetually falling objects appear to be weightless.',
+      'It’s weightlessness (pretty much). When something is in space, in orbit, or in freefall, gravity is no longer a force to be resisted. That’s why objects appear to be floating in space.',
   },
   {
     q: 'Why do I need weightless conditions?',
