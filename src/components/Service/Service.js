@@ -3,56 +3,58 @@ import styled from 'styled-components'
 
 import Step from './Step'
 import steps from './steps'
+import theme from '../../components/Layout/theme'
 
 const ServiceContainer = styled.div`
   position: relative;
+  margin: 0 auto;
+  max-width: 50rem;
 
   .loop {
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 1.5rem;
+    bottom: 2rem;
+    left: -0.7rem;
     width: 4rem;
-
-    background: linear-gradient(
-        90deg,
-        ${({ theme }) => theme.color.yellow} 50%,
-        transparent 50%
-      ),
-      linear-gradient(
-        90deg,
-        ${({ theme }) => theme.color.yellow} 50%,
-        transparent 50%
-      ),
-      linear-gradient(
-        0deg,
-        ${({ theme }) => theme.color.yellow} 50%,
-        transparent 50%
-      ),
-      linear-gradient(
-        0deg,
-        ${({ theme }) => theme.color.yellow} 50%,
-        transparent 50%
-      );
-    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
-    padding: 10px;
-    animation: border-loop 4s infinite linear;
+    border-radius: 1rem;
+    overflow: hidden;
   }
 
-  @keyframes border-loop {
-    0% {
-      background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+  rect {
+    stroke-dasharray: 20;
+    animation: dash 8s linear infinite;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 800;
     }
-    100% {
-      background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+    to {
+      stroke-dashoffset: 0;
     }
+  }
+
+  @media (max-width: 700px) {
+    margin-left: -4rem;
   }
 `
 
 const Service = () => {
   return (
     <ServiceContainer>
-      <div className="loop" />
+      <div className="loop">
+        <svg width="100%" height="100%">
+          <rect
+            width="100%"
+            height="100%"
+            strokeWidth="5"
+            stroke={theme.color.yellow}
+            strokeDashoffset="10"
+            strokeDasharray="10"
+            fill={'rgba(0, 0, 0, 0)'}
+          />
+        </svg>
+      </div>
       {steps.map((s) => (
         <Step key={s.title} {...s} />
       ))}
