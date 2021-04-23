@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ArrowDown32, Gift32, Rocket32 } from '@carbon/icons-react'
 
-import heroPhoto from '../../images/hero/hero_rightcrop.png'
+import heroPhoto from '../../images/hero/bg2.jpg'
 import { HeroTile } from './HeroTile'
 
 const HeroPhoto = styled.div`
