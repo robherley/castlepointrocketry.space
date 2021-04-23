@@ -3,24 +3,6 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { ArrowUpRight24 } from '@carbon/icons-react'
 
-export const HeroTileGrid = styled.div`
-  display: grid;
-  max-width: 25rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 1rem;
-
-  a:last-of-type {
-    grid-column: span 2;
-  }
-
-  @media (max-width: 460px) {
-    a {
-      grid-column: span 2;
-    }
-  }
-`
-
 const TileContainer = styled.a`
   position: relative;
   color: ${({ theme }) => theme.color.light};
@@ -31,6 +13,8 @@ const TileContainer = styled.a`
   text-decoration: none;
   transition: all 300ms;
   user-select: none;
+  display: block;
+  max-width: 25rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.yellow};

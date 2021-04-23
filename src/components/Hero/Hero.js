@@ -1,14 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  ArrowDown32,
-  PresentationFile32,
-  Gift32,
-  Rocket32,
-} from '@carbon/icons-react'
+import { ArrowDown32, Gift32, Rocket32 } from '@carbon/icons-react'
 
 import heroPhoto from '../../images/hero/hero_rightcrop.png'
-import { HeroTile, HeroTileGrid } from './HeroTile'
+import { HeroTile } from './HeroTile'
 
 const HeroPhoto = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -99,28 +94,21 @@ const Hero = () => {
           <span className="underline">Microgravity</span> as a{' '}
           <span className="underline">Service</span>
         </HeroTitle>
-        <HeroTileGrid>
-          <HeroTile
-            renderIcon={PresentationFile32}
-            title="Interested?"
-            subtitle="See our pitch at Propelify"
-            href="https://www.youtube.com/watch?v=gnz6q2EzGw8&t=2011"
-          />
-          <HeroTile
-            renderIcon={Gift32}
-            title="Want to help?"
-            subtitle="Invest on MicroVentures"
-            href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
-          />
-          <HeroTile
-            renderIcon={Rocket32}
-            title="Inquiry for a launch?"
-            subtitle="Fill out our form!"
-            href="https://airtable.com/shrt3DGgqmZ6KZwcC"
-          />
-        </HeroTileGrid>
+        <HeroTile
+          style={{ marginBottom: '1rem' }}
+          renderIcon={Rocket32}
+          title="Want to book a spot on our beta launch?"
+          subtitle="Sign up here!"
+          href="https://airtable.com/shrt3DGgqmZ6KZwcC"
+        />
+        <HeroTile
+          renderIcon={Gift32}
+          title="Looking to invest in our company?"
+          subtitle="Check us out on MicroVentures!"
+          href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
+        />
         <ScrollMore>
-          <a href="#problem">
+          <a href="#content">
             <h3>Scroll to learn more</h3>
             <ArrowDown32 />
           </a>
