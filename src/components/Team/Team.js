@@ -11,6 +11,7 @@ const TeamContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   max-width: 60rem;
+  margin: 0 auto;
 `
 
 const Team = () => {

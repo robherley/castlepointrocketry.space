@@ -53,6 +53,10 @@ const TileContainer = styled.a`
     align-items: center;
     padding: 1rem 2rem;
 
+    svg {
+      margin-right: 1rem;
+    }
+
     .title {
       margin-top: 0;
     }
