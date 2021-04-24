@@ -1,4 +1,5 @@
 import React from 'react'
+import Callout from '../components/Callout'
 
 import Contact from '../components/Contact'
 import FAQAccordion from '../components/FAQAccordion'
@@ -23,6 +24,11 @@ const IndexPage = () => (
       >
         <Service />
         <Video />
+        <Callout
+          href="https://airtable.com/shrt3DGgqmZ6KZwcC"
+          message="Chat with us about launching your research!"
+          buttonText="Get in touch with HSS"
+        />
       </Section>
       <Section id="faq" title="Frequently Asked Questions">
         <FAQAccordion />
