@@ -14,8 +14,7 @@ const CurrentMemberContainer = styled.div`
   }
 
   img {
-    max-width: 20rem;
-    width: 100%;
+    width: 20rem;
     height: auto;
     margin-right: 2rem;
     background-color: ${({ theme }) => theme.color.bg2};
