@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ArrowDown32, Gift32, Rocket32 } from '@carbon/icons-react'
 
+import SocialLink, { links } from '../SocialLink'
 import heroPhoto from '../../images/hero/bg2.jpg'
 import { HeroTile } from './HeroTile'
 
@@ -21,6 +22,15 @@ const HeroContent = styled.div`
   max-width: ${({ theme }) => theme.size.maxWidth};
   margin: 0 auto;
   padding: 8rem 2rem;
+`
+
+const HeroLinks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 25rem;
+  margin-top: 0.5rem;
 `
 
 const HeroTitle = styled.h1`
@@ -107,6 +117,11 @@ const Hero = () => {
           subtitle="Check us out on MicroVentures!"
           href="https://invest.microventures.com/offerings/hudson-space-systems/?referral_code=HSSWEB092420"
         />
+        <HeroLinks>
+          {links.map((e) => (
+            <SocialLink key={e.href} href={e.href} renderIcon={<e.icon />} />
+          ))}
+        </HeroLinks>
         <ScrollMore>
           <a href="#content">
             <h3>Scroll to learn more</h3>

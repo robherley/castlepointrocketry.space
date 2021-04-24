@@ -15,6 +15,7 @@ const TileContainer = styled.a`
   user-select: none;
   display: block;
   max-width: 25rem;
+  box-sizing: border-box;
 
   &:hover {
     background-color: ${({ theme }) => theme.color.yellow};

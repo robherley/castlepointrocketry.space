@@ -9,7 +9,7 @@ const VIDEO_LINK = 'https://www.youtube.com/watch?v=ni1DfT1ew8Y'
 
 const VideoContainer = styled.div`
   max-width: 55rem;
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
 `
 
 const AspectLock = styled.div`

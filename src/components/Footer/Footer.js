@@ -1,15 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  LogoTwitter32,
-  LogoGithub32,
-  LogoFacebook32,
-  LogoInstagram32,
-  LogoLinkedin32,
-} from '@carbon/icons-react'
 
 import favicon from '../../images/favicon.svg'
-import SocialLink from './SocialLink'
+import SocialLink, { links } from '../SocialLink'
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -75,26 +68,9 @@ const Footer = () => (
       </div>
     </div>
     <div className="social-links">
-      <SocialLink
-        href="https://twitter.com/HudsonSpaceSys"
-        renderIcon={<LogoTwitter32 />}
-      />
-      <SocialLink
-        href="https://www.facebook.com/hudsonspacesys"
-        renderIcon={<LogoFacebook32 />}
-      />
-      <SocialLink
-        href="https://www.instagram.com/hudsonspacesys/"
-        renderIcon={<LogoInstagram32 />}
-      />
-      <SocialLink
-        href="https://www.linkedin.com/company/hudsonspacesys/"
-        renderIcon={<LogoLinkedin32 />}
-      />
-      <SocialLink
-        href="http://github.com/hudsonspace/"
-        renderIcon={<LogoGithub32 />}
-      />
+      {links.map((e) => (
+        <SocialLink key={e.href} href={e.href} renderIcon={<e.icon />} />
+      ))}
     </div>
   </FooterContainer>
 )
