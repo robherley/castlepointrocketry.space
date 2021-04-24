@@ -12,8 +12,8 @@ const ServiceContainer = styled.div`
 
   .loop {
     position: absolute;
-    top: 1.5rem;
-    bottom: 2rem;
+    top: 0;
+    bottom: 0;
     left: -0.7rem;
     width: 4rem;
     border-radius: 1rem;
@@ -45,6 +45,7 @@ const Service = () => {
       <div className="loop">
         <svg width="100%" height="100%">
           <rect
+            rx="15"
             width="100%"
             height="100%"
             strokeWidth="5"
