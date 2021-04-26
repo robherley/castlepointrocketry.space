@@ -25,7 +25,7 @@ const IndexPage = () => (
         <Service />
         <Video />
         <Callout
-          href="https://airtable.com/shrt3DGgqmZ6KZwcC"
+          href="https://calendly.com/hudsonspace/30min"
           message="Chat with us about launching your research!"
           buttonText="Get in touch with HSS"
         />

@@ -21,8 +21,8 @@ const ServiceContainer = styled.div`
   }
 
   rect {
-    stroke-dasharray: 20;
-    animation: dash 8s linear infinite;
+    stroke-dasharray: 13;
+    animation: dash 9s linear infinite;
   }
 
   @keyframes dash {
