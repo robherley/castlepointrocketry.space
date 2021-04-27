@@ -2,6 +2,7 @@ import React from 'react'
 import Callout from '../components/Callout'
 
 import Contact from '../components/Contact'
+import Carousel from '../components/Carousel'
 import FAQAccordion from '../components/FAQAccordion'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
@@ -35,6 +36,7 @@ const IndexPage = () => (
       </Section>
       <Section id="team" title="Meet the Team">
         <Team />
+        <Carousel />
       </Section>
       <Contact />
       <Particles />
