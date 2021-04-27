@@ -8,7 +8,11 @@ import links from './links'
 
 const MAGIC_BREAKPOINT = 800
 
-const HorizontalContainer = styled.nav``
+const HorizontalContainer = styled.nav`
+  @media (max-width: ${MAGIC_BREAKPOINT}px) {
+    display: none;
+  }
+`
 
 const Horizontal = () => (
   <HorizontalContainer>
@@ -53,6 +57,10 @@ const VerticalButton = styled.button`
     transform: scale(1.5);
     fill: ${({ isOpen, theme }) => theme.color[isOpen ? 'yellow' : 'light']};
   }
+
+  @media (min-width: ${MAGIC_BREAKPOINT + 1}px) {
+    display: none;
+  }
 `
 
 const Vertical = ({ open, setOpen }) => {
@@ -78,8 +86,6 @@ const Navigation = () => {
   const width = useWindowWidth()
   const [open, setOpen] = useState(false)
 
-  const isHorizontal = width > MAGIC_BREAKPOINT
-
   useEffect(() => {
     // close if we grow > MAGIC_BREAKPOINT
     if (width > MAGIC_BREAKPOINT && open) {
@@ -87,10 +93,11 @@ const Navigation = () => {
     }
   }, [width, open])
 
-  return isHorizontal ? (
-    <Horizontal />
-  ) : (
-    <Vertical open={open} setOpen={setOpen} />
+  return (
+    <>
+      <Horizontal />
+      <Vertical open={open} setOpen={setOpen} />
+    </>
   )
 }
 
