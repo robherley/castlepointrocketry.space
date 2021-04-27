@@ -4,7 +4,7 @@ const photos = [
     alt: 'looking down engine',
   },
   {
-    src: require('../../images/carousel/0J9A9513.jpg'),
+    src: require('../../images/carousel/0J9A9513_fix.jpg'),
     alt: 'monica working on rocket',
   },
   {
