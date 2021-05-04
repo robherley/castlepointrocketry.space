@@ -1,5 +1,5 @@
 import { Loop32 } from '@carbon/icons-react'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 const ContactContainer = styled.form`
@@ -69,6 +69,7 @@ const ContactContainer = styled.form`
 
 const Contact = () => {
   const [email, setEmail] = useState('')
+  const [emailToSubmit, setEmailToSubmit] = useState('')
 
   const handleChange = (e) => {
     const {
@@ -78,15 +79,12 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-
-    alert('hey ben i need the url + token')
+    setEmailToSubmit(email)
     setEmail('')
   }
 
   return (
-    <ContactContainer id="contact" onSubmit={handleSubmit}>
+    <ContactContainer id="contact" onSubmit={handleSubmit} target="_blank" method="POST" action="https://lb.benchmarkemail.com//code/lbform">
       <Loop32 />
       <div className="title">Stay in the loop.</div>
       <div className="subtitle">
@@ -104,6 +102,11 @@ const Contact = () => {
         />
         <button type="submit">Join</button>
       </div>
+
+      <input type="hidden" readOnly name="fldemail" value={emailToSubmit} />
+      <input type="hidden" readOnly name="token" value="mFcQnoBFKMTCFYbAJg5l2MxpSu0%2BSv5KbU8eT15MPTOftxdKVEIMKw%3D%3D" />
+      <input type="hidden" readOnly name="successurl" value="https://lb.benchmarkemail.com/Code/Welcome" />
+      <input type="hidden" readOnly name="errorurl" value="https://lb.benchmarkemail.com//Code/Error" />
     </ContactContainer>
   )
 }
