@@ -12,8 +12,8 @@ const photos = [
     alt: 'Ground control',
   },
   {
-    src: require('../../images/carousel/IMG_2289.jpg'),
-    alt: 'Dakota and Nathan on the cherrypicker',
+    src: require('../../images/carousel/cleanroom.jpg'),
+    alt: 'Will working on the rocket in the cleanroom',
   },
   {
     src: require('../../images/carousel/0J9A9869.jpg'),
