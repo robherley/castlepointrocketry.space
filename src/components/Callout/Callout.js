@@ -19,7 +19,7 @@ const Button = styled.a`
   font-family: ${({ theme }) => theme.font.family.heading};
   text-align: center;
   display: block;
-  max-width: 14rem;
+  max-width: 16rem;
   transition: all 300ms ease-in-out;
   margin: 0 auto;
   margin-top: 1rem;

@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Hudson Space Systems`,
-        short_name: `HSS`,
+        short_name: `Hudson Space`,
         start_url: `/`,
         background_color: `#072250`,
         theme_color: `#072250`,

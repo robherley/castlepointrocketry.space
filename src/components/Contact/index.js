@@ -1,5 +1,5 @@
 import { Loop32 } from '@carbon/icons-react'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const ContactContainer = styled.form`

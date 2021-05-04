@@ -28,7 +28,7 @@ const IndexPage = () => (
         <Callout
           href="https://calendly.com/hudsonspace/30min"
           message="Chat with us about launching your research!"
-          buttonText="Get in touch with HSS"
+          buttonText="Get in touch with Hudson Space"
         />
       </Section>
       <Section id="faq" title="Frequently Asked Questions">

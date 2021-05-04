@@ -1,9 +1,9 @@
 {
   "name": "hudsonspace.systems",
   "private": true,
-  "description": "Landing Page for HSS",
+  "description": "Landing Page for Hudson Space Systems",
   "version": "0.1.0",
-  "author": "Hudson Space Systems <contact@cprocketry.com>",
+  "author": "Hudson Space Systems <contact@hudsonspace.systems>",
   "dependencies": {
     "@carbon/icons-react": "^10.29.0",
     "babel-plugin-styled-components": "^1.12.0",
@@ -50,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benwaffle/hudsonspace.systems"
+    "url": "https://github.com/hudsonspace/hudsonspace.systems"
   },
   "bugs": {
-    "url": "https://github.com/benwaffle/hudsonspace.systems/issues"
+    "url": "https://github.com/hudsonspace/hudsonspace.systems/issues"
   }
 }
