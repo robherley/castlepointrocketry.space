@@ -11,7 +11,7 @@ import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+  const { site, allFile } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,6 +19,11 @@ const SEO = ({ description, lang, meta, title }) => {
             title
             description
             author
+          }
+        }
+        allFile(filter: {name: {eq: "video_preview"}}) {
+          nodes {
+            publicURL
           }
         }
       }
@@ -50,6 +55,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: 'og:image',
+          content: `https://hudsonspace.systems${allFile.nodes[0].publicURL}`,
         },
         {
           name: `twitter:card`,
