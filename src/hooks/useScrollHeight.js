@@ -9,7 +9,7 @@ const getCurrentHeight = () => {
   }
 }
 
-export default () => {
+const useScrollHeight = () => {
   const [height, setHeight] = useState(getCurrentHeight())
 
   useLayoutEffect(() => {
@@ -29,3 +29,5 @@ export default () => {
 
   return height
 }
+
+export default useScrollHeight

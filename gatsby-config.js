@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Hudson Space Systems`,
-        short_name: `HSS`,
+        short_name: `Hudson Space`,
         start_url: `/`,
         background_color: `#072250`,
         theme_color: `#072250`,
@@ -31,12 +31,20 @@ module.exports = {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
+          omitKeys: [
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+            'xmlnsSodipodi',
+            'xmlnsInkscape',
+            'rdfResource',
+            'rdfAbout',
+          ],
           include: /\.inline\.svg$/,
         },
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-emotion`,
     {
       resolve: 'gatsby-plugin-fathom',
       options: {
@@ -48,5 +56,14 @@ module.exports = {
         whitelistHostnames: ['hudsonspace.systems'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Alata', 'Inter:300,400,600'],
+        },
+      },
+    },
+    `gatsby-plugin-styled-components`,
   ],
 }
