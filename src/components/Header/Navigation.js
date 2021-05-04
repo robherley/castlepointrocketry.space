@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styled from 'styled-components'
 import { Close32, Menu32 } from '@carbon/icons-react'
 
@@ -64,12 +64,27 @@ const VerticalButton = styled.button`
 `
 
 const Vertical = ({ open, setOpen }) => {
+  const virtNavRef = useRef(null)
+
   return (
     <>
-      <VerticalButton isOpen={open} onClick={() => setOpen(!open)}>
+      <VerticalButton
+        isOpen={open}
+        onClick={() => {
+          setOpen(!open)
+          if (!open && virtNavRef.current) {
+            virtNavRef.current.focus()
+          }
+        }}
+      >
         {open ? <Close32 /> : <Menu32 />}
       </VerticalButton>
-      <VerticalContainer isOpen={open}>
+      <VerticalContainer
+        ref={virtNavRef}
+        tabIndex="-1"
+        isOpen={open}
+        onBlur={() => setOpen(false)}
+      >
         {links.map((e) => (
           <VerticalHeaderLink
             {...e}
