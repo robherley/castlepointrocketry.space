@@ -12,6 +12,10 @@ const TeamContainer = styled.div`
   flex-wrap: wrap;
   max-width: 60rem;
   margin: 0 auto;
+
+  /* hack for scrollIntoView & consistency with section title spacing */
+  padding-top: 2rem;
+  margin-top: -2rem;
 `
 
 const Team = () => {
@@ -23,7 +27,7 @@ const Team = () => {
     if (memberRef.current) {
       memberRef.current.scrollIntoView({
         behavior: 'auto',
-        block: 'center',
+        block: 'start',
         inline: 'center',
       })
     }

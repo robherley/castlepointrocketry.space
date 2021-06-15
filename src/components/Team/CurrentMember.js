@@ -43,25 +43,23 @@ const CurrentMemberContainer = styled.div`
   }
 `
 
-const CurrentMember = React.forwardRef(
-  ({ first, last, role, photo, description, linkedin }, ref) => {
-    return (
-      <CurrentMemberContainer>
-        <img src={photo.default} alt={`${first} ${last}'s headshot`} />
+const CurrentMember = ({ first, last, role, photo, description, linkedin }) => {
+  return (
+    <CurrentMemberContainer>
+      <img src={photo.default} alt={`${first} ${last}'s headshot`} />
 
-        <div ref={ref}>
-          <div className="name">
-            {first} {last}{' '}
-            <a href={linkedin} target="_blank" rel="noopener noreferrer">
-              <LogoLinkedin32 />
-            </a>
-          </div>
-          <div className="role">{role}</div>
-          <div>{description}</div>
+      <div>
+        <div className="name">
+          {first} {last}{' '}
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
+            <LogoLinkedin32 />
+          </a>
         </div>
-      </CurrentMemberContainer>
-    )
-  }
-)
+        <div className="role">{role}</div>
+        <div>{description}</div>
+      </div>
+    </CurrentMemberContainer>
+  )
+}
 
 export default CurrentMember

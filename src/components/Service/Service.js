@@ -21,7 +21,6 @@ const ServiceContainer = styled.div`
   }
 
   rect {
-    stroke-dasharray: 13;
     animation: dash 9s linear infinite;
   }
 
@@ -50,8 +49,7 @@ const Service = () => {
             height="100%"
             strokeWidth="5"
             stroke={theme.color.yellow}
-            strokeDashoffset="10"
-            strokeDasharray="10"
+            strokeDasharray="2%" // % values gets rendered similar on ff and chrome
             fill={'rgba(0, 0, 0, 0)'}
           />
         </svg>
