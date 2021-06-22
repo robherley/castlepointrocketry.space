@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hudson Space Systems`,
-    description: `Hudson Space Systems is building the next generation of suborbital rockets.`,
+    description: `Hudson Space Systems is accelerating science and manufacturing by bringing microgravity to everyone.`,
     author: `Hudson Space Systems`,
   },
   plugins: [
