@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div id="content" />
       <Section
         id="microgravity"
-        title="Microgravity as a Service"
+        title="Microgravity as a Service™"
         subtitle="We want to make researching in microgravity as easy as ordering a lab test here on Earth. With our suborbital flights, researchers will have a dependable schedule of launches to book a spot on, and full integration services to help them carry out their experiments."
       >
         <Service />

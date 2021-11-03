@@ -102,7 +102,7 @@ const Hero = () => {
       <HeroContent>
         <HeroTitle>
           <span className="underline">Microgravity</span> as a{' '}
-          <span className="underline">Service</span>
+          <span className="underline">Service</span>™
         </HeroTitle>
         <HeroTile
           style={{ marginBottom: '1rem' }}
