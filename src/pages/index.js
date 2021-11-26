@@ -26,7 +26,7 @@ const IndexPage = () => (
         <Service />
         <Video />
         <Callout
-          href="https://calendly.com/hudsonspace/30min"
+          href="https://calendly.com/hudsonspace"
           message="Chat with us about launching your research!"
           buttonText="Get in touch with Hudson Space"
         />
