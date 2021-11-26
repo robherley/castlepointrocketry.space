@@ -1,72 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ArrowDown32, Rocket32 } from '@carbon/icons-react'
+import { ArrowDown32, ArrowUpRight24 } from '@carbon/icons-react'
 
-import SocialLink, { links } from '../SocialLink'
 import heroPhoto from '../../images/hero/bg2.jpg'
-import { HeroTile } from './HeroTile'
 
 const HeroPhoto = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(${heroPhoto});
   min-height: 100vh;
-  height: auto;
   background-color: ${({ theme }) => theme.color.bg};
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-`
-
-const HeroContent = styled.div`
-  max-width: ${({ theme }) => theme.size.maxWidth};
-  margin: 0 auto;
-  padding: 8rem 2rem;
-`
-
-const HeroLinks = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  max-width: 25rem;
-  margin-top: 0.5rem;
-`
-
-const HeroTitle = styled.h1`
-  color: ${({ theme }) => theme.color.light};
-  font-size: 3.5rem;
-  letter-spacing: 0.15rem;
-  max-width: 25rem;
-  word-break: keep-all;
-
-  .underline {
-    position: relative;
-    z-index: 1;
-    word-break: keep-all;
-
-    &:after {
-      z-index: -1;
-      position: absolute;
-      content: '';
-      background-color: ${({ theme }) => theme.color.yellow};
-      bottom: 10%;
-      left: 0;
-      height: 10%;
-      width: 100%;
-      opacity: 0.8;
-    }
-
-    &:hover:after {
-      opacity: 1;
-    }
-  }
-
-  @media (max-width: 460px) {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-  }
 `
 
 const ScrollMore = styled.div`
@@ -96,33 +42,114 @@ const ScrollMore = styled.div`
   }
 `
 
+const InvestContainer = styled.div`
+  padding: 6rem 0rem; `
+
+const Invest = styled.div`
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .yellow {
+    color: ${({ theme }) => theme.color.yellow};
+  }
+
+  h1 {
+    font-size: 3rem;
+    @media (min-width: 700px) {
+      font-size: 5rem;
+    }
+    text-align: center;
+
+    .underline {
+      position: relative;
+      z-index: 1;
+      word-break: keep-all;
+
+      &:after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        background-color: ${({ theme }) => theme.color.yellow};
+        bottom: 10%;
+        left: 0;
+        height: 10%;
+        width: 100%;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    @media (min-width: 700px) {
+      font-size: 3rem;
+    }
+    margin: 1rem 0;
+  }
+`
+
+const Deetz = styled.div`
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+  padding: 1rem;
+`
+
+const InvestLink = styled.div`
+  color: black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  svg {
+    fill: black;
+    vertical-align: middle;
+  }
+
+  > a {
+    padding: 0.25rem 2rem;
+    background-color: ${({ theme }) => theme.color.yellow};
+    border-radius: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+  }
+`
+
 const Hero = () => {
   return (
     <HeroPhoto>
-      <HeroContent>
-        <HeroTitle>
-          <span className="underline">Microgravity</span> as a{' '}
-          <span className="underline">Service</span>™
-        </HeroTitle>
-        <HeroTile
-          style={{ marginBottom: '1rem' }}
-          renderIcon={Rocket32}
-          title="Book a spot on our next launch"
-          subtitle="Fill out a launch services inquiry"
-          href="https://airtable.com/shrt3DGgqmZ6KZwcC"
-        />
-        <HeroLinks>
-          {links.map((e) => (
-            <SocialLink key={e.href} href={e.href} renderIcon={<e.icon />} />
-          ))}
-        </HeroLinks>
-        <ScrollMore>
-          <a href="#content">
-            <h3>Scroll to learn more</h3>
-            <ArrowDown32 />
-          </a>
-        </ScrollMore>
-      </HeroContent>
+      <InvestContainer>
+        <Invest>
+          <h1><span className="underline">Invest</span> in Hudson Space Systems</h1>
+          <h2><span className="yellow">10%</span> Black Friday Bonus</h2>
+          <div>11.26 &mdash; 11.28</div>
+          <Deetz>
+            <ul>
+              <li>Own a real piece of our company!</li>
+              <li>Get started with only $250</li>
+              <li>Our first launch is fully reserved</li>
+            </ul>
+          </Deetz>
+          <InvestLink>
+            <a href="https://startengine.com/hudson-space-systems" target="_blank" rel="noopener">
+              <h3>Check us out on StartEngine</h3>
+              <ArrowUpRight24 />
+            </a>
+          </InvestLink>
+          <ScrollMore>
+            <a href="#content">
+              <h3>Scroll to learn more</h3>
+              <ArrowDown32 />
+            </a>
+          </ScrollMore>
+        </Invest>
+      </InvestContainer>
     </HeroPhoto>
   )
 }
