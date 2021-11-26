@@ -137,7 +137,7 @@ const Hero = () => {
             </ul>
           </Deetz>
           <InvestLink>
-            <a href="https://startengine.com/hudson-space-systems" target="_blank" rel="noopener">
+            <a href="https://startengine.com/hudson-space-systems?utm_source=website&utm_medium=hero&utm_campaign=WEB20211126&utm_id=UA-177043644-4" target="_blank" rel="noopener">
               <h3>Check us out on StartEngine</h3>
               <ArrowUpRight24 />
             </a>
