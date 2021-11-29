@@ -128,7 +128,7 @@ const Hero = () => {
         <Invest>
           <h1><span className="underline">Invest</span> in Hudson Space Systems</h1>
           <h2><span className="yellow">10%</span> Black Friday Bonus</h2>
-          <div>11.26 &mdash; 11.28</div>
+          <div>11.26 &mdash; 11.29</div>
           <Deetz>
             <ul>
               <li>Own a real piece of our company!</li>
