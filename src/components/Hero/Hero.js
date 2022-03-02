@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ArrowDown32, PiggyBank32, Rocket32 } from '@carbon/icons-react'
+import { ArrowDown32, Rocket32 } from '@carbon/icons-react'
 
 import SocialLink, { links } from '../SocialLink'
 import heroPhoto from '../../images/hero/bg2.jpg'
@@ -110,12 +110,6 @@ const Hero = () => {
           title="Book a spot on our next launch"
           subtitle="Fill out a launch services inquiry"
           href="https://airtable.com/shrt3DGgqmZ6KZwcC"
-        />
-        <HeroTile
-          renderIcon={PiggyBank32}
-          title="Invest in our company"
-          subtitle="Check us out on StartEngine"
-          href="https://www.startengine.com/hudson-space-systems?utm_source=Website&utm_medium=Direct&utm_campaign=homepage20211207&utm_id=UA-177043644-4"
         />
         <HeroLinks>
           {links.map((e) => (
