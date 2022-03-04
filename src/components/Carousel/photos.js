@@ -27,6 +27,10 @@ const photos = [
     src: require('../../images/carousel/2019-07-09 22.42.41.jpg'),
     alt: '3D-Printed engine',
   },
+  {
+    src: require('../../images/carousel/nosecone.jpg'),
+    alt: 'Nosecone',
+  },
 ]
 
 export default photos
