@@ -11,7 +11,7 @@ const members = [
   {
     first: 'Monica',
     last: 'Traupmann',
-    role: 'COO',
+    role: 'CTO',
     photo: require('../../images/team/real/monica.png'),
     cartoon: require('../../images/team/cartoons/monica.png'),
     linkedin: 'monica-traupmann',
@@ -29,18 +29,9 @@ const members = [
     description: `Ben is a computer expert with extensive experience in software development, embedded programming, and Linux. He is a software engineer at Flow and brings that culture and experience to Hudson Space Systems. He has a B.S. in Computer Science.`,
   },
   {
-    first: 'William',
-    last: 'Skwirut',
-    role: 'CTO',
-    photo: require('../../images/team/real/will.png'),
-    cartoon: require('../../images/team/cartoons/will.png'),
-    linkedin: 'williamskwirut',
-    description: `Will’s background includes designing, manufacturing, and testing fluid control components and systems. He also has experience in numerical analysis, rapid prototyping, computational fluid dynamics, and finite element analysis. Will has Bachelor’s and Master’s Degrees in Mechanical Engineering from Stevens Institute of Technology, specializing in Fluids, Thermal, and Energy.`,
-  },
-  {
     first: 'Dakota',
     last: 'Van Deursen',
-    role: 'CFO',
+    role: 'COO',
     photo: require('../../images/team/real/dakota.png'),
     cartoon: require('../../images/team/cartoons/dakota.png'),
     linkedin: 'dvandeursen',
