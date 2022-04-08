@@ -46,6 +46,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-9S9ZL3YMH9",
+        ]
+      },
+    },
+    {
       resolve: 'gatsby-plugin-fathom',
       options: {
         // Fathom server URL. Defaults to `cdn.usefathom.com`
