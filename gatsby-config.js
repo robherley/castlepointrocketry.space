@@ -65,12 +65,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-plausible',
-      options: {
-        domain: 'plausible.io',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
