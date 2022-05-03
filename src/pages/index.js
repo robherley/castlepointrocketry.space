@@ -1,6 +1,5 @@
 import React from 'react'
 import Callout from '../components/Callout'
-
 import Contact from '../components/Contact'
 import Carousel from '../components/Carousel'
 import FAQAccordion from '../components/FAQAccordion'
@@ -10,7 +9,6 @@ import Particles from '../components/Particles'
 import Section from '../components/Section'
 import Service from '../components/Service'
 import Team from '../components/Team'
-import Video from '../components/Video'
 
 const IndexPage = () => (
   <>
@@ -21,12 +19,11 @@ const IndexPage = () => (
       <Section
         id="microgravity"
         title="Microgravity as a Service™"
-        subtitle="We want to make researching in microgravity as easy as ordering a lab test here on Earth. With our suborbital flights, researchers will have a dependable schedule of launches to book a spot on, and full integration services to help them carry out their experiments."
+        subtitle="We want to make manufacturing and research in microgravity as easy as ordering a lab test here on Earth. With our end-to-end service, customers will have a dependable schedule of launches to book a spot on, and full integration services to help them carry out their processes."
       >
         <Service />
-        <Video />
         <Callout
-          href="https://calendly.com/hudsonspace"
+          href="https://calendly.com/hudsonspace-nathan/website-inquiry"
           message="Chat with us about launching your research!"
           buttonText="Get in touch with Hudson Space"
         />

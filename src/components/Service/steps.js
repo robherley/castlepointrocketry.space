@@ -20,7 +20,7 @@ const steps = [
   {
     title: 'Launch',
     description:
-      'Three minutes of microgravity. 4.5g acceleration. 50 minutes of total flight time. We’ll work with you to set up a custom flight profile to suit your needs.',
+      'Our returnable orbiter brings your payload to VLEO for as long as you need. Stay for a day, month, or a year, and have your results returned to you with no delay.',
     image: rocket,
   },
   {

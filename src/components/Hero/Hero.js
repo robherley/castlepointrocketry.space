@@ -107,8 +107,8 @@ const Hero = () => {
         <HeroTile
           style={{ marginBottom: '1rem' }}
           renderIcon={Rocket32}
-          title="Book a spot on our next launch"
-          subtitle="Fill out a launch services inquiry"
+          title="Book your mission"
+          subtitle="Fill out a payload inquiry"
           href="https://airtable.com/shrt3DGgqmZ6KZwcC"
         />
         <HeroLinks>

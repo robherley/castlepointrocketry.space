@@ -64,7 +64,17 @@ const members = [
     cartoon: require('../../images/team/cartoons/khurram.png'),
     linkedin: 'kngore',
     description:
-      'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM.  With over 20 years in the tech and innovation space, his work brings together a deep understanding of business development, product lifecycle, data ethics, and the legal implications and challenges for companies that push boundaries.',
+      'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM. With over 20 years in the tech and innovation space, his work brings together a deep understanding of business development, product lifecycle, data ethics, and the legal implications and challenges for companies that push boundaries.',
+  },
+  {
+    first: 'Gerard',
+    last: 'DiFiore',
+    role: 'Senior Advisor',
+    photo: require('../../images/team/real/gerry.jpg'),
+    cartoon: require('../../images/team/cartoons/gerry.png'),
+    linkedin: 'gerarddifiore',
+    description:
+    'Gerry has been a partner at Reed Smith since 1998, and brings 30 years of experience to Hudson Space Systems. He routinely works with senior management and private equity firms in reaching strategic goals, focusing on public and private securities offerings, mergers and acquisitions, PE and VC investments, joint ventures and similar corporate transactional and governance matters.',
   },
 ]
 
