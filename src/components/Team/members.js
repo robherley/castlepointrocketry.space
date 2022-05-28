@@ -70,7 +70,7 @@ const members = [
     first: 'Gerard',
     last: 'DiFiore',
     role: 'Senior Advisor',
-    photo: require('../../images/team/real/gerry.jpg'),
+    photo: require('../../images/team/real/gerry.png'),
     cartoon: require('../../images/team/cartoons/gerry.png'),
     linkedin: 'gerarddifiore',
     description:
