@@ -1,8 +1,19 @@
 import React from 'react'
-import ParticleJS from 'react-particles-js'
+import TSParticles from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
 import { useWindowWidth } from '../../hooks'
 
 import config from './config'
+
+const particlesInit = async (main) => {
+  console.log(main);
+
+  await loadFull(main);
+};
+
+const particlesLoaded = (container) => {
+  console.log(container);
+};
 
 const Particles = () => {
   const width = useWindowWidth()
@@ -11,15 +22,15 @@ const Particles = () => {
   config.particles.number.value = isTiny ? 30 : 100
 
   return (
-    <ParticleJS
-      params={config}
-      style={{
-        position: 'fixed',
-        height: '100vh',
-        width: '100vw',
-        top: '0',
-        left: '0',
-        zIndex: '-1',
+    <TSParticles
+      init={particlesInit}
+      loaded={particlesLoaded}
+      params={{
+        ...config,
+        fullScreen: {
+          enable: true,
+          zIndex: -1,
+        }
       }}
     />
   )
