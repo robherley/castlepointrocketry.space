@@ -5,7 +5,7 @@ const members = [
     role: 'CEO',
     photo: require('../../images/team/real/nathan.png'),
     cartoon: require('../../images/team/cartoons/nathan.png'),
-    description: `Nathan is a space nerd with experience in management, systems, rapid prototyping, manufacturing, and project management. He has a Bachelor's degree in Mechanical Engineering and a Master's degree in Space Systems Engineering from Stevens Institute of Technology.`,
+    description: `Nathan holds an M.Eng. in Space Systems Engineering and a B.Eng. in Mechanical Engineering. He is a space nerd with experience in systems development, rapid prototyping, manufacturing, and project management. In addition to systems architecture, he oversees business development, fundraising, management, and planning.`,
     linkedin: 'nathan-tahbaz',
   },
   {
@@ -16,7 +16,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/monica.png'),
     linkedin: 'monica-traupmann',
     description:
-      'Monica is an explosions enthusiast with experience in propulsion design, fuel delivery systems, and instrumentation, as well as fundraising and crowdfunding for small-scale projects. She has a Bachelor’s degree in Chemical Engineering and a Master’s degree in Mechanical Engineering with a focus on Energy, Fluids, and Heat Transfer.',
+      'Monica is an explosions enthusiast with experience in fuel delivery systems and instrumentation. She has an M.Eng. in Mechanical Engineering and a B.Eng. in Chemical Engineering. She also oversees technology development strategy and leads propulsion systems design.',
   },
   {
     first: 'Benjamin',
@@ -26,7 +26,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/ben.png'),
     linkedin: 'beniofel',
     github: 'benwaffle',
-    description: `Ben is a computer expert with extensive experience in software development, embedded programming, and Linux. He is a software engineer at Flow and brings that culture and experience to Hudson Space Systems. He has a B.S. in Computer Science.`,
+    description: `Ben has a B.Sci. in Computer Science and extensive experience in software development, web & embedded programming, and Linux. He is responsible for designing and building experiment controls and DAQ, the customer portal, and the embedded distributed flight controller board.`,
   },
   {
     first: 'Dakota',
@@ -35,10 +35,10 @@ const members = [
     photo: require('../../images/team/real/dakota.png'),
     cartoon: require('../../images/team/cartoons/dakota.png'),
     linkedin: 'dvandeursen',
-    description: `Dakota is passionate about learning how complex systems work together - both physically and socially. He weaves experience with STEM in the workplace into his personal history in peer management and governing bodies. He has a B.Eng. in Chemical Engineering and an M.S. in Materials Science & Engineering from Stevens Institute of Technology.`,
+    description: `Dakota manages the team's assets, personnel, and logistics for both hardware projects and day-to-day operations, and directs payroll and HR. His M.Eng. in Materials Science and Engineering and a B.Eng. in Chemical Engineering, as well as time spent as a chemistry and materials researcher, also help him in various technical aspects of the business.`,
   },
   {
-    first: 'Nicholas',
+    first: 'Cole',
     last: 'Yarbrough',
     role: 'Engineer',
     photo: require('../../images/team/real/cole.png'),
@@ -54,7 +54,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/igor.png'),
     linkedin: 'igor-alexandrov-033123',
     description:
-      'Igor is an experienced president with a demonstrated history of working in the research industry. Strong business development professional skilled in Analytical Skills, Entrepreneurship, Fundraising, Software Development, and Start-ups.',
+      'Igor is a driven entrepreneur and technical advisor with multiple degrees, including a D.Sci in Complex Systems Design, a Ph.D. in Applied Physics, and an MBA. He has over 30 years of experience in science, space, and research, and has published extensively. He has held several executive roles for tech companies, and holds a variety of patents.',
   },
   {
     first: 'Khurram',
@@ -64,7 +64,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/khurram.png'),
     linkedin: 'kngore',
     description:
-      'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM. With over 20 years in the tech and innovation space, his work brings together a deep understanding of business development, product lifecycle, data ethics, and the legal implications and challenges for companies that push boundaries.',
+      'Khurram is a business executive, attorney, engineer and an advocate for diversity and STEM. With over 20 years in the tech and innovation fields and both a J.D. and M.Eng., his work brings together a deep understanding of business development, data ethics, and the legal implications for companies that push boundaries. He provides strategic business development advice.',
   },
   {
     first: 'Gerard',
@@ -74,7 +74,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/gerry.png'),
     linkedin: 'gerarddifiore',
     description:
-    'Gerry has been a partner at Reed Smith since 1998, and brings 30 years of experience to Hudson Space Systems. He routinely works with senior management and private equity firms in reaching strategic goals, focusing on public and private securities offerings, mergers and acquisitions, PE and VC investments, joint ventures and similar corporate transactional and governance matters.',
+    'Gerry, J.D., brings nearly 40 years of experience in investment and capital markets to his role at Hudson Space Systems. He routinely works with private equity firms to reach strategic goals.',
   },
 ]
 

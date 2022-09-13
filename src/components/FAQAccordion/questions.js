@@ -1,7 +1,7 @@
 const questions = [
   {
-    q: 'What is your mission?',
-    a: 'We\'re designing a faster future today. Made in Hoboken, NJ, we\'re Hudson Space Systems. Our goal is to make access to microgravity research and manufacturing simple and affordable.'
+    q: 'What’s your mission?',
+    a: 'We want to enable the next industrial revolution in space! The time is right, and all of the technology is available. We’re putting together the pieces to build the first layer of in-space infrastructure.',
   },
   {
     q: 'What is microgravity?',
@@ -19,9 +19,9 @@ const questions = [
       'Well... that’s the problem. The launch providers currently servicing this market are already operating at capacity, with extremely long lead times and sky high prices, which also means there are few chances for iterative experimentation. Because of this, opportunities to research in microgravity are limited.',
   },
   {
-    q: 'How can Hudson Space help this research?',
+    q: 'How can Hudson Space Systems help this research?',
     a:
-      'Bringing together a team of quirky rocket scientists, we’ve developed and built an innovative, fully-reusable launch platform. We can increase launch frequencies, lower costs, and remove the traditional barriers to sending experiments in space. We’re using our affordable and streamlined suborbital rocket technology to offer rides to space (and back) for research payloads, on a dependable schedule and at attainable rates.',
+      'Hudson Space Systems builds and integrates a stack of aerospace technologies to provide an end-to-end space access service. We call it Microgravity as a Service™, and its goal is to eliminate existing barriers (cost, supply, complexity, etc.) for academic and corporate STEM customers alike. The end result is simplified access to microgravity for advanced research/development/manufacturing.',
   },
 ]
 
