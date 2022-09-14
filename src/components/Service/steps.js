@@ -8,19 +8,19 @@ const steps = [
   {
     title: 'Schedule',
     description:
-      'No wait list. Period. You want to do cutting edge science, we want to make that happen ASAP. Our fleet is ready when you are.',
+      'No wait list. Period. You want to do cutting edge science, we want to make that happen ASAP. We’re ready when you are.',
     image: date,
   },
   {
-    title: 'Payload Integration',
+    title: 'Payloads',
     description:
-      'Fly our ready-to-go cubesat-style capsules, available with data/power, pressurized environments, and live telemetry. We’ll help you customize your capsule to your exact requirements.',
+      'Fly our preconfigured microFactories and microLabs, available with data/power, pressurized environments, and live telemetry, and much more. We’ll make sure there’s a microFactory perfect for your mission.',
     image: droptower,
   },
   {
     title: 'Launch',
     description:
-      'Our returnable orbiter brings your payload to VLEO for as long as you need. Stay for a day, month, or a year, and have your results returned to you with no delay.',
+      'We’ve got your ride, no need to shop for launch services. Stay for a day, month, or a year, and have your results returned to you with no delay.',
     image: rocket,
   },
   {
@@ -32,7 +32,7 @@ const steps = [
   {
     title: 'Iterate',
     description:
-      'One-offs are great for a proof of concept, but good science needs a robust data set. Our reusable vehicle and customer-focused integration services make iterative launches fast, simple, and affordable.',
+      'One-offs are great for a proof of concept, but good science needs a robust data set. Our reusable system and customer-focused integration services make iterative launches fast, simple, and affordable.',
     image: repeat2,
   },
 ]
