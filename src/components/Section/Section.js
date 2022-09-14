@@ -37,17 +37,6 @@ const SectionSubtitle = styled.p`
   max-width: 40rem;
   position: relative;
   font-size: 1.25rem;
-
-  &:before {
-    position: absolute;
-    top: 0.5rem;
-    left: -1.25rem;
-    content: '';
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 0.25rem;
-    background-color: ${({ theme }) => theme.color.yellow};
-  }
 `
 
 const SectionContent = styled.div`
