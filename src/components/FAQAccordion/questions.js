@@ -19,9 +19,9 @@ const questions = [
       'Well... that’s the problem. The launch providers currently servicing this market are already operating at capacity, with extremely long lead times and sky high prices, which also means there are few chances for iterative experimentation. Because of this, opportunities to research in microgravity are limited.',
   },
   {
-    q: 'How can Hudson Space Systems help this research?',
+    q: 'How can Hudson Space Systems help me?',
     a:
-      'Hudson Space Systems builds and integrates a stack of aerospace technologies to provide an end-to-end space access service. We call it Microgravity as a Service™, and its goal is to eliminate existing barriers (cost, supply, complexity, etc.) for academic and corporate STEM customers alike. The end result is simplified access to microgravity for advanced research/development/manufacturing.',
+      'Hudson Space Systems builds and integrates a stack of aerospace technologies to provide an end-to-end space access service. We call it Microgravity as a Service™, and its goal is to eliminate existing barriers (cost, supply, complexity, etc.) for academic and corporate STEM customers alike. The result is simplified access to microgravity for advanced research/development/manufacturing.',
   },
 ]
 

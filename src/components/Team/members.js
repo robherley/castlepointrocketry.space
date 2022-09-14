@@ -19,7 +19,7 @@ const members = [
       'Monica is an explosions enthusiast with experience in fuel delivery systems and instrumentation. She has an M.Eng. in Mechanical Engineering and a B.Eng. in Chemical Engineering. She also oversees technology development strategy and leads propulsion systems design.',
   },
   {
-    first: 'Benjamin',
+    first: 'Ben',
     last: 'Iofel',
     role: 'CIO',
     photo: require('../../images/team/real/ben.png'),
@@ -74,7 +74,7 @@ const members = [
     cartoon: require('../../images/team/cartoons/gerry.png'),
     linkedin: 'gerarddifiore',
     description:
-    'Gerry, J.D., brings nearly 40 years of experience in investment and capital markets to his role at Hudson Space Systems. He routinely works with private equity firms to reach strategic goals.',
+    'Gerry, J.D., brings nearly 40 years of experience in investment and capital markets to his role at Hudson Space Systems. He routinely works with private equity firms to reach strategic securities, acquisition, and offering goals.',
   },
 ]
 
