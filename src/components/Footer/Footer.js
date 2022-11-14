@@ -51,10 +51,6 @@ const Footer = () => (
         >
           contact@hudsonspace.systems
         </a>
-        {'  '}
-        <span style={{ wordBreak: 'keep-all', whiteSpace: 'nowrap' }}>
-          (201) 268-7887
-        </span>
       </div>
       <div className="copyright">
         © {new Date().getFullYear()} Hudson Space Systems. Created by{' '}
