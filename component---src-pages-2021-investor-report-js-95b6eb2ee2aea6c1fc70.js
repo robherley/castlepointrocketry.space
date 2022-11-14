@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhudsonspace_systems=self.webpackChunkhudsonspace_systems||[]).push([[935],{7579:function(s,e,n){n.r(e);var t=n(7294),u=n(9694);e.default=function(){return(0,t.useEffect)((function(){(0,u.navigate)("https://docsend.com/view/kj7yqgt57nbd6igf")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-2021-investor-report-js-95b6eb2ee2aea6c1fc70.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhudsonspace_systems=self.webpackChunkhudsonspace_systems||[]).push([[272],{7611:function(s,e,c){c.r(e);var n=c(7294),t=c(9694);e.default=function(){return(0,n.useEffect)((function(){(0,t.navigate)("https://docsend.com/view/p6gc6j3cz2vic8zs")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-handout-1-js-1a2f6785017e600c3be5.js.map

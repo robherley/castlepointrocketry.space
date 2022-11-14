@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhudsonspace_systems=self.webpackChunkhudsonspace_systems||[]).push([[996],{4840:function(s,e,u){u.r(e);var t=u(7294),n=u(9694);e.default=function(){return(0,t.useEffect)((function(){(0,n.navigate)("https://youtu.be/WBYJer5THBM")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-explainer-js-158d51959ed14acbf5c6.js.map
