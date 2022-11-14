@@ -47,16 +47,6 @@ const members = [
     description: `Cole is a lifelong maker and electrical / computer engineer who has worked on space projects both small and large: from communicating with the ISS to launching a high-altitude balloon. Cole leads the development of avionics hardware for our suborbital launch platforms.`,
   },
   {
-    first: 'Igor',
-    last: 'Alexandrov',
-    role: 'Senior Advisor',
-    photo: require('../../images/team/real/igor.png'),
-    cartoon: require('../../images/team/cartoons/igor.png'),
-    linkedin: 'igor-alexandrov-033123',
-    description:
-      'Igor is a driven entrepreneur and technical advisor with multiple degrees, including a D.Sci in Complex Systems Design, a Ph.D. in Applied Physics, and an MBA. He has over 30 years of experience in science, space, and research, and has published extensively. He has held several executive roles for tech companies, and holds a variety of patents.',
-  },
-  {
     first: 'Khurram',
     last: 'Nasir Gore',
     role: 'Senior Advisor',
